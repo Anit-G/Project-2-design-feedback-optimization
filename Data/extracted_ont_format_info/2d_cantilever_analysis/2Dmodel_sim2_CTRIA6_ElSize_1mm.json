@@ -1,0 +1,809 @@
+{
+    "Analysis": {
+        "AeroMechanical": "",
+        "CFD": "",
+        "CoupledAeroMechanical": "",
+        "Structural": {
+            "Mechanical": {
+                "2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                    "SolidMaterial": [
+                        "AISI_Steel_4340"
+                    ],
+                    "is2D": true,
+                    "isTransient": false,
+                    "LocalStorage": [
+                        "LocalStorage_id_num_1--2Dmodel_sim2_CTRIA6_ElSize_1mm"
+                    ],
+                    "isHarmonic": false,
+                    "is3D": false,
+                    "Geometry": [
+                        "2DMODEL"
+                    ],
+                    "Boundary": [
+                        "Fixed(1)--2Dmodel_sim2_CTRIA6_ElSize_1mm"
+                    ],
+                    "Mesh": [
+                        "2Dmodel_fem2_CTRIA6_ElSize_1mm"
+                    ],
+                    "ToolVersion": "v12.0.2.9",
+                    "Result": [
+                        "2dmodel_sim2-structural--2Dmodel_sim2_CTRIA6_ElSize_1mm"
+                    ],
+                    "LastModificationDate": 1631080163.0,
+                    "FileSize": 3459120,
+                    "isSteadyState": true,
+                    "People": [
+                        "Shyam"
+                    ],
+                    "FileNameOriginal": "2Dmodel_sim2",
+                    "FileNameAlias": "2Dmodel_sim2_CTRIA6_ElSize_1mm",
+                    "PointLoad": [
+                        "FrontLoad--2Dmodel_sim2_CTRIA6_ElSize_1mm",
+                        "TopLoad--2Dmodel_sim2_CTRIA6_ElSize_1mm"
+                    ]
+                }
+            },
+            "Thermomechanical": ""
+        }
+    },
+    "Material": {
+        "FluidMaterial": "",
+        "SolidMaterial": {
+            "AISI_Steel_4340": {
+                "R0": "2.5",
+                "R45": "3",
+                "R90": "2.7",
+                "MaterialCategory": "METAL",
+                "MaterialSubCategory": "Carbon Steel",
+                "Density": [
+                    "Density_7.85e-06_AISI_Steel_4340"
+                ],
+                "ModulusOfElasticity": [
+                    "ModulusOfElasticity_193000000_AISI_Steel_4340"
+                ],
+                "PoissonRatio": "0.284",
+                "TypeOfNonlinearity": "1",
+                "YieldFunctionCriterion": "1",
+                "HardeningRule": "1",
+                "YieldStrength": [
+                    "YieldStrength_1178000_AISI_Steel_4340"
+                ],
+                "UltimateTensileStrength": [
+                    "UltimateTensileStrength_1240000_AISI_Steel_4340"
+                ],
+                "FatigueStrengthCoefficient": [
+                    "FatigueStrengthCoefficient_1917000_AISI_Steel_4340"
+                ],
+                "FatigueStrengthExponent": "-0.099",
+                "FatigueDuctilityCoefficient": "1.122",
+                "FatigueDuctilityExponent": "-0.72",
+                "CyclicStrengthCoefficient": [
+                    "CyclicStrengthCoefficient_1887000_AISI_Steel_4340"
+                ],
+                "CyclicStrainHardeningExponent": "0.137",
+                "InitialStrain": [
+                    "InitialStrain_0.02_AISI_Steel_4340"
+                ],
+                "HardeningExponent": "0.22",
+                "StrengthCoefficient": [
+                    "StrengthCoefficient_2182.004_AISI_Steel_4340"
+                ],
+                "ThermalExpansionCoefficient": [
+                    "ThermalExpansionCoefficient_1.23e-051_AISI_Steel_4340"
+                ],
+                "ThermalConductivity": [
+                    "ThermalConductivity_44500_AISI_Steel_4340"
+                ],
+                "SpecificHeat": [
+                    "SpecificHeat_475000000_AISI_Steel_4340"
+                ],
+                "CrosshatchPattern": "Steel"
+            }
+        }
+    },
+    "Boundary": {
+        "Fixed(1)--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+            "FixedConstraint": [
+                "FixedConstraint_id_num_1--2Dmodel_sim2_CTRIA6_ElSize_1mm"
+            ]
+        }
+    },
+    "People": {
+        "Shyam": {
+            "Name": "Shyam"
+        },
+        "Chethan": {
+            "Name": "Chethan"
+        }
+    },
+    "Geometry": {
+        "2DMODEL": {
+            "SolidMaterial": [
+                "AISI_Steel_4340"
+            ],
+            "is2D": true,
+            "is3D": false,
+            "LastModificationDate": 1613118225.0,
+            "FileSize": 37850,
+            "FileNameOriginal": "2DMODEL",
+            "FileNameAlias": "2DMODEL",
+            "Line": [
+                "Line4--2DMODEL"
+            ],
+            "Component": [
+                "2DMODEL--2DMODEL"
+            ],
+            "Edge": [
+                "LOADINGEDGE--2DMODEL",
+                "TOPEDGE--2DMODEL"
+            ]
+        }
+    },
+    "Loads": {
+        "CyclicLoads": "",
+        "HeatFlux": "",
+        "MomentLoad": "",
+        "PointLoad": {
+            "FrontLoad--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                "Name": "FrontLoad",
+                "types": [
+                    "FORCE"
+                ],
+                "CSYSOption": 5,
+                "observeNode1": "Observe Node 1",
+                "observeNode2": "Observe Node 2",
+                "observeNode3": "Observe Node 3",
+                "observeNode4": "Observe Node 4",
+                "distributionType": 1,
+                "DistributionField": "NA",
+                "Edge": [
+                    "LOADINGEDGE--2DMODEL"
+                ],
+                "Force": [
+                    "Force_1000000.0_FrontLoad--2Dmodel_sim2_CTRIA6_ElSize_1mm"
+                ]
+            },
+            "TopLoad--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                "Name": "TopLoad",
+                "types": [
+                    "FORCE",
+                    "LOAD"
+                ],
+                "CSYSOption": 5,
+                "observeNode1": "Observe Node 1",
+                "observeNode2": "Observe Node 2",
+                "observeNode3": "Observe Node 3",
+                "observeNode4": "Observe Node 4",
+                "distributionType": 1,
+                "DistributionField": "NA",
+                "Edge": [
+                    "TOPEDGE--2DMODEL"
+                ],
+                "Force": [
+                    "Force_2500000.0_TopLoad--2Dmodel_sim2_CTRIA6_ElSize_1mm"
+                ]
+            }
+        },
+        "PressureLoad": "",
+        "UDL": ""
+    },
+    "Mesh": {
+        "2Dmodel_fem2_CTRIA6_ElSize_1mm": {
+            "MeshVolume": [
+                "2d_mesh(1)--2Dmodel_fem2_CTRIA6_ElSize_1mm"
+            ],
+            "LastModificationDate": 1631080162.0,
+            "FileSize": 7421799,
+            "is2D": true,
+            "is3D": false,
+            "FileNameOriginal": "2Dmodel_fem2",
+            "FileNameAlias": "2Dmodel_fem2_CTRIA6_ElSize_1mm"
+        }
+    },
+    "Preprocessing": "",
+    "Result": {
+        "2dmodel_sim2-structural--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+            "LastModificationDate": 1631080057.0,
+            "FileSize": 89389760,
+            "DisplacementNodal": [
+                "DisplacementNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_CTRIA6_ElSize_1mm",
+                "DisplacementNodal_Model_id_num_4--2Dmodel_sim2_CTRIA6_ElSize_1mm",
+                "DisplacementNodal_TOPEDGE_id_num_5--2Dmodel_sim2_CTRIA6_ElSize_1mm"
+            ],
+            "ReactionForceNodal": [
+                "ReactionForceNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_CTRIA6_ElSize_1mm",
+                "ReactionForceNodal_Model_id_num_4--2Dmodel_sim2_CTRIA6_ElSize_1mm",
+                "ReactionForceNodal_TOPEDGE_id_num_5--2Dmodel_sim2_CTRIA6_ElSize_1mm"
+            ],
+            "ReactionMomentNodal": [
+                "ReactionMomentNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_CTRIA6_ElSize_1mm",
+                "ReactionMomentNodal_Model_id_num_4--2Dmodel_sim2_CTRIA6_ElSize_1mm",
+                "ReactionMomentNodal_TOPEDGE_id_num_5--2Dmodel_sim2_CTRIA6_ElSize_1mm"
+            ],
+            "RotationNodal": [
+                "RotationNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_CTRIA6_ElSize_1mm",
+                "RotationNodal_Model_id_num_4--2Dmodel_sim2_CTRIA6_ElSize_1mm",
+                "RotationNodal_TOPEDGE_id_num_5--2Dmodel_sim2_CTRIA6_ElSize_1mm"
+            ],
+            "StressElementNodal": [
+                "StressElementNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_CTRIA6_ElSize_1mm",
+                "StressElementNodal_Model_id_num_4--2Dmodel_sim2_CTRIA6_ElSize_1mm",
+                "StressElementNodal_TOPEDGE_id_num_5--2Dmodel_sim2_CTRIA6_ElSize_1mm"
+            ],
+            "StressElemental": [
+                "StressElemental_Model_id_num_4--2Dmodel_sim2_CTRIA6_ElSize_1mm"
+            ],
+            "ConfluencePage": [
+                "ConfluencePage_id_num_5--2Dmodel_sim2_CTRIA6_ElSize_1mm"
+            ],
+            "PPT": [
+                "PPT_id_num_5--2Dmodel_sim2_CTRIA6_ElSize_1mm"
+            ]
+        }
+    },
+    "StorageLocation": {
+        "CloudStorage": "",
+        "LocalStorage": {
+            "LocalStorage_id_num_1--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                "GID": "z003hz2y",
+                "MachineName": "demlhw7sw110x"
+            },
+            "LocalStorage_id_num_6--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                "GID": "",
+                "MachineName": ""
+            }
+        },
+        "ServerStorage": "",
+        "TeamcenterStorage": ""
+    },
+    "Supplier": "",
+    "QuantitativeMetric": {
+        "Angle": "",
+        "CyclicStrengthCoefficient": {
+            "CyclicStrengthCoefficient_1887000_AISI_Steel_4340": {
+                "hasMagnitude": "1887000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "Density": {
+            "Density_7.85e-06_AISI_Steel_4340": {
+                "hasMagnitude": "7.85e-06",
+                "hasUnit": "kg/mm^3"
+            }
+        },
+        "ElasticStrength": "",
+        "FatigueStrengthCoefficient": {
+            "FatigueStrengthCoefficient_1917000_AISI_Steel_4340": {
+                "hasMagnitude": "1917000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "Force": {
+            "Force_1000000.0_FrontLoad--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                "hasMagnitude": 1000000.0,
+                "hasUnit": "N"
+            },
+            "Force_2500000.0_TopLoad--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                "hasMagnitude": 2500000.0,
+                "hasUnit": "N"
+            }
+        },
+        "Height": "",
+        "Independent": "",
+        "InitialStrain": {
+            "InitialStrain_0.02_AISI_Steel_4340": {
+                "hasMagnitude": "0.02",
+                "hasUnit": "mm/mm"
+            }
+        },
+        "Length": {
+            "ElementSize_1mm--2Dmodel_fem2_CTRIA6_ElSize_1mm": {
+                "hasMagnitude": 1.0,
+                "hasUnit": "mm"
+            }
+        },
+        "Mass_Flow": "",
+        "ModulusOfElasticity": {
+            "ModulusOfElasticity_193000000_AISI_Steel_4340": {
+                "hasMagnitude": "193000000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "Moment": "",
+        "PoissonRatioArray": "",
+        "Pressure": "",
+        "ShearModulus": "",
+        "SpecificHeat": {
+            "SpecificHeat_475000000_AISI_Steel_4340": {
+                "hasMagnitude": "475000000",
+                "hasUnit": "microJ/kg-dK"
+            }
+        },
+        "StrengthCoefficient": {
+            "StrengthCoefficient_2182.004_AISI_Steel_4340": {
+                "hasMagnitude": "2182.004",
+                "hasUnit": "N/mm^2(MPa)"
+            }
+        },
+        "Stress": "",
+        "Temperature": "",
+        "ThermalConductivity": {
+            "ThermalConductivity_44500_AISI_Steel_4340": {
+                "hasMagnitude": "44500",
+                "hasUnit": "microW/mm-dC"
+            }
+        },
+        "ThermalExpansionCoefficient": {
+            "ThermalExpansionCoefficient_1.23e-051_AISI_Steel_4340": {
+                "hasMagnitude": "1.23e-051",
+                "hasUnit": "/dC"
+            }
+        },
+        "Thickness": "",
+        "TurbulenceIntensity": "",
+        "UltimateTensileStrength": {
+            "UltimateTensileStrength_1240000_AISI_Steel_4340": {
+                "hasMagnitude": "1240000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "Velocity": "",
+        "Viscosity": "",
+        "Width": "",
+        "XDirection": "",
+        "YDirection": "",
+        "YieldStrength": {
+            "YieldStrength_1178000_AISI_Steel_4340": {
+                "hasMagnitude": "1178000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "ZDirection": ""
+    },
+    "BoundaryCondition": {
+        "FEABoundaryCondition": {
+            "FEAConstraintBC": {
+                "AntiSymmetricConstraint": "",
+                "AutomaticCoupling": "",
+                "CylindricalConstraint": "",
+                "EnforcedDisplacementConstraint": "",
+                "FixedConstraint": {
+                    "FixedConstraint_id_num_1--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                        "Name": "Fixed(1)",
+                        "CSYSOption": 0,
+                        "DOF1": 0.0,
+                        "DOF2": 0.0,
+                        "DOF3": 0.0,
+                        "DOF4": 0.0,
+                        "DOF5": 0.0,
+                        "DOF6": 0.0,
+                        "DescriptorName": "fixedConstraint",
+                        "DistributionType": 5,
+                        "ConstraintType": "SPC"
+                    }
+                },
+                "FixedRotationConstraint": "",
+                "FixedTranslationConstraint": "",
+                "ManualCoupling": "",
+                "PinnedConstraint": "",
+                "RollerConstraint": "",
+                "SimplySupportedConstraint": "",
+                "SliderConstraint": "",
+                "SymmetricConstraint": "",
+                "UserDefinedConstraint": ""
+            },
+            "FEAInteractionBC": {
+                "MechanicalContact": "",
+                "ThermalContact": ""
+            }
+        },
+        "CFDBoundaryCondition": {
+            "CFDConstraintBC": {
+                "FrictionWallBC": "",
+                "TotalPressureBC": "",
+                "VelocityBC": "",
+                "MassFlowBC": "",
+                "MovingWallBC": "",
+                "SmoothWallBC": "",
+                "StationaryWallBC": ""
+            },
+            "CFDInteractionBC": ""
+        },
+        "GenericBoundaryCondition": {
+            "PressureBC": ""
+        }
+    },
+    "PostProcessing": {
+        "Parameters": {
+            "CFDParameters": {
+                "AreaAveragedDynamicPressure": "",
+                "AreaAveragedPressure": "",
+                "AreaAveragedTotalPressure": "",
+                "MassAveragedDynamicPressure": "",
+                "MassAveragedPressure": "",
+                "MassAveragedTotalPressure": "",
+                "MassFlowRate": ""
+            },
+            "FEAParameters": {
+                "DisplacementNodal": {
+                    "DisplacementNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "0.12007959932088852",
+                        "Magnitude-Minimum": "0.11706044524908066",
+                        "X-Maximum": "0.026382606476545334",
+                        "X-Minimum": "-0.02089007757604122",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.11728297919034958",
+                        "Z-Minimum": "0.11619292944669724"
+                    },
+                    "DisplacementNodal_Model_id_num_4--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "0.12007959932088852",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.026382606476545334",
+                        "X-Minimum": "-0.02124902233481407",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.11728297919034958",
+                        "Z-Minimum": "0.0"
+                    },
+                    "DisplacementNodal_TOPEDGE_id_num_5--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "0.11912889033555984",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0258767269551754",
+                        "X-Minimum": "-0.02124902233481407",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.11728297919034958",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "ReactionForceNodal": {
+                    "ReactionForceNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionForceNodal_Model_id_num_4--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "247250.109375",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "233729.5",
+                        "X-Minimum": "-242537.09375",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "-50248.46875"
+                    },
+                    "ReactionForceNodal_TOPEDGE_id_num_5--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "114989.53125",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "109075.8984375",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "-36401.10546875"
+                    }
+                },
+                "ReactionMomentNodal": {
+                    "ReactionMomentNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionMomentNodal_Model_id_num_4--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionMomentNodal_TOPEDGE_id_num_5--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "RotationNodal": {
+                    "RotationNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "RotationNodal_Model_id_num_4--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "RotationNodal_TOPEDGE_id_num_5--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "StressElementNodal": {
+                    "StressElementNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "0.0",
+                        "Determinant-Minimum": "0.0",
+                        "MaximumPrincipal-Maximum": "2000.2957763671875",
+                        "MaximumPrincipal-Minimum": "1996.7860107421875",
+                        "MaximumShear-Maximum": "1023.9757080078125",
+                        "MaximumShear-Minimum": "998.7977905273438",
+                        "Mean-Maximum": "1238.3922119140625",
+                        "Mean-Minimum": "650.6195068359375",
+                        "MiddlePrincipal-Maximum": "1715.03857421875",
+                        "MiddlePrincipal-Minimum": "-2.432898327242583e-11",
+                        "MinimumPrincipal-Maximum": "1.4267698134062812e-10",
+                        "MinimumPrincipal-Minimum": "-48.04644775390625",
+                        "Octahedral-Maximum": "954.2904663085938",
+                        "Octahedral-Minimum": "816.516845703125",
+                        "VonMises-Maximum": "2024.3558349609375",
+                        "VonMises-Minimum": "1732.0938720703125",
+                        "WorstPrincipal-Maximum": "2000.2957763671875",
+                        "WorstPrincipal-Minimum": "1996.7860107421875",
+                        "XX-Maximum": "2000.2957763671875",
+                        "XX-Minimum": "1996.78076171875",
+                        "XY-Maximum": "0.0",
+                        "XY-Minimum": "0.0",
+                        "YY-Maximum": "0.0",
+                        "YY-Minimum": "0.0",
+                        "YZ-Maximum": "0.0",
+                        "YZ-Minimum": "0.0",
+                        "ZX-Maximum": "0.43585848808288574",
+                        "ZX-Minimum": "-3.2370073795318604",
+                        "ZZ-Maximum": "1715.0389404296875",
+                        "ZZ-Minimum": "-48.04643630981445"
+                    },
+                    "StressElementNodal_Model_id_num_4--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "0.0",
+                        "Determinant-Minimum": "0.0",
+                        "MaximumPrincipal-Maximum": "113602.2890625",
+                        "MaximumPrincipal-Minimum": "-1.588541636010632e-07",
+                        "MaximumShear-Maximum": "56801.14453125",
+                        "MaximumShear-Minimum": "833.2994995117188",
+                        "Mean-Maximum": "39663.234375",
+                        "Mean-Minimum": "-38944.27734375",
+                        "MiddlePrincipal-Maximum": "18168.447265625",
+                        "MiddlePrincipal-Minimum": "-16926.705078125",
+                        "MinimumPrincipal-Maximum": "0.00015922776947263628",
+                        "MinimumPrincipal-Minimum": "-112951.890625",
+                        "Octahedral-Maximum": "52355.26171875",
+                        "Octahedral-Minimum": "680.4597778320312",
+                        "VonMises-Maximum": "111062.28125",
+                        "VonMises-Minimum": "1443.4732666015625",
+                        "WorstPrincipal-Maximum": "113602.2890625",
+                        "WorstPrincipal-Minimum": "-112951.890625",
+                        "XX-Maximum": "110669.6015625",
+                        "XX-Minimum": "-109767.296875",
+                        "XY-Maximum": "0.0",
+                        "XY-Minimum": "0.0",
+                        "YY-Maximum": "0.0",
+                        "YY-Minimum": "0.0",
+                        "YZ-Maximum": "0.0",
+                        "YZ-Minimum": "0.0",
+                        "ZX-Maximum": "21123.77734375",
+                        "ZX-Minimum": "-2044.796630859375",
+                        "ZZ-Maximum": "24238.548828125",
+                        "ZZ-Minimum": "-23651.5234375"
+                    },
+                    "StressElementNodal_TOPEDGE_id_num_5--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "0.0",
+                        "Determinant-Minimum": "0.0",
+                        "MaximumPrincipal-Maximum": "2048.964599609375",
+                        "MaximumPrincipal-Minimum": "-2.3283064365386963e-10",
+                        "MaximumShear-Maximum": "56475.9453125",
+                        "MaximumShear-Minimum": "833.3075561523438",
+                        "Mean-Maximum": "1238.5960693359375",
+                        "Mean-Minimum": "-38944.27734375",
+                        "MiddlePrincipal-Maximum": "1666.8995361328125",
+                        "MiddlePrincipal-Minimum": "-3880.942626953125",
+                        "MinimumPrincipal-Maximum": "3.183231456205249e-12",
+                        "MinimumPrincipal-Minimum": "-112951.890625",
+                        "Octahedral-Maximum": "52355.26171875",
+                        "Octahedral-Minimum": "680.4901733398438",
+                        "VonMises-Maximum": "111062.28125",
+                        "VonMises-Minimum": "1443.5377197265625",
+                        "WorstPrincipal-Maximum": "2048.964599609375",
+                        "WorstPrincipal-Minimum": "-112951.890625",
+                        "XX-Maximum": "2048.964599609375",
+                        "XX-Minimum": "-109767.296875",
+                        "XY-Maximum": "0.0",
+                        "XY-Minimum": "0.0",
+                        "YY-Maximum": "0.0",
+                        "YY-Minimum": "0.0",
+                        "YZ-Maximum": "0.0",
+                        "YZ-Minimum": "0.0",
+                        "ZX-Maximum": "18363.13671875",
+                        "ZX-Minimum": "-119.57513427734375",
+                        "ZZ-Maximum": "1841.401123046875",
+                        "ZZ-Minimum": "-7065.5341796875"
+                    }
+                },
+                "StressElemental": {
+                    "StressElemental_Model_id_num_4--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "0.0",
+                        "Determinant-Minimum": "0.0",
+                        "MaximumPrincipal-Maximum": "78578.25",
+                        "MaximumPrincipal-Minimum": "-1.0404619388282299e-08",
+                        "MaximumShear-Maximum": "39289.125",
+                        "MaximumShear-Minimum": "833.44384765625",
+                        "Mean-Maximum": "28445.810546875",
+                        "Mean-Minimum": "-27193.23046875",
+                        "MiddlePrincipal-Maximum": "11088.546875",
+                        "MiddlePrincipal-Minimum": "-9651.1015625",
+                        "MinimumPrincipal-Maximum": "4.379271558718756e-07",
+                        "MinimumPrincipal-Minimum": "-76273.203125",
+                        "Octahedral-Maximum": "36422.875",
+                        "Octahedral-Minimum": "680.537353515625",
+                        "VonMises-Maximum": "77264.5859375",
+                        "VonMises-Minimum": "1443.6376953125",
+                        "WorstPrincipal-Maximum": "78578.25",
+                        "WorstPrincipal-Minimum": "-76273.203125",
+                        "XX-Maximum": "77524.9296875",
+                        "XX-Minimum": "-75107.2421875",
+                        "XY-Maximum": "0.0",
+                        "XY-Minimum": "0.0",
+                        "YY-Maximum": "0.0",
+                        "YY-Minimum": "0.0",
+                        "YZ-Maximum": "0.0",
+                        "YZ-Minimum": "0.0",
+                        "ZX-Maximum": "15269.0205078125",
+                        "ZX-Minimum": "-10.771722793579102",
+                        "ZZ-Maximum": "14667.9404296875",
+                        "ZZ-Minimum": "-13651.7099609375"
+                    }
+                }
+            },
+            "GenericParameters": {
+                "MaxTemperature": ""
+            }
+        },
+        "Plots": {
+            "ContourPlots": {
+                "ContactPressureContour": "",
+                "ContactStatusContour": "",
+                "PressureContour": "",
+                "TotalPressureContour": "",
+                "VelocityContour": ""
+            },
+            "DisplacementPlot": "",
+            "XYPlots": {
+                "MassAveragedTotalPressurePlot": "",
+                "WallYPlus": ""
+            },
+            "StressPlot": {
+                "PrincipalStressPlot": "",
+                "VonMisesStressPlot": ""
+            },
+            "StrainPlot": ""
+        }
+    },
+    "MeshElements": {
+        "AxiSymmetricElement": "",
+        "HexElement": "",
+        "PrismLayer": "",
+        "QuadElement": "",
+        "ShellElement": "",
+        "TetrahedralElement": ""
+    },
+    "GeometricFeature": {
+        "Body": "",
+        "Curve": "",
+        "Edge": {
+            "LOADINGEDGE--2DMODEL": {},
+            "TOPEDGE--2DMODEL": {}
+        },
+        "Face": "",
+        "Line": {
+            "Line4--2DMODEL": {}
+        },
+        "Point": ""
+    },
+    "Documentation": {
+        "ConfluencePage": {
+            "ConfluencePage_id_num_5--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                "WebSite": ""
+            }
+        },
+        "PPT": {
+            "PPT_id_num_5--2Dmodel_sim2_CTRIA6_ElSize_1mm": {
+                "LocalStorage": [
+                    "LocalStorage_id_num_6--2Dmodel_sim2_CTRIA6_ElSize_1mm"
+                ]
+            }
+        }
+    },
+    "MeshVolume": {
+        "2d_mesh(1)--2Dmodel_fem2_CTRIA6_ElSize_1mm": {
+            "Mesh_Collector": "ThinShell(1)",
+            "Mesh_name": "2d_mesh(1)",
+            "Surface Curvature Based Size Variation": "50",
+            "Surface Curvature Threshold": "0.505 mm",
+            "SolidMaterial": [
+                "AISI_Steel_4340"
+            ],
+            "MeshElements": [
+                "CTRIA6--2Dmodel_fem2_CTRIA6_ElSize_1mm"
+            ],
+            "is2D": true,
+            "is3D": false,
+            "MinElementLength": "0.1",
+            "NumElements": "60000",
+            "NumNodes": "120801",
+            "Length": [
+                "ElementSize_1mm--2Dmodel_fem2_CTRIA6_ElSize_1mm"
+            ]
+        }
+    },
+    "Project": {
+        "2d_cantilever_analysis": {
+            "People": [
+                "Shyam",
+                "Chethan"
+            ],
+            "Mechanical": [
+                "2Dmodel_sim2_CTRIA6_ElSize_1mm"
+            ],
+            "UpdateEvent": [
+                "UpdateEvent_id_num_5--2Dmodel_sim2_CTRIA6_ElSize_1mm"
+            ],
+            "ProjectStartDate": 1608505200.0,
+            "ProjectEndDate": 1634680800.0
+        }
+    },
+    "UpdateEvent": {
+        "UpdateEvent_id_num_5": {
+            "Comment": "changed mesh parameters to CTRIA6_ElSize_1mm",
+            "hasPredecessor": "2Dmodel_sim2",
+            "hasSuccessor": ""
+        }
+    }
+}

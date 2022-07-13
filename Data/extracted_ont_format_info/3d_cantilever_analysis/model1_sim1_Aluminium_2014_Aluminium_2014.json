@@ -1,0 +1,991 @@
+{
+    "Analysis": {
+        "AeroMechanical": "",
+        "CFD": "",
+        "CoupledAeroMechanical": "",
+        "Structural": {
+            "Mechanical": {
+                "model1_sim1_Aluminium_2014_Aluminium_2014": {
+                    "SolidMaterial": [
+                        "Aluminum_2014"
+                    ],
+                    "is2D": false,
+                    "isTransient": false,
+                    "LocalStorage": [
+                        "LocalStorage_id_num_1--model1_sim1_Aluminium_2014_Aluminium_2014"
+                    ],
+                    "isHarmonic": false,
+                    "is3D": true,
+                    "Geometry": [
+                        "MODEL1"
+                    ],
+                    "Boundary": [
+                        "Fixed(1)--model1_sim1_Aluminium_2014_Aluminium_2014",
+                        "Zfixed--model1_sim1_Aluminium_2014_Aluminium_2014"
+                    ],
+                    "Mesh": [
+                        "model1_fem1_Aluminium_2014_Aluminium_2014"
+                    ],
+                    "ToolVersion": "v12.0.2.9",
+                    "Result": [
+                        "model1_sim1-staticsolution--model1_sim1_Aluminium_2014_Aluminium_2014"
+                    ],
+                    "LastModificationDate": 1631004069.0,
+                    "FileSize": 3496145,
+                    "isSteadyState": true,
+                    "People": [
+                        "Shyam"
+                    ],
+                    "FileNameOriginal": "model1_sim1",
+                    "FileNameAlias": "model1_sim1_Aluminium_2014_Aluminium_2014",
+                    "PointLoad": [
+                        "Force(1)--model1_sim1_Aluminium_2014_Aluminium_2014"
+                    ],
+                    "PressureLoad": [
+                        "Pressure(1)--model1_sim1_Aluminium_2014_Aluminium_2014"
+                    ]
+                }
+            },
+            "Thermomechanical": ""
+        }
+    },
+    "Material": {
+        "FluidMaterial": "",
+        "SolidMaterial": {
+            "Aluminum_2014": {
+                "R0": "2",
+                "R45": "2",
+                "R90": "2",
+                "MaterialCategory": "METAL",
+                "MaterialSubCategory": "Aluminum Alloy",
+                "Density": [
+                    "Density_2.794e-06_Aluminum_2014"
+                ],
+                "ModulusOfElasticity": [
+                    "Young'sModulus(E)_array_Y_Aluminum_2014"
+                ],
+                "PoissonRatio": "0.33",
+                "TypeOfNonlinearity": "1",
+                "YieldFunctionCriterion": "1",
+                "HardeningRule": "1",
+                "YieldStrength": [
+                    "YieldStrength_array_Y_Aluminum_2014"
+                ],
+                "UltimateTensileStrength": [
+                    "UltimateTensileStrength_array_Y_Aluminum_2014"
+                ],
+                "FatigueStrengthCoefficient": [
+                    "FatigueStrengthCoefficient_1008000_Aluminum_2014"
+                ],
+                "FatigueStrengthExponent": "-0.114",
+                "FatigueDuctilityCoefficient": "1.418",
+                "FatigueDuctilityExponent": "-0.87",
+                "CyclicStrengthCoefficient": [
+                    "CyclicStrengthCoefficient_963000_Aluminum_2014"
+                ],
+                "CyclicStrainHardeningExponent": "0.132",
+                "InitialStrain": [
+                    "InitialStrain_0.02_Aluminum_2014"
+                ],
+                "HardeningExponent": "0.21",
+                "StrengthCoefficient": [
+                    "StrengthCoefficient_826.957_Aluminum_2014"
+                ],
+                "ThermalExpansionCoefficient": [
+                    "ThermalExpansionCoefficient(A)_array_Y_Aluminum_2014"
+                ],
+                "ThermalConductivity": [
+                    "ThermalConductivity(K)_array_Y_Aluminum_2014"
+                ],
+                "SpecificHeat": [
+                    "SpecificHeat_880000000_Aluminum_2014"
+                ],
+                "CrosshatchPattern": "Aluminum/Magnesium"
+            }
+        }
+    },
+    "Boundary": {
+        "Fixed(1)--model1_sim1_Aluminium_2014_Aluminium_2014": {
+            "FixedConstraint": [
+                "FixedConstraint_id_num_1--model1_sim1_Aluminium_2014_Aluminium_2014"
+            ],
+            "Face": [
+                "FIXEDFACE--MODEL1"
+            ]
+        },
+        "Zfixed--model1_sim1_Aluminium_2014_Aluminium_2014": {
+            "UserDefinedConstraint": [
+                "UserDefinedConstraint_id_num_2--model1_sim1_Aluminium_2014_Aluminium_2014"
+            ]
+        }
+    },
+    "People": {
+        "Shyam": {
+            "Name": "Shyam"
+        },
+        "Chethan": {
+            "Name": "Chethan"
+        }
+    },
+    "Geometry": {
+        "MODEL1": {
+            "SolidMaterial": [
+                "Aluminum_2014"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "LastModificationDate": 1614324142.0,
+            "FileSize": 45394,
+            "FileNameOriginal": "MODEL1",
+            "FileNameAlias": "MODEL1",
+            "Line": [
+                "Line4--MODEL1",
+                "Line1--MODEL1",
+                "Line2--MODEL1",
+                "Line3--MODEL1"
+            ],
+            "Component": [
+                "MODEL1--MODEL1"
+            ],
+            "Face": [
+                "TOPFACE2--MODEL1",
+                "TOPFACE1--MODEL1",
+                "FRONTLOAD--MODEL1",
+                "FIXEDFACE--MODEL1"
+            ]
+        }
+    },
+    "Loads": {
+        "CyclicLoads": "",
+        "HeatFlux": "",
+        "MomentLoad": "",
+        "PointLoad": {
+            "Force(1)--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                "Name": "Force(1)",
+                "types": [
+                    "FORCE"
+                ],
+                "CSYSOption": 5,
+                "observeNode1": "Observe Node 1",
+                "observeNode2": "Observe Node 2",
+                "observeNode3": "Observe Node 3",
+                "observeNode4": "Observe Node 4",
+                "distributionType": 1,
+                "DistributionField": "NA",
+                "Face": [
+                    "FRONTLOAD--MODEL1"
+                ],
+                "Force": [
+                    "Force_1000000.0_Force(1)--model1_sim1_Aluminium_2014_Aluminium_2014"
+                ]
+            }
+        },
+        "PressureLoad": {
+            "Pressure(1)--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                "Name": "Pressure(1)",
+                "types": [
+                    "PLOAD4",
+                    "LOAD"
+                ],
+                "CSYSOption": 10,
+                "distributionType": 32,
+                "Face": [
+                    "TOPFACE1--MODEL1"
+                ],
+                "Pressure": [
+                    "Pressure_10000.0_Pressure(1)--model1_sim1_Aluminium_2014_Aluminium_2014"
+                ]
+            }
+        },
+        "UDL": ""
+    },
+    "Mesh": {
+        "model1_fem1_Aluminium_2014_Aluminium_2014": {
+            "MeshVolume": [
+                "3d_mesh(1)--model1_fem1_Aluminium_2014_Aluminium_2014",
+                "3d_mesh(2)--model1_fem1_Aluminium_2014_Aluminium_2014"
+            ],
+            "LastModificationDate": 1631004069.0,
+            "FileSize": 2083983,
+            "is2D": false,
+            "is3D": true,
+            "FileNameOriginal": "model1_fem1",
+            "FileNameAlias": "model1_fem1_Aluminium_2014_Aluminium_2014"
+        }
+    },
+    "Preprocessing": "",
+    "Result": {
+        "model1_sim1-staticsolution--model1_sim1_Aluminium_2014_Aluminium_2014": {
+            "LastModificationDate": 1631004009.0,
+            "FileSize": 5922004,
+            "DisplacementNodal": [
+                "DisplacementNodal_FIXEDFACE_id_num_4--model1_sim1_Aluminium_2014_Aluminium_2014",
+                "DisplacementNodal_FRONTLOAD_id_num_5--model1_sim1_Aluminium_2014_Aluminium_2014",
+                "DisplacementNodal_Model_id_num_6--model1_sim1_Aluminium_2014_Aluminium_2014",
+                "DisplacementNodal_TOPFACE1_id_num_7--model1_sim1_Aluminium_2014_Aluminium_2014"
+            ],
+            "ReactionForceNodal": [
+                "ReactionForceNodal_FIXEDFACE_id_num_4--model1_sim1_Aluminium_2014_Aluminium_2014",
+                "ReactionForceNodal_FRONTLOAD_id_num_5--model1_sim1_Aluminium_2014_Aluminium_2014",
+                "ReactionForceNodal_Model_id_num_6--model1_sim1_Aluminium_2014_Aluminium_2014",
+                "ReactionForceNodal_TOPFACE1_id_num_7--model1_sim1_Aluminium_2014_Aluminium_2014"
+            ],
+            "ReactionMomentNodal": [
+                "ReactionMomentNodal_FIXEDFACE_id_num_4--model1_sim1_Aluminium_2014_Aluminium_2014",
+                "ReactionMomentNodal_FRONTLOAD_id_num_5--model1_sim1_Aluminium_2014_Aluminium_2014",
+                "ReactionMomentNodal_Model_id_num_6--model1_sim1_Aluminium_2014_Aluminium_2014",
+                "ReactionMomentNodal_TOPFACE1_id_num_7--model1_sim1_Aluminium_2014_Aluminium_2014"
+            ],
+            "RotationNodal": [
+                "RotationNodal_FIXEDFACE_id_num_4--model1_sim1_Aluminium_2014_Aluminium_2014",
+                "RotationNodal_FRONTLOAD_id_num_5--model1_sim1_Aluminium_2014_Aluminium_2014",
+                "RotationNodal_Model_id_num_6--model1_sim1_Aluminium_2014_Aluminium_2014",
+                "RotationNodal_TOPFACE1_id_num_7--model1_sim1_Aluminium_2014_Aluminium_2014"
+            ],
+            "StressElementNodal": [
+                "StressElementNodal_FIXEDFACE_id_num_4--model1_sim1_Aluminium_2014_Aluminium_2014",
+                "StressElementNodal_FRONTLOAD_id_num_5--model1_sim1_Aluminium_2014_Aluminium_2014",
+                "StressElementNodal_Model_id_num_6--model1_sim1_Aluminium_2014_Aluminium_2014",
+                "StressElementNodal_TOPFACE1_id_num_7--model1_sim1_Aluminium_2014_Aluminium_2014"
+            ],
+            "StressElemental": [
+                "StressElemental_Model_id_num_6--model1_sim1_Aluminium_2014_Aluminium_2014"
+            ],
+            "ConfluencePage": [
+                "ConfluencePage_id_num_7--model1_sim1_Aluminium_2014_Aluminium_2014"
+            ],
+            "PPT": [
+                "PPT_id_num_7--model1_sim1_Aluminium_2014_Aluminium_2014"
+            ]
+        }
+    },
+    "StorageLocation": {
+        "CloudStorage": "",
+        "LocalStorage": {
+            "LocalStorage_id_num_1--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                "GID": "z003hz2y",
+                "MachineName": "demlhw7sw110x"
+            },
+            "LocalStorage_id_num_8--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                "GID": "",
+                "MachineName": ""
+            }
+        },
+        "ServerStorage": "",
+        "TeamcenterStorage": ""
+    },
+    "Supplier": "",
+    "QuantitativeMetric": {
+        "Angle": "",
+        "CyclicStrengthCoefficient": {
+            "CyclicStrengthCoefficient_963000_Aluminum_2014": {
+                "hasMagnitude": "963000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "Density": {
+            "Density_2.794e-06_Aluminum_2014": {
+                "hasMagnitude": "2.794e-06",
+                "hasUnit": "kg/mm^3"
+            }
+        },
+        "ElasticStrength": "",
+        "FatigueStrengthCoefficient": {
+            "FatigueStrengthCoefficient_1008000_Aluminum_2014": {
+                "hasMagnitude": "1008000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "Force": {
+            "Force_1000000.0_Force(1)--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                "hasMagnitude": 1000000.0,
+                "hasUnit": "N"
+            }
+        },
+        "Height": "",
+        "Independent": "",
+        "InitialStrain": {
+            "InitialStrain_0.02_Aluminum_2014": {
+                "hasMagnitude": "0.02",
+                "hasUnit": "mm/mm"
+            }
+        },
+        "Length": {
+            "ElementSize_20mm--model1_fem1_Aluminium_2014_Aluminium_2014": {
+                "hasMagnitude": 20.0,
+                "hasUnit": "mm"
+            }
+        },
+        "Mass_Flow": "",
+        "ModulusOfElasticity": {
+            "Young'sModulus(E)_array_Y_Aluminum_2014": {
+                "VectorValueSet": "73119000,73119000,73119000,73119000,73119000,72429000,72429000,71739000,71049000,70359000,69670000,68980000,68290000,66910000,66221000,64841000,63461000,61392000,60012000,58633000,57253000,55184000,53804000,51735000,49665000,47596000,46216000,44147000",
+                "hasUnit": "mN/mm^2(kPa)",
+                "VariesWith": [
+                    "Young'sModulus(E)_array_X_Aluminum_2014"
+                ]
+            }
+        },
+        "Moment": "",
+        "PoissonRatioArray": "",
+        "Pressure": {
+            "Pressure_10000.0_Pressure(1)--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                "hasMagnitude": 10000.0,
+                "hasUnit": "N/mm^2(MPa)"
+            }
+        },
+        "ShearModulus": "",
+        "SpecificHeat": {
+            "SpecificHeat_880000000_Aluminum_2014": {
+                "hasMagnitude": "880000000",
+                "hasUnit": "microJ/kg-dK"
+            }
+        },
+        "StrengthCoefficient": {
+            "StrengthCoefficient_826.957_Aluminum_2014": {
+                "hasMagnitude": "826.957",
+                "hasUnit": "N/mm^2(MPa)"
+            }
+        },
+        "Stress": "",
+        "Temperature": {
+            "Young'sModulus(E)_array_X_Aluminum_2014": {
+                "VectorValueSet": "20,21.11,23.89,37.78,51.67,65.56,79.44,93.33,107.22,121.11,135,148.89,162.78,176.67,190.56,204.44,218.33,232.22,246.11,260,273.89,287.78,301.67,315.56,329.44,343.33,357.22,371.11",
+                "hasUnit": "C"
+            },
+            "YieldStrength_array_X_Aluminum_2014": {
+                "VectorValueSet": "20,26.6667,37.7778,51.6667,65.5556,79.4444,93.3333,107.222,121.111,135,148.889,162.778,176.667,190.556,204.444,218.333,232.222,246.111,260",
+                "hasUnit": "C"
+            },
+            "UltimateTensileStrength_array_X_Aluminum_2014": {
+                "VectorValueSet": "20,21.1111,23.8889,37.7778,51.6667,65.5556,79.4444,93.3333,107.222,121.111,135,148.889,162.778,176.667,190.556,204.444,218.333,232.222,246.111,260",
+                "hasUnit": "C"
+            },
+            "ThermalExpansionCoefficient(A)_array_X_Aluminum_2014": {
+                "VectorValueSet": "20,93.33,107.22,121.11,135,148.89,162.78,176.67,190.56,204.44,218.33,232.22,246.11,260,273.89,287.78,301.67,315.56,329.44,343.33,357.22,371.11,385,398.89,412.78,426.67",
+                "hasUnit": "C"
+            },
+            "ThermalConductivity(K)_array_X_Aluminum_2014": {
+                "VectorValueSet": "20,21.11,23.89,37.78,51.67,65.56,79.44,93.33,107.22,121.11,135,148.89,162.78,176.67,190.56,204.44,218.33,232.22,246.11,260,273.89,287.78,301.67,315.56,329.44,343.33,357.22,371.11,385,398.89,412.78,426.67",
+                "hasUnit": "C"
+            }
+        },
+        "ThermalConductivity": {
+            "ThermalConductivity(K)_array_Y_Aluminum_2014": {
+                "VectorValueSet": "154250,154320,154540,155680,156880,158160,159530,160960,162490,164120,165790,167450,169090,170750,172420,174080,175830,177400,178510,179270,179690,179720,179490,179130,178580,177820,176870,175810,174630,173290,171800,170190",
+                "hasUnit": "microW/mm-dC",
+                "VariesWith": [
+                    "ThermalConductivity(K)_array_X_Aluminum_2014"
+                ]
+            }
+        },
+        "ThermalExpansionCoefficient": {
+            "ThermalExpansionCoefficient(A)_array_Y_Aluminum_2014": {
+                "VectorValueSet": "2.16e-05,2.25e-05,2.2662e-05,2.2824e-05,2.2968e-05,2.313e-05,2.3274e-05,2.3418e-05,2.3544e-05,2.3688e-05,2.3814e-05,2.3958e-05,2.4066e-05,2.4192e-05,2.43e-05,2.4408e-05,2.4498e-05,2.4606e-05,2.4696e-05,2.4786e-05,2.4876e-05,2.4984e-05,2.511e-05,2.5254e-05,2.5398e-05,2.556e-05",
+                "hasUnit": "1/dC",
+                "VariesWith": [
+                    "ThermalExpansionCoefficient(A)_array_X_Aluminum_2014"
+                ]
+            }
+        },
+        "Thickness": "",
+        "TurbulenceIntensity": "",
+        "UltimateTensileStrength": {
+            "UltimateTensileStrength_array_Y_Aluminum_2014": {
+                "VectorValueSet": "441500,441264,440575,436438,430233,423338,415064,406101,396449,384038,370938,357148,343359,326811,306127,282685,253038,220632,186158,150306",
+                "hasUnit": "mN/mm^2(kPa)",
+                "VariesWith": [
+                    "UltimateTensileStrength_array_X_Aluminum_2014"
+                ]
+            }
+        },
+        "Velocity": "",
+        "Viscosity": "",
+        "Width": "",
+        "XDirection": "",
+        "YDirection": "",
+        "YieldStrength": {
+            "YieldStrength_array_Y_Aluminum_2014": {
+                "VectorValueSet": "393700,393001,390933,387485,383348,377833,370938,362664,351633,339222,324054,308885,290959,268896,243385,215116,184779,155132,1254854",
+                "hasUnit": "mN/mm^2(kPa)",
+                "VariesWith": [
+                    "YieldStrength_array_X_Aluminum_2014"
+                ]
+            }
+        },
+        "ZDirection": ""
+    },
+    "BoundaryCondition": {
+        "FEABoundaryCondition": {
+            "FEAConstraintBC": {
+                "AntiSymmetricConstraint": "",
+                "AutomaticCoupling": "",
+                "CylindricalConstraint": "",
+                "EnforcedDisplacementConstraint": "",
+                "FixedConstraint": {
+                    "FixedConstraint_id_num_1--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "Name": "Fixed(1)",
+                        "CSYSOption": 0,
+                        "DOF1": 0.0,
+                        "DOF2": 0.0,
+                        "DOF3": 0.0,
+                        "DOF4": 0.0,
+                        "DOF5": 0.0,
+                        "DOF6": 0.0,
+                        "DescriptorName": "fixedConstraint",
+                        "Face": [
+                            "FIXEDFACE--MODEL1"
+                        ],
+                        "DistributionType": 5,
+                        "ConstraintType": "SPC"
+                    }
+                },
+                "FixedRotationConstraint": "",
+                "FixedTranslationConstraint": "",
+                "ManualCoupling": "",
+                "PinnedConstraint": "",
+                "RollerConstraint": "",
+                "SimplySupportedConstraint": "",
+                "SliderConstraint": "",
+                "SymmetricConstraint": "",
+                "UserDefinedConstraint": {
+                    "UserDefinedConstraint_id_num_2--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "Name": "Zfixed",
+                        "CSYSOption": 0,
+                        "Local Csys": null,
+                        "DOF1": -777777.0,
+                        "DOF2": -777777.0,
+                        "DOF3": 0.0,
+                        "DOF4": -777777.0,
+                        "DOF5": -777777.0,
+                        "DOF6": -777777.0,
+                        "DCID": "CORD2R",
+                        "DCID2": "CORD2C",
+                        "DCID3": "CORD2S",
+                        "DescriptorName": "UserDefinedDisplacementConstraint",
+                        "DistributionType": 5,
+                        "ConstraintType": "SPC"
+                    }
+                }
+            },
+            "FEAInteractionBC": {
+                "MechanicalContact": "",
+                "ThermalContact": ""
+            }
+        },
+        "CFDBoundaryCondition": {
+            "CFDConstraintBC": {
+                "FrictionWallBC": "",
+                "TotalPressureBC": "",
+                "VelocityBC": "",
+                "MassFlowBC": "",
+                "MovingWallBC": "",
+                "SmoothWallBC": "",
+                "StationaryWallBC": ""
+            },
+            "CFDInteractionBC": ""
+        },
+        "GenericBoundaryCondition": {
+            "PressureBC": ""
+        }
+    },
+    "PostProcessing": {
+        "Parameters": {
+            "CFDParameters": {
+                "AreaAveragedDynamicPressure": "",
+                "AreaAveragedPressure": "",
+                "AreaAveragedTotalPressure": "",
+                "MassAveragedDynamicPressure": "",
+                "MassAveragedPressure": "",
+                "MassAveragedTotalPressure": "",
+                "MassFlowRate": ""
+            },
+            "FEAParameters": {
+                "DisplacementNodal": {
+                    "DisplacementNodal_FIXEDFACE_id_num_4--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "1.373903053480537e-19",
+                        "Magnitude-Minimum": "-4.027877884812498e-35",
+                        "X-Maximum": "8.353400384375244e-20",
+                        "X-Minimum": "-3.4280600556790774e-20",
+                        "Y-Maximum": "9.432825201082342e-20",
+                        "Y-Minimum": "-6.098267573894728e-20",
+                        "Z-Maximum": "6.618799408677277e-20",
+                        "Z-Minimum": "-2.4780904632568623e-35"
+                    },
+                    "DisplacementNodal_FRONTLOAD_id_num_5--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "0.2822769284248352",
+                        "Magnitude-Minimum": "0.2493944615125656",
+                        "X-Maximum": "0.1058557853102684",
+                        "X-Minimum": "-0.0851062461733818",
+                        "Y-Maximum": "0.002395722782239318",
+                        "Y-Minimum": "-0.002413801848888397",
+                        "Z-Maximum": "-0.2488631308078766",
+                        "Z-Minimum": "-0.26176536083221436"
+                    },
+                    "DisplacementNodal_Model_id_num_6--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "0.2822769284248352",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.1058557853102684",
+                        "X-Minimum": "-0.08533410727977753",
+                        "Y-Maximum": "0.018842410296201706",
+                        "Y-Minimum": "-0.018802234902977943",
+                        "Z-Maximum": "0.006655387580394745",
+                        "Z-Minimum": "-0.26176536083221436"
+                    },
+                    "DisplacementNodal_TOPFACE1_id_num_7--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "0.28219786286354065",
+                        "Magnitude-Minimum": "0.09323959052562714",
+                        "X-Maximum": "0.1058557853102684",
+                        "X-Minimum": "0.0718974620103836",
+                        "Y-Maximum": "0.0031055014114826918",
+                        "Y-Minimum": "-0.0031174521427601576",
+                        "Z-Maximum": "-0.059286728501319885",
+                        "Z-Minimum": "-0.2616250514984131"
+                    }
+                },
+                "ReactionForceNodal": {
+                    "ReactionForceNodal_FIXEDFACE_id_num_4--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "1474745.875",
+                        "Magnitude-Minimum": "970.9331665039062",
+                        "X-Maximum": "1301539.375",
+                        "X-Minimum": "-1420705.5",
+                        "Y-Maximum": "509385.8125",
+                        "Y-Minimum": "-508802.25",
+                        "Z-Maximum": "363748.3125",
+                        "Z-Minimum": "-701962.25"
+                    },
+                    "ReactionForceNodal_FRONTLOAD_id_num_5--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionForceNodal_Model_id_num_6--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "18777926.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "1301539.375",
+                        "X-Minimum": "-1420705.5",
+                        "Y-Maximum": "509385.8125",
+                        "Y-Minimum": "-508802.25",
+                        "Z-Maximum": "18777926.0",
+                        "Z-Minimum": "-701962.25"
+                    },
+                    "ReactionForceNodal_TOPFACE1_id_num_7--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "ReactionMomentNodal": {
+                    "ReactionMomentNodal_FIXEDFACE_id_num_4--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionMomentNodal_FRONTLOAD_id_num_5--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionMomentNodal_Model_id_num_6--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionMomentNodal_TOPFACE1_id_num_7--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "RotationNodal": {
+                    "RotationNodal_FIXEDFACE_id_num_4--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "RotationNodal_FRONTLOAD_id_num_5--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "RotationNodal_Model_id_num_6--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "RotationNodal_TOPFACE1_id_num_7--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "StressElementNodal": {
+                    "StressElementNodal_FIXEDFACE_id_num_4--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "3020209782784.0",
+                        "Determinant-Minimum": "-2204858843136.0",
+                        "MaximumPrincipal-Maximum": "27468.115234375",
+                        "MaximumPrincipal-Minimum": "-8006.90869140625",
+                        "MaximumShear-Maximum": "9234.216796875",
+                        "MaximumShear-Minimum": "2895.901611328125",
+                        "Mean-Maximum": "16215.9599609375",
+                        "Mean-Minimum": "-14703.796875",
+                        "MiddlePrincipal-Maximum": "12070.5263671875",
+                        "MiddlePrincipal-Minimum": "-10944.931640625",
+                        "MinimumPrincipal-Maximum": "9109.2373046875",
+                        "MinimumPrincipal-Minimum": "-25159.55078125",
+                        "Octahedral-Maximum": "8054.3525390625",
+                        "Octahedral-Minimum": "2730.2822265625",
+                        "VonMises-Maximum": "17085.861328125",
+                        "VonMises-Minimum": "5791.80322265625",
+                        "WorstPrincipal-Maximum": "27468.115234375",
+                        "WorstPrincipal-Minimum": "-25159.55078125",
+                        "XX-Maximum": "24506.826171875",
+                        "XX-Minimum": "-22221.52734375",
+                        "XY-Maximum": "6785.46533203125",
+                        "XY-Minimum": "-6531.8212890625",
+                        "YY-Maximum": "12070.5263671875",
+                        "YY-Minimum": "-10944.931640625",
+                        "YZ-Maximum": "396.6264953613281",
+                        "YZ-Minimum": "-30.209186553955078",
+                        "ZX-Maximum": "6817.451171875",
+                        "ZX-Minimum": "-3867.74169921875",
+                        "ZZ-Maximum": "12070.5263671875",
+                        "ZZ-Minimum": "-10944.931640625"
+                    },
+                    "StressElementNodal_FRONTLOAD_id_num_5--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "98663840.0",
+                        "Determinant-Minimum": "-2269596416.0",
+                        "MaximumPrincipal-Maximum": "757.4901733398438",
+                        "MaximumPrincipal-Minimum": "110.79039764404297",
+                        "MaximumShear-Maximum": "5174.8515625",
+                        "MaximumShear-Minimum": "117.68959045410156",
+                        "Mean-Maximum": "118.69860076904297",
+                        "Mean-Minimum": "-3339.687744140625",
+                        "MiddlePrincipal-Maximum": "540.4705810546875",
+                        "MiddlePrincipal-Minimum": "-71.806396484375",
+                        "MinimumPrincipal-Maximum": "-48.80663299560547",
+                        "MinimumPrincipal-Minimum": "-10087.7705078125",
+                        "Octahedral-Maximum": "4807.85986328125",
+                        "Octahedral-Minimum": "97.07698822021484",
+                        "VonMises-Maximum": "10199.01171875",
+                        "VonMises-Minimum": "205.931396484375",
+                        "WorstPrincipal-Maximum": "278.8731689453125",
+                        "WorstPrincipal-Minimum": "-10087.7705078125",
+                        "XX-Maximum": "602.4199829101562",
+                        "XX-Minimum": "-71.70062255859375",
+                        "XY-Maximum": "43.58449172973633",
+                        "XY-Minimum": "-43.5998649597168",
+                        "YY-Maximum": "540.4705810546875",
+                        "YY-Minimum": "-342.9881286621094",
+                        "YZ-Maximum": "137.9713897705078",
+                        "YZ-Minimum": "-137.92552185058594",
+                        "ZX-Maximum": "90.5572738647461",
+                        "ZX-Minimum": "-1129.185791015625",
+                        "ZZ-Maximum": "232.41773986816406",
+                        "ZZ-Minimum": "-10087.7119140625"
+                    },
+                    "StressElementNodal_Model_id_num_6--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "5629706502144.0",
+                        "Determinant-Minimum": "-680519515766784.0",
+                        "MaximumPrincipal-Maximum": "35131.73046875",
+                        "MaximumPrincipal-Minimum": "-53233.76953125",
+                        "MaximumShear-Maximum": "46480.45703125",
+                        "MaximumShear-Minimum": "79.52909851074219",
+                        "Mean-Maximum": "16456.2109375",
+                        "Mean-Minimum": "-94812.921875",
+                        "MiddlePrincipal-Maximum": "15762.29296875",
+                        "MiddlePrincipal-Minimum": "-91512.4296875",
+                        "MinimumPrincipal-Maximum": "9310.1962890625",
+                        "MinimumPrincipal-Minimum": "-139692.5625",
+                        "Octahedral-Maximum": "37958.1171875",
+                        "Octahedral-Minimum": "66.78073120117188",
+                        "VonMises-Maximum": "80521.3203125",
+                        "VonMises-Minimum": "141.66331481933594",
+                        "WorstPrincipal-Maximum": "35131.73046875",
+                        "WorstPrincipal-Minimum": "-139692.5625",
+                        "XX-Maximum": "35127.62109375",
+                        "XX-Minimum": "-111729.9140625",
+                        "XY-Maximum": "11497.318359375",
+                        "XY-Minimum": "-10397.0947265625",
+                        "YY-Maximum": "16047.6728515625",
+                        "YY-Minimum": "-53247.4609375",
+                        "YZ-Maximum": "13011.5107421875",
+                        "YZ-Minimum": "-11508.259765625",
+                        "ZX-Maximum": "24244.208984375",
+                        "ZX-Minimum": "-23273.060546875",
+                        "ZZ-Maximum": "12249.359375",
+                        "ZZ-Minimum": "-119461.390625"
+                    },
+                    "StressElementNodal_TOPFACE1_id_num_7--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "347471544320.0",
+                        "Determinant-Minimum": "-264873295872.0",
+                        "MaximumPrincipal-Maximum": "28710.88671875",
+                        "MaximumPrincipal-Minimum": "29.240154266357422",
+                        "MaximumShear-Maximum": "17898.009765625",
+                        "MaximumShear-Minimum": "4935.85400390625",
+                        "Mean-Maximum": "8184.94140625",
+                        "Mean-Minimum": "-3339.687744140625",
+                        "MiddlePrincipal-Maximum": "1075.1749267578125",
+                        "MiddlePrincipal-Minimum": "-1804.6414794921875",
+                        "MinimumPrincipal-Maximum": "-5017.09130859375",
+                        "MinimumPrincipal-Minimum": "-11147.0947265625",
+                        "Octahedral-Maximum": "15046.00390625",
+                        "Octahedral-Minimum": "4640.41064453125",
+                        "VonMises-Maximum": "31917.39453125",
+                        "VonMises-Minimum": "9843.7978515625",
+                        "WorstPrincipal-Maximum": "28710.88671875",
+                        "WorstPrincipal-Minimum": "-10708.2353515625",
+                        "XX-Maximum": "27848.484375",
+                        "XX-Minimum": "-40.99665832519531",
+                        "XY-Maximum": "830.4462890625",
+                        "XY-Minimum": "-1616.8297119140625",
+                        "YY-Maximum": "1098.2489013671875",
+                        "YY-Minimum": "-1809.3270263671875",
+                        "YZ-Maximum": "47.43650817871094",
+                        "YZ-Minimum": "-422.360595703125",
+                        "ZX-Maximum": "4.259616851806641",
+                        "ZX-Minimum": "-5867.39453125",
+                        "ZZ-Maximum": "-4180.05908203125",
+                        "ZZ-Minimum": "-10997.4794921875"
+                    }
+                },
+                "StressElemental": {
+                    "StressElemental_Model_id_num_6--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "544352272384.0",
+                        "Determinant-Minimum": "-176299012259840.0",
+                        "MaximumPrincipal-Maximum": "32644.857421875",
+                        "MaximumPrincipal-Minimum": "-29769.54296875",
+                        "MaximumShear-Maximum": "33123.875",
+                        "MaximumShear-Minimum": "87.65882873535156",
+                        "Mean-Maximum": "11225.3017578125",
+                        "Mean-Minimum": "-62125.609375",
+                        "MiddlePrincipal-Maximum": "6345.42919921875",
+                        "MiddlePrincipal-Minimum": "-63835.28515625",
+                        "MinimumPrincipal-Maximum": "4581.177734375",
+                        "MinimumPrincipal-Minimum": "-92772.0",
+                        "Octahedral-Maximum": "27230.736328125",
+                        "Octahedral-Minimum": "72.36185455322266",
+                        "VonMises-Maximum": "57765.11328125",
+                        "VonMises-Minimum": "153.50267028808594",
+                        "WorstPrincipal-Maximum": "32644.857421875",
+                        "WorstPrincipal-Minimum": "-92772.0",
+                        "XX-Maximum": "32644.09375",
+                        "XX-Minimum": "-73491.6171875",
+                        "XY-Maximum": "4283.54296875",
+                        "XY-Minimum": "-4279.31396484375",
+                        "YY-Maximum": "7116.59228515625",
+                        "YY-Minimum": "-29775.333984375",
+                        "YZ-Maximum": "3955.52685546875",
+                        "YZ-Minimum": "-3921.624755859375",
+                        "ZX-Maximum": "13648.384765625",
+                        "ZX-Minimum": "-23258.30859375",
+                        "ZZ-Maximum": "6331.30224609375",
+                        "ZZ-Minimum": "-83109.875"
+                    }
+                }
+            },
+            "GenericParameters": {
+                "MaxTemperature": ""
+            }
+        },
+        "Plots": {
+            "ContourPlots": {
+                "ContactPressureContour": "",
+                "ContactStatusContour": "",
+                "PressureContour": "",
+                "TotalPressureContour": "",
+                "VelocityContour": ""
+            },
+            "DisplacementPlot": "",
+            "XYPlots": {
+                "MassAveragedTotalPressurePlot": "",
+                "WallYPlus": ""
+            },
+            "StressPlot": {
+                "PrincipalStressPlot": "",
+                "VonMisesStressPlot": ""
+            },
+            "StrainPlot": ""
+        }
+    },
+    "MeshElements": {
+        "AxiSymmetricElement": "",
+        "HexElement": {
+            "CHEXA--model1_fem1_Aluminium_2014_Aluminium_2014": {}
+        },
+        "PrismLayer": "",
+        "QuadElement": "",
+        "ShellElement": "",
+        "TetrahedralElement": {
+            "CTETRA--model1_fem1_Aluminium_2014_Aluminium_2014": {}
+        }
+    },
+    "GeometricFeature": {
+        "Body": "",
+        "Curve": "",
+        "Edge": "",
+        "Face": {
+            "TOPFACE2--MODEL1": {},
+            "TOPFACE1--MODEL1": {},
+            "FRONTLOAD--MODEL1": {},
+            "FIXEDFACE--MODEL1": {}
+        },
+        "Line": {
+            "Line4--MODEL1": {},
+            "Line1--MODEL1": {},
+            "Line2--MODEL1": {},
+            "Line3--MODEL1": {}
+        },
+        "Point": ""
+    },
+    "Documentation": {
+        "ConfluencePage": {
+            "ConfluencePage_id_num_7--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                "WebSite": ""
+            }
+        },
+        "PPT": {
+            "PPT_id_num_7--model1_sim1_Aluminium_2014_Aluminium_2014": {
+                "LocalStorage": [
+                    "LocalStorage_id_num_8--model1_sim1_Aluminium_2014_Aluminium_2014"
+                ]
+            }
+        }
+    },
+    "MeshVolume": {
+        "3d_mesh(1)--model1_fem1_Aluminium_2014_Aluminium_2014": {
+            "Mesh_Collector": "Solid(1)",
+            "Mesh_name": "3d_mesh(1)",
+            "Surface Curvature Based Size Variation": "50",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Aluminum_2014"
+            ],
+            "MeshElements": [
+                "CTETRA--model1_fem1_Aluminium_2014_Aluminium_2014"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "2",
+            "NumElements": "3025",
+            "NumNodes": "5070",
+            "Length": [
+                "ElementSize_20mm--model1_fem1_Aluminium_2014_Aluminium_2014"
+            ]
+        },
+        "3d_mesh(2)--model1_fem1_Aluminium_2014_Aluminium_2014": {
+            "Mesh_Collector": "Solid(2)",
+            "Mesh_name": "3d_mesh(2)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Aluminum_2014"
+            ],
+            "MeshElements": [
+                "CHEXA--model1_fem1_Aluminium_2014_Aluminium_2014"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "500",
+            "NumNodes": "726",
+            "Length": [
+                "ElementSize_20mm--model1_fem1_Aluminium_2014_Aluminium_2014"
+            ]
+        }
+    },
+    "Project": {
+        "3d_cantilever_analysis": {
+            "People": [
+                "Shyam",
+                "Chethan"
+            ],
+            "Mechanical": [
+                "model1_sim1_Aluminium_2014_Aluminium_2014"
+            ],
+            "UpdateEvent": [
+                "UpdateEvent_id_num_7--model1_sim1_Aluminium_2014_Aluminium_2014"
+            ],
+            "ProjectStartDate": 1580511600.0,
+            "ProjectEndDate": 1634680800.0
+        }
+    },
+    "UpdateEvent": {
+        "UpdateEvent_id_num_7": {
+            "Comment": "changed material to Aluminium_2014_Aluminium_2014",
+            "hasPredecessor": "model1_sim1",
+            "hasSuccessor": ""
+        }
+    }
+}

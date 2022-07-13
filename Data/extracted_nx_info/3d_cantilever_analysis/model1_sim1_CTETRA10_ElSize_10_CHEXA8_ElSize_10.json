@@ -1,0 +1,1553 @@
+{
+    "ANALYSIS_TYPE": "Structural",
+    "UNITS": {
+        "LENGTH": "mm",
+        "TIME": "sec",
+        "MASS": "kilogram (kg)",
+        "TEMPERATURE": "deg Celsius",
+        "FORCE": "milli-newton",
+        "THERMAL_ENERGY": "mN-mm (micro-joule)"
+    },
+    "SOLUTION_INFO": [
+        {
+            "Simulation Object": "Face Gluing(1)"
+        }
+    ],
+    "MESH_INFO": {
+        "MeshVolume": [
+            {
+                "Mesh_Collector": "Solid(1)",
+                "Mesh_name": "3d_mesh(1)",
+                "ELEMENT_TYPES": [
+                    "CTETRA"
+                ],
+                "Type of mesh": "3D",
+                "Number of elements in the mesh": "19433",
+                "Number of nodes in the mesh": "29844",
+                "Element Size": "10 mm",
+                "Surface Curvature Based Size Variation": "50",
+                "Surface Curvature Threshold": "NA",
+                "Minimum Element Length": "1",
+                "SolidMaterial": "AISI_Steel_4340"
+            },
+            {
+                "Mesh_Collector": "Solid(2)",
+                "Mesh_name": "3d_mesh(2)",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Number of elements in the mesh": "4000",
+                "Number of nodes in the mesh": "4851",
+                "Element Size": "10 mm",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "Minimum Element Length": "NA",
+                "SolidMaterial": "Aluminum_2014"
+            }
+        ],
+        "MeshFileName": "model1_fem1",
+        "MeshFileSize": 4038484,
+        "MeshFileDateModified": 1631084034.0
+    },
+    "PROPERTY_INFO": [
+        {
+            "Name": "PSOLID1",
+            "types": [
+                "PSOLID"
+            ]
+        },
+        {
+            "Name": "PSOLID2",
+            "types": [
+                "PSOLID"
+            ]
+        }
+    ],
+    "MATERIAL_INFO": {
+        "AISI_Steel_4340": {
+            "Category": "METAL",
+            "Sub-Category": "Carbon Steel",
+            "Mass Density (RHO)": {
+                "Magnitude": "7.85e-06",
+                "Unit": "kg/mm^3"
+            },
+            "Young's Modulus (E)": {
+                "Magnitude": "193000000",
+                "Unit": "mN/mm^2(kPa)"
+            },
+            "Poisson's Ratio (NU)": {
+                "Magnitude": "0.284",
+                "Unit": ""
+            },
+            "Type of Nonlinearity (TYPE)": {
+                "Magnitude": "1",
+                "Unit": ""
+            },
+            "Yield Function Criterion (YF)": {
+                "Magnitude": "1",
+                "Unit": ""
+            },
+            "Hardening Rule (HR)": {
+                "Magnitude": "1",
+                "Unit": ""
+            },
+            "Yield Strength": {
+                "Magnitude": "1178000",
+                "Unit": "mN/mm^2(kPa)"
+            },
+            "Ultimate Tensile Strength": {
+                "Magnitude": "1240000",
+                "Unit": "mN/mm^2(kPa)"
+            },
+            "Fatigue Strength Coefficient": {
+                "Magnitude": "1917000",
+                "Unit": "mN/mm^2(kPa)"
+            },
+            "Fatigue Strength Exponent": {
+                "Magnitude": "-0.099",
+                "Unit": ""
+            },
+            "Fatigue Ductility Coefficient": {
+                "Magnitude": "1.122",
+                "Unit": ""
+            },
+            "Fatigue Ductility Exponent": {
+                "Magnitude": "-0.72",
+                "Unit": ""
+            },
+            "Cyclic Strength Coefficient": {
+                "Magnitude": "1887000",
+                "Unit": "mN/mm^2(kPa)"
+            },
+            "Cyclic Strain Hardening Exponent": {
+                "Magnitude": "0.137",
+                "Unit": ""
+            },
+            "Initial Strain": {
+                "Magnitude": "0.02",
+                "Unit": "mm/mm"
+            },
+            "Hardening Exponent": {
+                "Magnitude": "0.22",
+                "Unit": ""
+            },
+            "Strength Coefficient": {
+                "Magnitude": "2182.004",
+                "Unit": "N/mm^2(MPa)"
+            },
+            "R0": {
+                "Magnitude": "2.5",
+                "Unit": ""
+            },
+            "R45": {
+                "Magnitude": "3",
+                "Unit": ""
+            },
+            "R90": {
+                "Magnitude": "2.7",
+                "Unit": ""
+            },
+            "Thermal Expansion Coefficient (A)": {
+                "Magnitude": "1.23e-051",
+                "Unit": "/dC"
+            },
+            "Thermal Conductivity (K)": {
+                "Magnitude": "44500",
+                "Unit": "microW/mm-dC"
+            },
+            "Specific Heat (CP)": {
+                "Magnitude": "475000000",
+                "Unit": "microJ/kg-dK"
+            },
+            "Crosshatch Pattern": "Steel"
+        },
+        "Aluminum_2014": {
+            "Category": "METAL",
+            "Sub-Category": "Aluminum Alloy",
+            "Mass Density (RHO)": {
+                "Magnitude": "2.794e-06",
+                "Unit": "kg/mm^3"
+            },
+            "Young's Modulus (E)": {
+                "X": {
+                    "Label": "temperature",
+                    "Data": [
+                        "20",
+                        "21.11",
+                        "23.89",
+                        "37.78",
+                        "51.67",
+                        "65.56",
+                        "79.44",
+                        "93.33",
+                        "107.22",
+                        "121.11",
+                        "135",
+                        "148.89",
+                        "162.78",
+                        "176.67",
+                        "190.56",
+                        "204.44",
+                        "218.33",
+                        "232.22",
+                        "246.11",
+                        "260",
+                        "273.89",
+                        "287.78",
+                        "301.67",
+                        "315.56",
+                        "329.44",
+                        "343.33",
+                        "357.22",
+                        "371.11"
+                    ],
+                    "Unit": "C"
+                },
+                "Y": {
+                    "Label": "Young's Modulus (E)",
+                    "Data": [
+                        "73119000",
+                        "73119000",
+                        "73119000",
+                        "73119000",
+                        "73119000",
+                        "72429000",
+                        "72429000",
+                        "71739000",
+                        "71049000",
+                        "70359000",
+                        "69670000",
+                        "68980000",
+                        "68290000",
+                        "66910000",
+                        "66221000",
+                        "64841000",
+                        "63461000",
+                        "61392000",
+                        "60012000",
+                        "58633000",
+                        "57253000",
+                        "55184000",
+                        "53804000",
+                        "51735000",
+                        "49665000",
+                        "47596000",
+                        "46216000",
+                        "44147000"
+                    ],
+                    "Unit": "mN/mm^2(kPa)"
+                }
+            },
+            "Poisson's Ratio (NU)": {
+                "Magnitude": "0.33",
+                "Unit": ""
+            },
+            "Type of Nonlinearity (TYPE)": {
+                "Magnitude": "1",
+                "Unit": ""
+            },
+            "Yield Function Criterion (YF)": {
+                "Magnitude": "1",
+                "Unit": ""
+            },
+            "Hardening Rule (HR)": {
+                "Magnitude": "1",
+                "Unit": ""
+            },
+            "Yield Strength": {
+                "X": {
+                    "Label": "temperature",
+                    "Data": [
+                        "20",
+                        "26.6667",
+                        "37.7778",
+                        "51.6667",
+                        "65.5556",
+                        "79.4444",
+                        "93.3333",
+                        "107.222",
+                        "121.111",
+                        "135",
+                        "148.889",
+                        "162.778",
+                        "176.667",
+                        "190.556",
+                        "204.444",
+                        "218.333",
+                        "232.222",
+                        "246.111",
+                        "260"
+                    ],
+                    "Unit": "C"
+                },
+                "Y": {
+                    "Label": "Yield Strength",
+                    "Data": [
+                        "393700",
+                        "393001",
+                        "390933",
+                        "387485",
+                        "383348",
+                        "377833",
+                        "370938",
+                        "362664",
+                        "351633",
+                        "339222",
+                        "324054",
+                        "308885",
+                        "290959",
+                        "268896",
+                        "243385",
+                        "215116",
+                        "184779",
+                        "155132",
+                        "1254854"
+                    ],
+                    "Unit": "mN/mm^2(kPa)"
+                }
+            },
+            "Ultimate Tensile Strength": {
+                "X": {
+                    "Label": "temperature",
+                    "Data": [
+                        "20",
+                        "21.1111",
+                        "23.8889",
+                        "37.7778",
+                        "51.6667",
+                        "65.5556",
+                        "79.4444",
+                        "93.3333",
+                        "107.222",
+                        "121.111",
+                        "135",
+                        "148.889",
+                        "162.778",
+                        "176.667",
+                        "190.556",
+                        "204.444",
+                        "218.333",
+                        "232.222",
+                        "246.111",
+                        "260"
+                    ],
+                    "Unit": "C"
+                },
+                "Y": {
+                    "Label": "Ultimate Tensile Strength",
+                    "Data": [
+                        "441500",
+                        "441264",
+                        "440575",
+                        "436438",
+                        "430233",
+                        "423338",
+                        "415064",
+                        "406101",
+                        "396449",
+                        "384038",
+                        "370938",
+                        "357148",
+                        "343359",
+                        "326811",
+                        "306127",
+                        "282685",
+                        "253038",
+                        "220632",
+                        "186158",
+                        "150306"
+                    ],
+                    "Unit": "mN/mm^2(kPa)"
+                }
+            },
+            "Fatigue Strength Coefficient": {
+                "Magnitude": "1008000",
+                "Unit": "mN/mm^2(kPa)"
+            },
+            "Fatigue Strength Exponent": {
+                "Magnitude": "-0.114",
+                "Unit": ""
+            },
+            "Fatigue Ductility Coefficient": {
+                "Magnitude": "1.418",
+                "Unit": ""
+            },
+            "Fatigue Ductility Exponent": {
+                "Magnitude": "-0.87",
+                "Unit": ""
+            },
+            "Cyclic Strength Coefficient": {
+                "Magnitude": "963000",
+                "Unit": "mN/mm^2(kPa)"
+            },
+            "Cyclic Strain Hardening Exponent": {
+                "Magnitude": "0.132",
+                "Unit": ""
+            },
+            "Initial Strain": {
+                "Magnitude": "0.02",
+                "Unit": "mm/mm"
+            },
+            "Hardening Exponent": {
+                "Magnitude": "0.21",
+                "Unit": ""
+            },
+            "Strength Coefficient": {
+                "Magnitude": "826.957",
+                "Unit": "N/mm^2(MPa)"
+            },
+            "R0": {
+                "Magnitude": "2",
+                "Unit": ""
+            },
+            "R45": {
+                "Magnitude": "2",
+                "Unit": ""
+            },
+            "R90": {
+                "Magnitude": "2",
+                "Unit": ""
+            },
+            "Thermal Expansion Coefficient (A)": {
+                "X": {
+                    "Label": "temperature",
+                    "Data": [
+                        "20",
+                        "93.33",
+                        "107.22",
+                        "121.11",
+                        "135",
+                        "148.89",
+                        "162.78",
+                        "176.67",
+                        "190.56",
+                        "204.44",
+                        "218.33",
+                        "232.22",
+                        "246.11",
+                        "260",
+                        "273.89",
+                        "287.78",
+                        "301.67",
+                        "315.56",
+                        "329.44",
+                        "343.33",
+                        "357.22",
+                        "371.11",
+                        "385",
+                        "398.89",
+                        "412.78",
+                        "426.67"
+                    ],
+                    "Unit": "C"
+                },
+                "Y": {
+                    "Label": "Thermal Expansion Coefficient (A)",
+                    "Data": [
+                        "2.16e-05",
+                        "2.25e-05",
+                        "2.2662e-05",
+                        "2.2824e-05",
+                        "2.2968e-05",
+                        "2.313e-05",
+                        "2.3274e-05",
+                        "2.3418e-05",
+                        "2.3544e-05",
+                        "2.3688e-05",
+                        "2.3814e-05",
+                        "2.3958e-05",
+                        "2.4066e-05",
+                        "2.4192e-05",
+                        "2.43e-05",
+                        "2.4408e-05",
+                        "2.4498e-05",
+                        "2.4606e-05",
+                        "2.4696e-05",
+                        "2.4786e-05",
+                        "2.4876e-05",
+                        "2.4984e-05",
+                        "2.511e-05",
+                        "2.5254e-05",
+                        "2.5398e-05",
+                        "2.556e-05"
+                    ],
+                    "Unit": "1/dC"
+                }
+            },
+            "Thermal Conductivity (K)": {
+                "X": {
+                    "Label": "temperature",
+                    "Data": [
+                        "20",
+                        "21.11",
+                        "23.89",
+                        "37.78",
+                        "51.67",
+                        "65.56",
+                        "79.44",
+                        "93.33",
+                        "107.22",
+                        "121.11",
+                        "135",
+                        "148.89",
+                        "162.78",
+                        "176.67",
+                        "190.56",
+                        "204.44",
+                        "218.33",
+                        "232.22",
+                        "246.11",
+                        "260",
+                        "273.89",
+                        "287.78",
+                        "301.67",
+                        "315.56",
+                        "329.44",
+                        "343.33",
+                        "357.22",
+                        "371.11",
+                        "385",
+                        "398.89",
+                        "412.78",
+                        "426.67"
+                    ],
+                    "Unit": "C"
+                },
+                "Y": {
+                    "Label": "Thermal Conductivity (K)",
+                    "Data": [
+                        "154250",
+                        "154320",
+                        "154540",
+                        "155680",
+                        "156880",
+                        "158160",
+                        "159530",
+                        "160960",
+                        "162490",
+                        "164120",
+                        "165790",
+                        "167450",
+                        "169090",
+                        "170750",
+                        "172420",
+                        "174080",
+                        "175830",
+                        "177400",
+                        "178510",
+                        "179270",
+                        "179690",
+                        "179720",
+                        "179490",
+                        "179130",
+                        "178580",
+                        "177820",
+                        "176870",
+                        "175810",
+                        "174630",
+                        "173290",
+                        "171800",
+                        "170190"
+                    ],
+                    "Unit": "microW/mm-dC"
+                }
+            },
+            "Specific Heat (CP)": {
+                "Magnitude": "880000000",
+                "Unit": "microJ/kg-dK"
+            },
+            "Crosshatch Pattern": "Aluminum/Magnesium"
+        }
+    },
+    "LOAD_INFO": [
+        {
+            "Name": "Force(1)",
+            "types": [
+                "FORCE"
+            ],
+            "TotalForce": {
+                "Magnitude": 1000000.0,
+                "Unit": "N"
+            },
+            "CSYSOption": 5,
+            "observeNode1": "Observe Node 1",
+            "observeNode2": "Observe Node 2",
+            "observeNode3": "Observe Node 3",
+            "observeNode4": "Observe Node 4",
+            "distributionType": 1,
+            "DistributionField": "NA",
+            "geom_feature": "FRONTLOAD"
+        },
+        {
+            "Name": "Pressure(1)",
+            "types": [
+                "PLOAD4",
+                "LOAD"
+            ],
+            "CSYSOption": 10,
+            "TotalPressure": {
+                "Magnitude": 10000.0,
+                "Unit": "N/mm^2(MPa)"
+            },
+            "distributionType": 32,
+            "geom_feature": "TOPFACE1"
+        }
+    ],
+    "CONSTRAINT_INFO": [
+        {
+            "Name": "Fixed(1)",
+            "types": [
+                "SPC"
+            ],
+            "CSYSOption": 0,
+            "DOF1": 0.0,
+            "DOF2": 0.0,
+            "DOF3": 0.0,
+            "DOF4": 0.0,
+            "DOF5": 0.0,
+            "DOF6": 0.0,
+            "distributionType": 5,
+            "DescriptorName": "fixedConstraint",
+            "geom_feature": "FIXEDFACE"
+        },
+        {
+            "Name": "Zfixed",
+            "types": [
+                "SPC"
+            ],
+            "CSYSOption": 0,
+            "Local Csys": null,
+            "DOF1": -777777.0,
+            "DOF2": -777777.0,
+            "DOF3": 0.0,
+            "DOF4": -777777.0,
+            "DOF5": -777777.0,
+            "DOF6": -777777.0,
+            "DCID": "CORD2R",
+            "DCID2": "CORD2C",
+            "DCID3": "CORD2S",
+            "distributionType": 5,
+            "DescriptorName": "UserDefinedDisplacementConstraint"
+        }
+    ],
+    "REGION_INFO": [
+        {
+            "Name": "Region1",
+            "types": [
+                "BSURFS",
+                "BCRPARA"
+            ]
+        },
+        {
+            "Name": "Region2",
+            "types": [
+                "BSURFS",
+                "BCRPARA",
+                "SPCADD"
+            ]
+        }
+    ],
+    "isTransient": false,
+    "isHarmonic": false,
+    "ToolVersion": "v12.0.2.9",
+    "isSteadyState": true,
+    "DateModified": 1631084034.0,
+    "FileSize": 3486814,
+    "GEOM_INFO": {
+        "model1_fem1_i": {
+            "is2D": false,
+            "is3D": true,
+            "all_objects": {
+                "Point": [
+                    {
+                        "JournalIdentifier": "HANDLE R-123",
+                        "Name": ""
+                    }
+                ],
+                "Line": [
+                    {
+                        "JournalIdentifier": "HANDLE R-298",
+                        "Name": "Line4"
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-295",
+                        "Name": "Line1"
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-296",
+                        "Name": "Line2"
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-297",
+                        "Name": "Line3"
+                    }
+                ],
+                "CartesianCoordinateSystem": [
+                    {
+                        "JournalIdentifier": "HANDLE R-122",
+                        "Name": ""
+                    }
+                ],
+                "Component": [
+                    {
+                        "JournalIdentifier": "COMPONENT model1 1",
+                        "Name": "MODEL1",
+                        "PRT_Name": "model1.prt"
+                    }
+                ],
+                "Edge": [
+                    {
+                        "JournalIdentifier": "HANDLE R-1228",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1222",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1087",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1091",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1221",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1094",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1086",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1227",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1085",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1093",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1223",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1232",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1088",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1230",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1224",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1095",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1231",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1226",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1090",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1089",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1229",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1225",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1092",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1096",
+                        "Name": ""
+                    }
+                ],
+                "Face": [
+                    {
+                        "JournalIdentifier": "HANDLE R-1216",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1079",
+                        "Name": "TOPFACE2"
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1084",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1218",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1082",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1215",
+                        "Name": "TOPFACE1"
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1080",
+                        "Name": "FRONTLOAD"
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1217",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1083",
+                        "Name": "FIXEDFACE"
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1220",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1219",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1081",
+                        "Name": ""
+                    }
+                ],
+                "Body": [
+                    {
+                        "JournalIdentifier": "HANDLE R-1213",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-1076",
+                        "Name": ""
+                    }
+                ],
+                "DatumAxis": [
+                    {
+                        "JournalIdentifier": "HANDLE R-129",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-128",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-130",
+                        "Name": ""
+                    }
+                ],
+                "DatumPlane": [
+                    {
+                        "JournalIdentifier": "HANDLE R-126",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-125",
+                        "Name": ""
+                    },
+                    {
+                        "JournalIdentifier": "HANDLE R-124",
+                        "Name": ""
+                    }
+                ]
+            },
+            "GeometryFileName": "model1_fem1_i.prt",
+            "GeometryFileSize": 45394,
+            "GeometryFileDateModified": 1614324142.0,
+            "isAssembly": false
+        },
+        "RootComponent": "model1_fem1_i"
+    },
+    "RESULT_INFO": {
+        "ResultDetails": {
+            "Model": {
+                "Displacement - Nodal": {
+                    "X": {
+                        "Minimum": -0.051781050860881805,
+                        "Maximum": 0.06563332676887512
+                    },
+                    "Y": {
+                        "Minimum": -0.00926577765494585,
+                        "Maximum": 0.009249631315469742
+                    },
+                    "Z": {
+                        "Minimum": -0.1677645444869995,
+                        "Maximum": 0.0023150979541242123
+                    },
+                    "Magnitude": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.18007755279541016
+                    }
+                },
+                "Rotation - Nodal": {
+                    "X": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Y": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Z": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Magnitude": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    }
+                },
+                "Stress - Elemental": {
+                    "XX": {
+                        "Minimum": -88909.9765625,
+                        "Maximum": 44422.453125
+                    },
+                    "YY": {
+                        "Minimum": -26190.255859375,
+                        "Maximum": 6177.9951171875
+                    },
+                    "ZZ": {
+                        "Minimum": -110599.859375,
+                        "Maximum": 7347.84228515625
+                    },
+                    "XY": {
+                        "Minimum": -6139.8681640625,
+                        "Maximum": 5774.43798828125
+                    },
+                    "YZ": {
+                        "Minimum": -5770.046875,
+                        "Maximum": 5751.525390625
+                    },
+                    "ZX": {
+                        "Minimum": -21832.734375,
+                        "Maximum": 14683.7421875
+                    },
+                    "Determinant": {
+                        "Minimum": -237950147231744.0,
+                        "Maximum": 13718758883328.0
+                    },
+                    "Mean": {
+                        "Minimum": -74747.2421875,
+                        "Maximum": 15627.37109375
+                    },
+                    "Max Shear": {
+                        "Minimum": 31.32793617248535,
+                        "Maximum": 48993.8828125
+                    },
+                    "Min Principal": {
+                        "Minimum": -117488.1171875,
+                        "Maximum": 4756.99072265625
+                    },
+                    "Mid Principal": {
+                        "Minimum": -82078.21875,
+                        "Maximum": 7311.4697265625
+                    },
+                    "Max Principal": {
+                        "Minimum": -26187.748046875,
+                        "Maximum": 44425.73828125
+                    },
+                    "Worst Principal": {
+                        "Minimum": -117488.1171875,
+                        "Maximum": 44425.73828125
+                    },
+                    "Octahedral": {
+                        "Minimum": 26.091344833374023,
+                        "Maximum": 40569.421875
+                    },
+                    "Von-Mises": {
+                        "Minimum": 55.34809875488281,
+                        "Maximum": 86060.7421875
+                    }
+                },
+                "Stress - Element-Nodal": {
+                    "XX": {
+                        "Minimum": -124810.9765625,
+                        "Maximum": 55037.1171875
+                    },
+                    "YY": {
+                        "Minimum": -43771.4375,
+                        "Maximum": 16100.9287109375
+                    },
+                    "ZZ": {
+                        "Minimum": -146672.5,
+                        "Maximum": 16470.8125
+                    },
+                    "XY": {
+                        "Minimum": -12650.6083984375,
+                        "Maximum": 12962.7177734375
+                    },
+                    "YZ": {
+                        "Minimum": -12574.1943359375,
+                        "Maximum": 12121.228515625
+                    },
+                    "ZX": {
+                        "Minimum": -21865.810546875,
+                        "Maximum": 27521.62109375
+                    },
+                    "Determinant": {
+                        "Minimum": -758271107399680.0,
+                        "Maximum": 45572018929664.0
+                    },
+                    "Mean": {
+                        "Minimum": -104858.015625,
+                        "Maximum": 26837.111328125
+                    },
+                    "Max Shear": {
+                        "Minimum": 14.050555229187012,
+                        "Maximum": 64558.85546875
+                    },
+                    "Min Principal": {
+                        "Minimum": -164430.5625,
+                        "Maximum": 9214.5
+                    },
+                    "Mid Principal": {
+                        "Minimum": -107075.9609375,
+                        "Maximum": 15442.9365234375
+                    },
+                    "Max Principal": {
+                        "Minimum": -43758.0078125,
+                        "Maximum": 55853.8984375
+                    },
+                    "Worst Principal": {
+                        "Minimum": -164430.5625,
+                        "Maximum": 55853.8984375
+                    },
+                    "Octahedral": {
+                        "Minimum": 11.555808067321777,
+                        "Maximum": 52801.31640625
+                    },
+                    "Von-Mises": {
+                        "Minimum": 24.51357078552246,
+                        "Maximum": 112008.5
+                    }
+                },
+                "Reaction Force - Nodal": {
+                    "X": {
+                        "Minimum": -536913.0,
+                        "Maximum": 468187.3125
+                    },
+                    "Y": {
+                        "Minimum": -165764.34375,
+                        "Maximum": 149533.875
+                    },
+                    "Z": {
+                        "Minimum": -193010.15625,
+                        "Maximum": 4812890.0
+                    },
+                    "Magnitude": {
+                        "Minimum": 0.0,
+                        "Maximum": 4812890.0
+                    }
+                },
+                "Reaction Moment - Nodal": {
+                    "X": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Y": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Z": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Magnitude": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    }
+                }
+            },
+            "FRONTLOAD": {
+                "Displacement - Nodal": {
+                    "X": {
+                        "Minimum": -0.05159834399819374,
+                        "Maximum": 0.06563332676887512
+                    },
+                    "Y": {
+                        "Minimum": -0.002423112979158759,
+                        "Maximum": 0.002410807181149721
+                    },
+                    "Z": {
+                        "Minimum": -0.1677645444869995,
+                        "Maximum": -0.15402980148792267
+                    },
+                    "Magnitude": {
+                        "Minimum": 0.15461981296539307,
+                        "Maximum": 0.18007755279541016
+                    }
+                },
+                "Rotation - Nodal": {
+                    "X": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Y": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Z": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Magnitude": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    }
+                },
+                "Stress - Element-Nodal": {
+                    "XX": {
+                        "Minimum": -211.2293701171875,
+                        "Maximum": 311.9288635253906
+                    },
+                    "YY": {
+                        "Minimum": -390.3732604980469,
+                        "Maximum": 346.4444274902344
+                    },
+                    "ZZ": {
+                        "Minimum": -10231.5791015625,
+                        "Maximum": 214.11676025390625
+                    },
+                    "XY": {
+                        "Minimum": -37.047027587890625,
+                        "Maximum": 37.0467529296875
+                    },
+                    "YZ": {
+                        "Minimum": -174.96620178222656,
+                        "Maximum": 174.9450225830078
+                    },
+                    "ZX": {
+                        "Minimum": -607.5223388671875,
+                        "Maximum": 86.52275848388672
+                    },
+                    "Determinant": {
+                        "Minimum": -531297760.0,
+                        "Maximum": 79014856.0
+                    },
+                    "Mean": {
+                        "Minimum": -3420.508056640625,
+                        "Maximum": 157.0086212158203
+                    },
+                    "Max Shear": {
+                        "Minimum": 84.80854797363281,
+                        "Maximum": 5202.3388671875
+                    },
+                    "Min Principal": {
+                        "Minimum": -10231.859375,
+                        "Maximum": 7.570211410522461
+                    },
+                    "Mid Principal": {
+                        "Minimum": -351.46636962890625,
+                        "Maximum": 321.80865478515625
+                    },
+                    "Max Principal": {
+                        "Minimum": -150.25245666503906,
+                        "Maximum": 365.62005615234375
+                    },
+                    "Worst Principal": {
+                        "Minimum": -10231.859375,
+                        "Maximum": 283.8424072265625
+                    },
+                    "Octahedral": {
+                        "Minimum": 69.52571105957031,
+                        "Maximum": 4861.30419921875
+                    },
+                    "Von-Mises": {
+                        "Minimum": 147.48631286621094,
+                        "Maximum": 10312.3837890625
+                    }
+                },
+                "Reaction Force - Nodal": {
+                    "X": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Y": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Z": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Magnitude": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    }
+                },
+                "Reaction Moment - Nodal": {
+                    "X": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Y": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Z": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Magnitude": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    }
+                }
+            },
+            "TOPFACE1": {
+                "Displacement - Nodal": {
+                    "X": {
+                        "Minimum": 0.033490266650915146,
+                        "Maximum": 0.06563332676887512
+                    },
+                    "Y": {
+                        "Minimum": -0.003365606302395463,
+                        "Maximum": 0.0033563494216650724
+                    },
+                    "Z": {
+                        "Minimum": -0.16769947111606598,
+                        "Maximum": -0.029993854463100433
+                    },
+                    "Magnitude": {
+                        "Minimum": 0.04503681883215904,
+                        "Maximum": 0.18003638088703156
+                    }
+                },
+                "Rotation - Nodal": {
+                    "X": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Y": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Z": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Magnitude": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    }
+                },
+                "Stress - Element-Nodal": {
+                    "XX": {
+                        "Minimum": -210.2704315185547,
+                        "Maximum": 36541.6328125
+                    },
+                    "YY": {
+                        "Minimum": -13436.8916015625,
+                        "Maximum": 5101.63720703125
+                    },
+                    "ZZ": {
+                        "Minimum": -21876.390625,
+                        "Maximum": -5039.82763671875
+                    },
+                    "XY": {
+                        "Minimum": -743.1453857421875,
+                        "Maximum": 1359.406982421875
+                    },
+                    "YZ": {
+                        "Minimum": -834.2758178710938,
+                        "Maximum": 592.7286987304688
+                    },
+                    "ZX": {
+                        "Minimum": -18070.482421875,
+                        "Maximum": 64.46077728271484
+                    },
+                    "Determinant": {
+                        "Minimum": -1811159187456.0,
+                        "Maximum": 9947272183808.0
+                    },
+                    "Mean": {
+                        "Minimum": -4693.85498046875,
+                        "Maximum": 11065.6787109375
+                    },
+                    "Max Shear": {
+                        "Minimum": 4936.349609375,
+                        "Maximum": 28865.443359375
+                    },
+                    "Min Principal": {
+                        "Minimum": -28316.3125,
+                        "Maximum": -7725.70361328125
+                    },
+                    "Mid Principal": {
+                        "Minimum": -13421.3271484375,
+                        "Maximum": 5101.673828125
+                    },
+                    "Max Principal": {
+                        "Minimum": -109.91121673583984,
+                        "Maximum": 37580.24609375
+                    },
+                    "Worst Principal": {
+                        "Minimum": -28316.3125,
+                        "Maximum": 37580.24609375
+                    },
+                    "Octahedral": {
+                        "Minimum": 4630.3994140625,
+                        "Maximum": 24385.67578125
+                    },
+                    "Von-Mises": {
+                        "Minimum": 9822.560546875,
+                        "Maximum": 51729.83203125
+                    }
+                },
+                "Reaction Force - Nodal": {
+                    "X": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Y": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Z": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Magnitude": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    }
+                },
+                "Reaction Moment - Nodal": {
+                    "X": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Y": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Z": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Magnitude": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    }
+                }
+            },
+            "FIXEDFACE": {
+                "Displacement - Nodal": {
+                    "X": {
+                        "Minimum": -2.3487268427624706e-20,
+                        "Maximum": 1.782148512841994e-20
+                    },
+                    "Y": {
+                        "Minimum": -9.829263626551885e-21,
+                        "Maximum": 2.1937771732205353e-20
+                    },
+                    "Z": {
+                        "Minimum": -1.465334460825063e-20,
+                        "Maximum": 1.003009160861111e-20
+                    },
+                    "Magnitude": {
+                        "Minimum": -5.4977872222888014e-36,
+                        "Maximum": 3.232143296948173e-20
+                    }
+                },
+                "Rotation - Nodal": {
+                    "X": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Y": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Z": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Magnitude": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    }
+                },
+                "Stress - Element-Nodal": {
+                    "XX": {
+                        "Minimum": -27255.69140625,
+                        "Maximum": 30607.22265625
+                    },
+                    "YY": {
+                        "Minimum": -10810.91796875,
+                        "Maximum": 12140.294921875
+                    },
+                    "ZZ": {
+                        "Minimum": -10810.91796875,
+                        "Maximum": 12140.294921875
+                    },
+                    "XY": {
+                        "Minimum": -8518.232421875,
+                        "Maximum": 8130.5380859375
+                    },
+                    "YZ": {
+                        "Minimum": -0.8841972351074219,
+                        "Maximum": 343.8853454589844
+                    },
+                    "ZX": {
+                        "Minimum": -5783.79541015625,
+                        "Maximum": 7207.9033203125
+                    },
+                    "Determinant": {
+                        "Minimum": -2499204087808.0,
+                        "Maximum": 3603538903040.0
+                    },
+                    "Mean": {
+                        "Minimum": -16292.5087890625,
+                        "Maximum": 18295.9375
+                    },
+                    "Max Shear": {
+                        "Minimum": 3879.852783203125,
+                        "Maximum": 12657.3125
+                    },
+                    "Min Principal": {
+                        "Minimum": -30482.873046875,
+                        "Maximum": 8837.9853515625
+                    },
+                    "Mid Principal": {
+                        "Minimum": -10810.91796875,
+                        "Maximum": 12140.294921875
+                    },
+                    "Max Principal": {
+                        "Minimum": -7583.73681640625,
+                        "Maximum": 34031.0703125
+                    },
+                    "Worst Principal": {
+                        "Minimum": -30482.873046875,
+                        "Maximum": 34031.0703125
+                    },
+                    "Octahedral": {
+                        "Minimum": 3657.960205078125,
+                        "Maximum": 11213.8759765625
+                    },
+                    "Von-Mises": {
+                        "Minimum": 7759.70556640625,
+                        "Maximum": 23788.22265625
+                    }
+                },
+                "Reaction Force - Nodal": {
+                    "X": {
+                        "Minimum": -536913.0,
+                        "Maximum": 468187.3125
+                    },
+                    "Y": {
+                        "Minimum": -165764.34375,
+                        "Maximum": 149533.875
+                    },
+                    "Z": {
+                        "Minimum": -193010.15625,
+                        "Maximum": 104853.3125
+                    },
+                    "Magnitude": {
+                        "Minimum": 53.27057647705078,
+                        "Maximum": 543207.9375
+                    }
+                },
+                "Reaction Moment - Nodal": {
+                    "X": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Y": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Z": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    },
+                    "Magnitude": {
+                        "Minimum": 0.0,
+                        "Maximum": 0.0
+                    }
+                }
+            }
+        },
+        "ResultFileSize": 37183496,
+        "ResultFileDateModified": 1631083940.0,
+        "ResultFileName": "model1_sim1-staticsolution"
+    },
+    "manual_info": {
+        "confluence_url": "",
+        "ppt_name": "",
+        "ppt_storage_location": "Local",
+        "ppt_gid": "",
+        "ppt_machine_name": "",
+        "ppt_tc_path": "",
+        "ppt_tc_project_id": "",
+        "ppt_tc_server_loc": "ORL",
+        "ppt_cloud_loc": "",
+        "ppt_cloud_hostname": "",
+        "ppt_cloud_extn": "",
+        "ppt_server_bucket": "",
+        "ppt_server_loc": "",
+        "ppt_server_hostname": "",
+        "ppt_server_extn": "",
+        "new_project": false,
+        "project_name": "3d_cantilever_analysis",
+        "project_contributors": [
+            "Shyam",
+            "Chethan"
+        ],
+        "simulation_contributors": [
+            "Shyam"
+        ],
+        "project_start_date": "01-Feb-2020",
+        "project_end_date": "20-Oct-2021",
+        "update_event_comment": "changed mesh parameters to CTETRA10_ElSize_10_CHEXA8_ElSize_10",
+        "predecessor_analysis": "model1_sim1",
+        "successor_analysis": "",
+        "sim_name": {
+            "current_name": "model1_sim1",
+            "new_name": "model1_sim1_CTETRA10_ElSize_10_CHEXA8_ElSize_10"
+        },
+        "mesh_name": {
+            "current_name": "model1_fem1",
+            "new_name": "model1_fem1_CTETRA10_ElSize_10_CHEXA8_ElSize_10"
+        },
+        "geom_name": {
+            "current_name": [
+                "MODEL1"
+            ],
+            "new_name": [
+                "MODEL1"
+            ]
+        }
+    }
+}

@@ -1,0 +1,811 @@
+{
+    "Analysis": {
+        "AeroMechanical": "",
+        "CFD": "",
+        "CoupledAeroMechanical": "",
+        "Structural": {
+            "Mechanical": {
+                "2Dmodel_sim2_Copper_C10100": {
+                    "SolidMaterial": [
+                        "Copper_C10100"
+                    ],
+                    "is2D": true,
+                    "isTransient": false,
+                    "LocalStorage": [
+                        "LocalStorage_id_num_1--2Dmodel_sim2_Copper_C10100"
+                    ],
+                    "isHarmonic": false,
+                    "is3D": false,
+                    "Geometry": [
+                        "2DMODEL_Copper_C10100"
+                    ],
+                    "Boundary": [
+                        "Fixed(1)--2Dmodel_sim2_Copper_C10100"
+                    ],
+                    "Mesh": [
+                        "2Dmodel_fem2_Copper_C10100"
+                    ],
+                    "ToolVersion": "v12.0.2.9",
+                    "Result": [
+                        "2dmodel_sim2-structural--2Dmodel_sim2_Copper_C10100"
+                    ],
+                    "LastModificationDate": 1631002376.0,
+                    "FileSize": 3464351,
+                    "isSteadyState": true,
+                    "People": [
+                        "Shyam"
+                    ],
+                    "FileNameOriginal": "2Dmodel_sim2",
+                    "FileNameAlias": "2Dmodel_sim2_Copper_C10100",
+                    "PointLoad": [
+                        "FrontLoad--2Dmodel_sim2_Copper_C10100",
+                        "TopLoad--2Dmodel_sim2_Copper_C10100"
+                    ]
+                }
+            },
+            "Thermomechanical": ""
+        }
+    },
+    "Material": {
+        "FluidMaterial": "",
+        "SolidMaterial": {
+            "Copper_C10100": {
+                "R0": "1.2",
+                "R45": "1.2",
+                "R90": "1.2",
+                "MaterialCategory": "METAL",
+                "MaterialSubCategory": "Copper Alloy",
+                "Density": [
+                    "Density_8.92e-06_Copper_C10100"
+                ],
+                "ModulusOfElasticity": [
+                    "ModulusOfElasticity_114000000_Copper_C10100"
+                ],
+                "PoissonRatio": "0.31",
+                "TypeOfNonlinearity": "1",
+                "YieldFunctionCriterion": "1",
+                "HardeningRule": "1",
+                "YieldStrength": [
+                    "YieldStrength_30000_Copper_C10100"
+                ],
+                "UltimateTensileStrength": [
+                    "UltimateTensileStrength_207000_Copper_C10100"
+                ],
+                "FatigueStrengthCoefficient": [
+                    "FatigueStrengthCoefficient_564000_Copper_C10100"
+                ],
+                "FatigueStrengthExponent": "-0.141",
+                "FatigueDuctilityCoefficient": "0.483",
+                "FatigueDuctilityExponent": "-0.535",
+                "CyclicStrengthCoefficient": [
+                    "CyclicStrengthCoefficient_683000_Copper_C10100"
+                ],
+                "CyclicStrainHardeningExponent": "0.263",
+                "InitialStrain": [
+                    "InitialStrain_0.02_Copper_C10100"
+                ],
+                "HardeningExponent": "0.19",
+                "StrengthCoefficient": [
+                    "StrengthCoefficient_397.8909_Copper_C10100"
+                ],
+                "ThermalExpansionCoefficient": [
+                    "ThermalExpansionCoefficient_1.17e-051_Copper_C10100"
+                ],
+                "ThermalConductivity": [
+                    "ThermalConductivity_387000_Copper_C10100"
+                ],
+                "SpecificHeat": [
+                    "SpecificHeat_385000000_Copper_C10100"
+                ],
+                "CrosshatchPattern": "Brass/Copper"
+            }
+        }
+    },
+    "Boundary": {
+        "Fixed(1)--2Dmodel_sim2_Copper_C10100": {
+            "FixedConstraint": [
+                "FixedConstraint_id_num_1--2Dmodel_sim2_Copper_C10100"
+            ]
+        }
+    },
+    "People": {
+        "Shyam": {
+            "Name": "Shyam"
+        },
+        "Chethan": {
+            "Name": "Chethan"
+        }
+    },
+    "Geometry": {
+        "2DMODEL_Copper_C10100": {
+            "SolidMaterial": [
+                "Copper_C10100"
+            ],
+            "is2D": true,
+            "is3D": false,
+            "LastModificationDate": 1631002376.0,
+            "FileSize": 40337,
+            "FileNameOriginal": "2DMODEL",
+            "FileNameAlias": "2DMODEL_Copper_C10100",
+            "Line": [
+                "Line4--2DMODEL_Copper_C10100"
+            ],
+            "Component": [
+                "2DMODEL--2DMODEL_Copper_C10100"
+            ],
+            "Edge": [
+                "LOADINGEDGE--2DMODEL_Copper_C10100",
+                "TOPEDGE--2DMODEL_Copper_C10100"
+            ]
+        }
+    },
+    "Loads": {
+        "CyclicLoads": "",
+        "HeatFlux": "",
+        "MomentLoad": "",
+        "PointLoad": {
+            "FrontLoad--2Dmodel_sim2_Copper_C10100": {
+                "Name": "FrontLoad",
+                "types": [
+                    "FORCE"
+                ],
+                "CSYSOption": 5,
+                "observeNode1": "Observe Node 1",
+                "observeNode2": "Observe Node 2",
+                "observeNode3": "Observe Node 3",
+                "observeNode4": "Observe Node 4",
+                "distributionType": 1,
+                "DistributionField": "NA",
+                "Edge": [
+                    "LOADINGEDGE--2DMODEL_Copper_C10100"
+                ],
+                "Force": [
+                    "Force_1000000.0_FrontLoad--2Dmodel_sim2_Copper_C10100"
+                ]
+            },
+            "TopLoad--2Dmodel_sim2_Copper_C10100": {
+                "Name": "TopLoad",
+                "types": [
+                    "FORCE",
+                    "LOAD"
+                ],
+                "CSYSOption": 5,
+                "observeNode1": "Observe Node 1",
+                "observeNode2": "Observe Node 2",
+                "observeNode3": "Observe Node 3",
+                "observeNode4": "Observe Node 4",
+                "distributionType": 1,
+                "DistributionField": "NA",
+                "Edge": [
+                    "TOPEDGE--2DMODEL_Copper_C10100"
+                ],
+                "Force": [
+                    "Force_2500000.0_TopLoad--2Dmodel_sim2_Copper_C10100"
+                ]
+            }
+        },
+        "PressureLoad": "",
+        "UDL": ""
+    },
+    "Mesh": {
+        "2Dmodel_fem2_Copper_C10100": {
+            "MeshVolume": [
+                "2d_mesh(1)--2Dmodel_fem2_Copper_C10100"
+            ],
+            "LastModificationDate": 1631002376.0,
+            "FileSize": 1875357,
+            "is2D": true,
+            "is3D": false,
+            "FileNameOriginal": "2Dmodel_fem2",
+            "FileNameAlias": "2Dmodel_fem2_Copper_C10100"
+        }
+    },
+    "Preprocessing": "",
+    "Result": {
+        "2dmodel_sim2-structural--2Dmodel_sim2_Copper_C10100": {
+            "LastModificationDate": 1631002292.0,
+            "FileSize": 2774400,
+            "DisplacementNodal": [
+                "DisplacementNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_Copper_C10100",
+                "DisplacementNodal_Model_id_num_4--2Dmodel_sim2_Copper_C10100",
+                "DisplacementNodal_TOPEDGE_id_num_5--2Dmodel_sim2_Copper_C10100"
+            ],
+            "ReactionForceNodal": [
+                "ReactionForceNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_Copper_C10100",
+                "ReactionForceNodal_Model_id_num_4--2Dmodel_sim2_Copper_C10100",
+                "ReactionForceNodal_TOPEDGE_id_num_5--2Dmodel_sim2_Copper_C10100"
+            ],
+            "ReactionMomentNodal": [
+                "ReactionMomentNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_Copper_C10100",
+                "ReactionMomentNodal_Model_id_num_4--2Dmodel_sim2_Copper_C10100",
+                "ReactionMomentNodal_TOPEDGE_id_num_5--2Dmodel_sim2_Copper_C10100"
+            ],
+            "RotationNodal": [
+                "RotationNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_Copper_C10100",
+                "RotationNodal_Model_id_num_4--2Dmodel_sim2_Copper_C10100",
+                "RotationNodal_TOPEDGE_id_num_5--2Dmodel_sim2_Copper_C10100"
+            ],
+            "StressElementNodal": [
+                "StressElementNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_Copper_C10100",
+                "StressElementNodal_Model_id_num_4--2Dmodel_sim2_Copper_C10100",
+                "StressElementNodal_TOPEDGE_id_num_5--2Dmodel_sim2_Copper_C10100"
+            ],
+            "StressElemental": [
+                "StressElemental_Model_id_num_4--2Dmodel_sim2_Copper_C10100"
+            ],
+            "ConfluencePage": [
+                "ConfluencePage_id_num_5--2Dmodel_sim2_Copper_C10100"
+            ],
+            "PPT": [
+                "PPT_id_num_5--2Dmodel_sim2_Copper_C10100"
+            ]
+        }
+    },
+    "StorageLocation": {
+        "CloudStorage": "",
+        "LocalStorage": {
+            "LocalStorage_id_num_1--2Dmodel_sim2_Copper_C10100": {
+                "GID": "z003hz2y",
+                "MachineName": "demlhw7sw110x"
+            },
+            "LocalStorage_id_num_6--2Dmodel_sim2_Copper_C10100": {
+                "GID": "",
+                "MachineName": ""
+            }
+        },
+        "ServerStorage": "",
+        "TeamcenterStorage": ""
+    },
+    "Supplier": "",
+    "QuantitativeMetric": {
+        "Angle": "",
+        "CyclicStrengthCoefficient": {
+            "CyclicStrengthCoefficient_683000_Copper_C10100": {
+                "hasMagnitude": "683000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "Density": {
+            "Density_8.92e-06_Copper_C10100": {
+                "hasMagnitude": "8.92e-06",
+                "hasUnit": "kg/mm^3"
+            }
+        },
+        "ElasticStrength": "",
+        "FatigueStrengthCoefficient": {
+            "FatigueStrengthCoefficient_564000_Copper_C10100": {
+                "hasMagnitude": "564000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "Force": {
+            "Force_1000000.0_FrontLoad--2Dmodel_sim2_Copper_C10100": {
+                "hasMagnitude": 1000000.0,
+                "hasUnit": "N"
+            },
+            "Force_2500000.0_TopLoad--2Dmodel_sim2_Copper_C10100": {
+                "hasMagnitude": 2500000.0,
+                "hasUnit": "N"
+            }
+        },
+        "Height": "",
+        "Independent": "",
+        "InitialStrain": {
+            "InitialStrain_0.02_Copper_C10100": {
+                "hasMagnitude": "0.02",
+                "hasUnit": "mm/mm"
+            }
+        },
+        "Length": {
+            "ElementSize_5mm--2Dmodel_fem2_Copper_C10100": {
+                "hasMagnitude": 5.0,
+                "hasUnit": "mm"
+            }
+        },
+        "Mass_Flow": "",
+        "ModulusOfElasticity": {
+            "ModulusOfElasticity_114000000_Copper_C10100": {
+                "hasMagnitude": "114000000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "Moment": "",
+        "PoissonRatioArray": "",
+        "Pressure": "",
+        "ShearModulus": "",
+        "SpecificHeat": {
+            "SpecificHeat_385000000_Copper_C10100": {
+                "hasMagnitude": "385000000",
+                "hasUnit": "microJ/kg-dK"
+            }
+        },
+        "StrengthCoefficient": {
+            "StrengthCoefficient_397.8909_Copper_C10100": {
+                "hasMagnitude": "397.8909",
+                "hasUnit": "N/mm^2(MPa)"
+            }
+        },
+        "Stress": "",
+        "Temperature": "",
+        "ThermalConductivity": {
+            "ThermalConductivity_387000_Copper_C10100": {
+                "hasMagnitude": "387000",
+                "hasUnit": "microW/mm-dC"
+            }
+        },
+        "ThermalExpansionCoefficient": {
+            "ThermalExpansionCoefficient_1.17e-051_Copper_C10100": {
+                "hasMagnitude": "1.17e-051",
+                "hasUnit": "/dC"
+            }
+        },
+        "Thickness": "",
+        "TurbulenceIntensity": "",
+        "UltimateTensileStrength": {
+            "UltimateTensileStrength_207000_Copper_C10100": {
+                "hasMagnitude": "207000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "Velocity": "",
+        "Viscosity": "",
+        "Width": "",
+        "XDirection": "",
+        "YDirection": "",
+        "YieldStrength": {
+            "YieldStrength_30000_Copper_C10100": {
+                "hasMagnitude": "30000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "ZDirection": ""
+    },
+    "BoundaryCondition": {
+        "FEABoundaryCondition": {
+            "FEAConstraintBC": {
+                "AntiSymmetricConstraint": "",
+                "AutomaticCoupling": "",
+                "CylindricalConstraint": "",
+                "EnforcedDisplacementConstraint": "",
+                "FixedConstraint": {
+                    "FixedConstraint_id_num_1--2Dmodel_sim2_Copper_C10100": {
+                        "Name": "Fixed(1)",
+                        "CSYSOption": 0,
+                        "DOF1": 0.0,
+                        "DOF2": 0.0,
+                        "DOF3": 0.0,
+                        "DOF4": 0.0,
+                        "DOF5": 0.0,
+                        "DOF6": 0.0,
+                        "DescriptorName": "fixedConstraint",
+                        "DistributionType": 5,
+                        "ConstraintType": "SPC"
+                    }
+                },
+                "FixedRotationConstraint": "",
+                "FixedTranslationConstraint": "",
+                "ManualCoupling": "",
+                "PinnedConstraint": "",
+                "RollerConstraint": "",
+                "SimplySupportedConstraint": "",
+                "SliderConstraint": "",
+                "SymmetricConstraint": "",
+                "UserDefinedConstraint": ""
+            },
+            "FEAInteractionBC": {
+                "MechanicalContact": "",
+                "ThermalContact": ""
+            }
+        },
+        "CFDBoundaryCondition": {
+            "CFDConstraintBC": {
+                "FrictionWallBC": "",
+                "TotalPressureBC": "",
+                "VelocityBC": "",
+                "MassFlowBC": "",
+                "MovingWallBC": "",
+                "SmoothWallBC": "",
+                "StationaryWallBC": ""
+            },
+            "CFDInteractionBC": ""
+        },
+        "GenericBoundaryCondition": {
+            "PressureBC": ""
+        }
+    },
+    "PostProcessing": {
+        "Parameters": {
+            "CFDParameters": {
+                "AreaAveragedDynamicPressure": "",
+                "AreaAveragedPressure": "",
+                "AreaAveragedTotalPressure": "",
+                "MassAveragedDynamicPressure": "",
+                "MassAveragedPressure": "",
+                "MassAveragedTotalPressure": "",
+                "MassFlowRate": ""
+            },
+            "FEAParameters": {
+                "DisplacementNodal": {
+                    "DisplacementNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_Copper_C10100": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "0.2036018669605255",
+                        "Magnitude-Minimum": "0.19482189416885376",
+                        "X-Maximum": "0.04462679848074913",
+                        "X-Minimum": "-0.03544427827000618",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.198838010430336",
+                        "Z-Minimum": "0.19058075547218323"
+                    },
+                    "DisplacementNodal_Model_id_num_4--2Dmodel_sim2_Copper_C10100": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "0.2036018669605255",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.04462679848074913",
+                        "X-Minimum": "-0.03602893650531769",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.198838010430336",
+                        "Z-Minimum": "0.0"
+                    },
+                    "DisplacementNodal_TOPEDGE_id_num_5--2Dmodel_sim2_Copper_C10100": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "0.20197239518165588",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.04034068062901497",
+                        "X-Minimum": "-0.03602893650531769",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.198838010430336",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "ReactionForceNodal": {
+                    "ReactionForceNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_Copper_C10100": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionForceNodal_Model_id_num_4--2Dmodel_sim2_Copper_C10100": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "851162.1875",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "784742.5625",
+                        "X-Minimum": "-846049.5",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "-174392.171875"
+                    },
+                    "ReactionForceNodal_TOPEDGE_id_num_5--2Dmodel_sim2_Copper_C10100": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "422620.28125",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "384961.40625",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "-174392.171875"
+                    }
+                },
+                "ReactionMomentNodal": {
+                    "ReactionMomentNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_Copper_C10100": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionMomentNodal_Model_id_num_4--2Dmodel_sim2_Copper_C10100": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionMomentNodal_TOPEDGE_id_num_5--2Dmodel_sim2_Copper_C10100": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "RotationNodal": {
+                    "RotationNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_Copper_C10100": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "RotationNodal_Model_id_num_4--2Dmodel_sim2_Copper_C10100": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "RotationNodal_TOPEDGE_id_num_5--2Dmodel_sim2_Copper_C10100": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "StressElementNodal": {
+                    "StressElementNodal_LOADINGEDGE_id_num_3--2Dmodel_sim2_Copper_C10100": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "0.0",
+                        "Determinant-Minimum": "0.0",
+                        "MaximumPrincipal-Maximum": "2016.6964111328125",
+                        "MaximumPrincipal-Minimum": "1997.32568359375",
+                        "MaximumShear-Maximum": "1020.5216674804688",
+                        "MaximumShear-Minimum": "998.662841796875",
+                        "Mean-Maximum": "1237.9124755859375",
+                        "Mean-Minimum": "651.7215576171875",
+                        "MiddlePrincipal-Maximum": "1711.43212890625",
+                        "MiddlePrincipal-Minimum": "-9.094947017729282e-13",
+                        "MinimumPrincipal-Maximum": "1.0913936421275139e-11",
+                        "MinimumPrincipal-Minimum": "-42.74876022338867",
+                        "Octahedral-Maximum": "952.2410278320312",
+                        "Octahedral-Minimum": "816.7196044921875",
+                        "VonMises-Maximum": "2020.0081787109375",
+                        "VonMises-Minimum": "1732.52392578125",
+                        "WorstPrincipal-Maximum": "2016.6964111328125",
+                        "WorstPrincipal-Minimum": "1997.32568359375",
+                        "XX-Maximum": "2016.6932373046875",
+                        "XX-Minimum": "1997.3255615234375",
+                        "XY-Maximum": "0.0",
+                        "XY-Minimum": "0.0",
+                        "YY-Maximum": "0.0",
+                        "YY-Minimum": "0.0",
+                        "YZ-Maximum": "0.0",
+                        "YZ-Minimum": "0.0",
+                        "ZX-Maximum": "2.521623134613037",
+                        "ZX-Minimum": "-3.8974616527557373",
+                        "ZZ-Maximum": "1711.4635009765625",
+                        "ZZ-Minimum": "-42.74388885498047"
+                    },
+                    "StressElementNodal_Model_id_num_4--2Dmodel_sim2_Copper_C10100": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "0.0",
+                        "Determinant-Minimum": "0.0",
+                        "MaximumPrincipal-Maximum": "82252.859375",
+                        "MaximumPrincipal-Minimum": "-1.4006218407303095e-10",
+                        "MaximumShear-Maximum": "41126.4296875",
+                        "MaximumShear-Minimum": "834.4031372070312",
+                        "Mean-Maximum": "32500.2265625",
+                        "Mean-Minimum": "-31226.416015625",
+                        "MiddlePrincipal-Maximum": "15247.8212890625",
+                        "MiddlePrincipal-Minimum": "-13745.7060546875",
+                        "MinimumPrincipal-Maximum": "1.1332303984090686e-08",
+                        "MinimumPrincipal-Minimum": "-79933.5390625",
+                        "Octahedral-Maximum": "35726.90234375",
+                        "Octahedral-Minimum": "681.3951416015625",
+                        "VonMises-Maximum": "75788.203125",
+                        "VonMises-Minimum": "1445.4573974609375",
+                        "WorstPrincipal-Maximum": "82252.859375",
+                        "WorstPrincipal-Minimum": "-79933.5390625",
+                        "XX-Maximum": "76706.4921875",
+                        "XX-Minimum": "-73861.21875",
+                        "XY-Maximum": "0.0",
+                        "XY-Minimum": "0.0",
+                        "YY-Maximum": "0.0",
+                        "YY-Minimum": "0.0",
+                        "YZ-Maximum": "0.0",
+                        "YZ-Minimum": "0.0",
+                        "ZX-Maximum": "19106.041015625",
+                        "ZX-Minimum": "-3898.369384765625",
+                        "ZZ-Maximum": "20794.185546875",
+                        "ZZ-Minimum": "-19818.029296875"
+                    },
+                    "StressElementNodal_TOPEDGE_id_num_5--2Dmodel_sim2_Copper_C10100": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "0.0",
+                        "Determinant-Minimum": "0.0",
+                        "MaximumPrincipal-Maximum": "4726.10498046875",
+                        "MaximumPrincipal-Minimum": "-3.637978807091713e-12",
+                        "MaximumShear-Maximum": "39966.76953125",
+                        "MaximumShear-Minimum": "834.4031372070312",
+                        "Mean-Maximum": "1237.5556640625",
+                        "Mean-Minimum": "-31226.416015625",
+                        "MiddlePrincipal-Maximum": "1669.4140625",
+                        "MiddlePrincipal-Minimum": "-13745.7060546875",
+                        "MinimumPrincipal-Maximum": "2.0463630789890885e-12",
+                        "MinimumPrincipal-Minimum": "-79933.5390625",
+                        "Octahedral-Maximum": "34895.3125",
+                        "Octahedral-Minimum": "681.3988647460938",
+                        "VonMises-Maximum": "74024.1328125",
+                        "VonMises-Minimum": "1445.46533203125",
+                        "WorstPrincipal-Maximum": "2049.250732421875",
+                        "WorstPrincipal-Minimum": "-79933.5390625",
+                        "XX-Maximum": "2048.804931640625",
+                        "XX-Minimum": "-73861.21875",
+                        "XY-Maximum": "0.0",
+                        "XY-Minimum": "0.0",
+                        "YY-Maximum": "0.0",
+                        "YY-Minimum": "0.0",
+                        "YZ-Maximum": "0.0",
+                        "YZ-Minimum": "0.0",
+                        "ZX-Maximum": "19106.041015625",
+                        "ZX-Minimum": "-370.6771545410156",
+                        "ZZ-Maximum": "4723.44091796875",
+                        "ZZ-Minimum": "-19818.029296875"
+                    }
+                },
+                "StressElemental": {
+                    "StressElemental_Model_id_num_4--2Dmodel_sim2_Copper_C10100": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "0.0",
+                        "Determinant-Minimum": "0.0",
+                        "MaximumPrincipal-Maximum": "54065.08203125",
+                        "MaximumPrincipal-Minimum": "-4.3655745685100555e-11",
+                        "MaximumShear-Maximum": "27032.541015625",
+                        "MaximumShear-Minimum": "839.5496215820312",
+                        "Mean-Maximum": "20016.28515625",
+                        "Mean-Minimum": "-18338.607421875",
+                        "MiddlePrincipal-Maximum": "7502.1533203125",
+                        "MiddlePrincipal-Minimum": "-5913.33642578125",
+                        "MinimumPrincipal-Maximum": "6.788468454033136e-09",
+                        "MinimumPrincipal-Minimum": "-50604.1171875",
+                        "Octahedral-Maximum": "24199.748046875",
+                        "Octahedral-Minimum": "687.6493530273438",
+                        "VonMises-Maximum": "51335.41796875",
+                        "VonMises-Minimum": "1458.7244873046875",
+                        "WorstPrincipal-Maximum": "54065.08203125",
+                        "WorstPrincipal-Minimum": "-50604.1171875",
+                        "XX-Maximum": "52775.32421875",
+                        "XX-Minimum": "-49154.83203125",
+                        "XY-Maximum": "0.0",
+                        "XY-Minimum": "0.0",
+                        "YY-Maximum": "0.0",
+                        "YY-Minimum": "0.0",
+                        "YZ-Maximum": "0.0",
+                        "YZ-Minimum": "0.0",
+                        "ZX-Maximum": "8052.67138671875",
+                        "ZX-Minimum": "-5.782010078430176",
+                        "ZZ-Maximum": "9192.2978515625",
+                        "ZZ-Minimum": "-7871.9140625"
+                    }
+                }
+            },
+            "GenericParameters": {
+                "MaxTemperature": ""
+            }
+        },
+        "Plots": {
+            "ContourPlots": {
+                "ContactPressureContour": "",
+                "ContactStatusContour": "",
+                "PressureContour": "",
+                "TotalPressureContour": "",
+                "VelocityContour": ""
+            },
+            "DisplacementPlot": "",
+            "XYPlots": {
+                "MassAveragedTotalPressurePlot": "",
+                "WallYPlus": ""
+            },
+            "StressPlot": {
+                "PrincipalStressPlot": "",
+                "VonMisesStressPlot": ""
+            },
+            "StrainPlot": ""
+        }
+    },
+    "MeshElements": {
+        "AxiSymmetricElement": "",
+        "HexElement": "",
+        "PrismLayer": "",
+        "QuadElement": {
+            "CQUAD8--2Dmodel_fem2_Copper_C10100": {}
+        },
+        "ShellElement": "",
+        "TetrahedralElement": ""
+    },
+    "GeometricFeature": {
+        "Body": "",
+        "Curve": "",
+        "Edge": {
+            "LOADINGEDGE--2DMODEL_Copper_C10100": {},
+            "TOPEDGE--2DMODEL_Copper_C10100": {}
+        },
+        "Face": "",
+        "Line": {
+            "Line4--2DMODEL_Copper_C10100": {}
+        },
+        "Point": ""
+    },
+    "Documentation": {
+        "ConfluencePage": {
+            "ConfluencePage_id_num_5--2Dmodel_sim2_Copper_C10100": {
+                "WebSite": ""
+            }
+        },
+        "PPT": {
+            "PPT_id_num_5--2Dmodel_sim2_Copper_C10100": {
+                "LocalStorage": [
+                    "LocalStorage_id_num_6--2Dmodel_sim2_Copper_C10100"
+                ]
+            }
+        }
+    },
+    "MeshVolume": {
+        "2d_mesh(1)--2Dmodel_fem2_Copper_C10100": {
+            "Mesh_Collector": "ThinShell(1)",
+            "Mesh_name": "2d_mesh(1)",
+            "Surface Curvature Based Size Variation": "50",
+            "Surface Curvature Threshold": "2.525 mm",
+            "SolidMaterial": [
+                "Copper_C10100"
+            ],
+            "MeshElements": [
+                "CQUAD8--2Dmodel_fem2_Copper_C10100"
+            ],
+            "is2D": true,
+            "is3D": false,
+            "MinElementLength": "0.5",
+            "NumElements": "1200",
+            "NumNodes": "3761",
+            "Length": [
+                "ElementSize_5mm--2Dmodel_fem2_Copper_C10100"
+            ]
+        }
+    },
+    "Project": {
+        "2d_cantilever_analysis": {
+            "People": [
+                "Shyam",
+                "Chethan"
+            ],
+            "Mechanical": [
+                "2Dmodel_sim2_Copper_C10100"
+            ],
+            "UpdateEvent": [
+                "UpdateEvent_id_num_5--2Dmodel_sim2_Copper_C10100"
+            ],
+            "ProjectStartDate": 1608505200.0,
+            "ProjectEndDate": 1634680800.0
+        }
+    },
+    "UpdateEvent": {
+        "UpdateEvent_id_num_5": {
+            "Comment": "changed material to Copper_C10100",
+            "hasPredecessor": "2Dmodel_sim2",
+            "hasSuccessor": ""
+        }
+    }
+}

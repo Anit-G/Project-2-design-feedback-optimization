@@ -1,0 +1,1537 @@
+{
+    "Analysis": {
+        "AeroMechanical": "",
+        "CFD": "",
+        "CoupledAeroMechanical": "",
+        "Structural": {
+            "Mechanical": {
+                "1_Static_SIM_Track": {
+                    "SolidMaterial": [
+                        "Steel"
+                    ],
+                    "is2D": false,
+                    "isTransient": false,
+                    "LocalStorage": [
+                        "LocalStorage_id_num_1--1_Static_SIM_Track"
+                    ],
+                    "isHarmonic": false,
+                    "is3D": true,
+                    "Geometry": [
+                        "TRACK_MERGED"
+                    ],
+                    "Boundary": [
+                        "Fixed(1)--1_Static_SIM_Track",
+                        "Symmetric(1)--1_Static_SIM_Track"
+                    ],
+                    "Mesh": [
+                        "1_Transient_sim"
+                    ],
+                    "ToolVersion": "v1953.0.0.1700",
+                    "Result": "",
+                    "LastModificationDate": 1628745480.0,
+                    "FileSize": 4927492,
+                    "isSteadyState": true,
+                    "People": [
+                        "Keshav"
+                    ],
+                    "FileNameOriginal": "1_Static_SIM_Track",
+                    "FileNameAlias": "1_Static_SIM_Track",
+                    "PointLoad": [
+                        "Wheelweight--1_Static_SIM_Track",
+                        "Longitudinal--1_Static_SIM_Track",
+                        "Lateral--1_Static_SIM_Track",
+                        "Impact_Mg_Wheelweight--1_Static_SIM_Track",
+                        "Impact_Mg_Longitudinal--1_Static_SIM_Track",
+                        "Impact_Mg_Lateral--1_Static_SIM_Track"
+                    ]
+                }
+            },
+            "Thermomechanical": ""
+        }
+    },
+    "Material": {
+        "FluidMaterial": "",
+        "SolidMaterial": {
+            "Steel": {
+                "R0": "1.3",
+                "R45": "1.3",
+                "R90": "1.3",
+                "Material Property Dependency": "Temperature",
+                "Studio Material": "Steel",
+                "ThermalExpansionCoefficientType": "Undefined",
+                "MaterialCategory": "METAL",
+                "MaterialSubCategory": "Alloy Steel",
+                "Density": [
+                    "Density_7.829e-06_Steel"
+                ],
+                "ModulusOfElasticity": [
+                    "TemperatureDependentYoung'sModulus(E)_array_Y_Steel"
+                ],
+                "PoissonRatio": "0.288",
+                "PoissonRatioArray": [
+                    "TemperatureDependentPoisson'sRatio(NU)_array_Y_Steel"
+                ],
+                "TypeOfNonlinearity": "Elastoplastic",
+                "YieldFunctionCriterion": "von Mises",
+                "HardeningRule": "Isotropic",
+                "YieldStrength": [
+                    "YieldStrength_array_Y_Steel"
+                ],
+                "UltimateTensileStrength": [
+                    "UltimateTensileStrength_array_Y_Steel"
+                ],
+                "InitialStrain": [
+                    "InitialStrain_0.02_Steel"
+                ],
+                "HardeningExponent": "0.2",
+                "StrengthCoefficient": [
+                    "StrengthCoefficient_550_Steel"
+                ],
+                "ThermalExpansionCoefficient": [
+                    "TemperatureDependentThermalExpansionCoefficient(A)_array_Y_Steel"
+                ],
+                "SpecificHeat": [
+                    "SpecificHeat_434000000_Steel"
+                ],
+                "CrosshatchPattern": "Steel"
+            }
+        }
+    },
+    "Boundary": {
+        "Fixed(1)--1_Static_SIM_Track": {},
+        "Symmetric(1)--1_Static_SIM_Track": {}
+    },
+    "People": {
+        "Keshav": {
+            "Name": "Keshav"
+        },
+        "Shyam": {
+            "Name": "Shyam"
+        }
+    },
+    "Geometry": {
+        "TRACK_MERGED": {
+            "SolidMaterial": [
+                "Steel"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "LastModificationDate": 1628745480.0,
+            "FileSize": 1803627,
+            "FileNameOriginal": "TRACK_MERGED",
+            "FileNameAlias": "TRACK_MERGED",
+            "Component": [
+                "TRACK_MERGED--TRACK_MERGED"
+            ]
+        }
+    },
+    "Loads": {
+        "CyclicLoads": "",
+        "HeatFlux": "",
+        "MomentLoad": "",
+        "PointLoad": {
+            "Wheelweight--1_Static_SIM_Track": {
+                "Name": "Wheelweight",
+                "types": [
+                    "FORCE"
+                ],
+                "CSYSOption": 5,
+                "observeNode1": "Observe Node 1",
+                "observeNode2": "Observe Node 2",
+                "observeNode3": "Observe Node 3",
+                "observeNode4": "Observe Node 4",
+                "distributionType": 1,
+                "DistributionField": "NA",
+                "Force": [
+                    "Force_75000000.0_Wheelweight--1_Static_SIM_Track"
+                ]
+            },
+            "Longitudinal--1_Static_SIM_Track": {
+                "Name": "Longitudinal",
+                "types": [
+                    "FORCE"
+                ],
+                "CSYSOption": 5,
+                "observeNode1": "Observe Node 1",
+                "observeNode2": "Observe Node 2",
+                "observeNode3": "Observe Node 3",
+                "observeNode4": "Observe Node 4",
+                "distributionType": 1,
+                "DistributionField": "NA",
+                "Force": [
+                    "Force_20000000.0_Longitudinal--1_Static_SIM_Track"
+                ]
+            },
+            "Lateral--1_Static_SIM_Track": {
+                "Name": "Lateral",
+                "types": [
+                    "FORCE",
+                    "LOAD"
+                ],
+                "CSYSOption": 5,
+                "observeNode1": "Observe Node 1",
+                "observeNode2": "Observe Node 2",
+                "observeNode3": "Observe Node 3",
+                "observeNode4": "Observe Node 4",
+                "distributionType": 1,
+                "DistributionField": "NA",
+                "Force": [
+                    "Force_500.0_Lateral--1_Static_SIM_Track"
+                ]
+            },
+            "Impact_Mg_Wheelweight--1_Static_SIM_Track": {
+                "Name": "Impact_Mg_Wheelweight",
+                "types": [
+                    "FORCE"
+                ],
+                "CSYSOption": 5,
+                "observeNode1": "Observe Node 1",
+                "observeNode2": "Observe Node 2",
+                "observeNode3": "Observe Node 3",
+                "observeNode4": "Observe Node 4",
+                "distributionType": 1,
+                "DistributionField": "NA",
+                "Force": [
+                    "Force_187500000.0_Impact_Mg_Wheelweight--1_Static_SIM_Track"
+                ]
+            },
+            "Impact_Mg_Longitudinal--1_Static_SIM_Track": {
+                "Name": "Impact_Mg_Longitudinal",
+                "types": [
+                    "FORCE"
+                ],
+                "CSYSOption": 5,
+                "observeNode1": "Observe Node 1",
+                "observeNode2": "Observe Node 2",
+                "observeNode3": "Observe Node 3",
+                "observeNode4": "Observe Node 4",
+                "distributionType": 1,
+                "DistributionField": "NA",
+                "Force": [
+                    "Force_20000000.0_Impact_Mg_Longitudinal--1_Static_SIM_Track"
+                ]
+            },
+            "Impact_Mg_Lateral--1_Static_SIM_Track": {
+                "Name": "Impact_Mg_Lateral",
+                "types": [
+                    "FORCE",
+                    "LOAD"
+                ],
+                "CSYSOption": 5,
+                "observeNode1": "Observe Node 1",
+                "observeNode2": "Observe Node 2",
+                "observeNode3": "Observe Node 3",
+                "observeNode4": "Observe Node 4",
+                "distributionType": 1,
+                "DistributionField": "NA",
+                "Force": [
+                    "Force_500.0_Impact_Mg_Lateral--1_Static_SIM_Track"
+                ]
+            }
+        },
+        "PressureLoad": "",
+        "UDL": ""
+    },
+    "Mesh": {
+        "1_Transient_sim": {
+            "MeshVolume": [
+                "3d_mesh(1)--1_Transient_sim",
+                "3d_mesh(16)--1_Transient_sim",
+                "3d_mesh(17)--1_Transient_sim",
+                "3d_mesh(18)--1_Transient_sim",
+                "3d_mesh(19)--1_Transient_sim",
+                "3d_mesh(20)--1_Transient_sim",
+                "3d_mesh(21)--1_Transient_sim",
+                "3d_mesh(22)--1_Transient_sim",
+                "3d_mesh(23)--1_Transient_sim",
+                "3d_mesh(24)--1_Transient_sim",
+                "3d_mesh(25)--1_Transient_sim",
+                "3d_mesh(26)--1_Transient_sim",
+                "3d_mesh(27)--1_Transient_sim",
+                "3d_mesh(28)--1_Transient_sim",
+                "3d_mesh(29)--1_Transient_sim",
+                "3d_mesh(30)--1_Transient_sim",
+                "3d_mesh(31)--1_Transient_sim",
+                "3d_mesh(32)--1_Transient_sim",
+                "3d_mesh(33)--1_Transient_sim",
+                "3d_mesh(34)--1_Transient_sim",
+                "3d_mesh(35)--1_Transient_sim",
+                "3d_mesh(36)--1_Transient_sim",
+                "3d_mesh(37)--1_Transient_sim",
+                "3d_mesh(38)--1_Transient_sim",
+                "3d_mesh(39)--1_Transient_sim",
+                "3d_mesh(40)--1_Transient_sim",
+                "3d_mesh(41)--1_Transient_sim",
+                "3d_mesh(42)--1_Transient_sim",
+                "3d_mesh(43)--1_Transient_sim",
+                "3d_mesh(44)--1_Transient_sim",
+                "3d_mesh(45)--1_Transient_sim",
+                "3d_mesh(46)--1_Transient_sim",
+                "3d_mesh(15)--1_Transient_sim",
+                "3d_mesh(14)--1_Transient_sim",
+                "3d_mesh(13)--1_Transient_sim",
+                "3d_mesh(12)--1_Transient_sim",
+                "3d_mesh(11)--1_Transient_sim",
+                "3d_mesh(10)--1_Transient_sim",
+                "3d_mesh(9)--1_Transient_sim",
+                "3d_mesh(8)--1_Transient_sim",
+                "3d_mesh(7)--1_Transient_sim",
+                "3d_mesh(6)--1_Transient_sim",
+                "3d_mesh(5)--1_Transient_sim",
+                "3d_mesh(4)--1_Transient_sim",
+                "3d_mesh(3)--1_Transient_sim",
+                "3d_mesh(2)--1_Transient_sim"
+            ],
+            "LastModificationDate": 1628745480.0,
+            "FileSize": 20556122,
+            "is2D": false,
+            "is3D": true,
+            "FileNameOriginal": "1_Transient_sim",
+            "FileNameAlias": "1_Transient_sim"
+        }
+    },
+    "Preprocessing": "",
+    "Result": "",
+    "StorageLocation": {
+        "CloudStorage": "",
+        "LocalStorage": {
+            "LocalStorage_id_num_1--1_Static_SIM_Track": {
+                "GID": "z003hz2y",
+                "MachineName": "demlhw7sw110x"
+            },
+            "LocalStorage_id_num_2--1_Static_SIM_Track": {
+                "GID": "",
+                "MachineName": ""
+            }
+        },
+        "ServerStorage": "",
+        "TeamcenterStorage": ""
+    },
+    "Supplier": "",
+    "QuantitativeMetric": {
+        "Angle": "",
+        "CyclicStrengthCoefficient": "",
+        "Density": {
+            "Density_7.829e-06_Steel": {
+                "hasMagnitude": "7.829e-06",
+                "hasUnit": "kg/mm^3"
+            }
+        },
+        "ElasticStrength": "",
+        "FatigueStrengthCoefficient": "",
+        "Force": {
+            "Force_75000000.0_Wheelweight--1_Static_SIM_Track": {
+                "hasMagnitude": 75000000.0,
+                "hasUnit": "kN"
+            },
+            "Force_20000000.0_Longitudinal--1_Static_SIM_Track": {
+                "hasMagnitude": 20000000.0,
+                "hasUnit": "kN"
+            },
+            "Force_500.0_Lateral--1_Static_SIM_Track": {
+                "hasMagnitude": 500.0,
+                "hasUnit": "kN"
+            },
+            "Force_187500000.0_Impact_Mg_Wheelweight--1_Static_SIM_Track": {
+                "hasMagnitude": 187500000.0,
+                "hasUnit": "kN"
+            },
+            "Force_20000000.0_Impact_Mg_Longitudinal--1_Static_SIM_Track": {
+                "hasMagnitude": 20000000.0,
+                "hasUnit": "kN"
+            },
+            "Force_500.0_Impact_Mg_Lateral--1_Static_SIM_Track": {
+                "hasMagnitude": 500.0,
+                "hasUnit": "kN"
+            }
+        },
+        "Height": "",
+        "Independent": "",
+        "InitialStrain": {
+            "InitialStrain_0.02_Steel": {
+                "hasMagnitude": "0.02",
+                "hasUnit": "mm/mm"
+            }
+        },
+        "Length": {
+            "ElementSize_300mm--1_Transient_sim": {
+                "hasMagnitude": 300.0,
+                "hasUnit": "mm"
+            },
+            "ElementSize_8mm--1_Transient_sim": {
+                "hasMagnitude": 8.0,
+                "hasUnit": "mm"
+            },
+            "ElementSize_55.3mm--1_Transient_sim": {
+                "hasMagnitude": 55.3,
+                "hasUnit": "mm"
+            },
+            "ElementSize_76.8mm--1_Transient_sim": {
+                "hasMagnitude": 76.8,
+                "hasUnit": "mm"
+            },
+            "ElementSize_100mm--1_Transient_sim": {
+                "hasMagnitude": 100.0,
+                "hasUnit": "mm"
+            }
+        },
+        "Mass_Flow": "",
+        "ModulusOfElasticity": {
+            "ModulusOfElasticity_206940000_Steel": {
+                "hasMagnitude": "206940000",
+                "hasUnit": "kPa"
+            },
+            "TemperatureDependentYoung'sModulus(E)_array_Y_Steel": {
+                "VectorValueSet": "206940000",
+                "hasUnit": "kPa",
+                "VariesWith": [
+                    "TemperatureDependentYoung'sModulus(E)_array_X_Steel"
+                ]
+            }
+        },
+        "Moment": "",
+        "PoissonRatioArray": {
+            "TemperatureDependentPoisson'sRatio(NU)_array_Y_Steel": {
+                "VectorValueSet": "0.288,0.288,0.288,0.289,0.289,0.29,0.29,0.291,0.291,0.291,0.292,0.292,0.293,0.293,0.293,0.294,0.294,0.294,0.295,0.295,0.296,0.296,0.296,0.297,0.297,0.298,0.298,0.298,0.299,0.299,0.3,0.3,0.301,0.301,0.302,0.302,0.303,0.304,0.304,0.305,0.306,0.307,0.308,0.309,0.31,0.311,0.312,0.313,0.314,0.316,0.317",
+                "hasUnit": "",
+                "VariesWith": [
+                    "TemperatureDependentPoisson'sRatio(NU)_array_X_Steel"
+                ]
+            }
+        },
+        "Pressure": "",
+        "ShearModulus": "",
+        "SpecificHeat": {
+            "SpecificHeat_434000000_Steel": {
+                "hasMagnitude": "434000000",
+                "hasUnit": "microJ/(kg-K)"
+            }
+        },
+        "StrengthCoefficient": {
+            "StrengthCoefficient_550_Steel": {
+                "hasMagnitude": "550",
+                "hasUnit": "MPa"
+            }
+        },
+        "Stress": "",
+        "Temperature": {
+            "TemperatureDependentYoung'sModulus(E)_array_X_Steel": {
+                "VectorValueSet": "21.11",
+                "hasUnit": "degC"
+            },
+            "TemperatureDependentPoisson'sRatio(NU)_array_X_Steel": {
+                "VectorValueSet": "21.11,23.89,37.78,51.67,65.56,79.44,93.33,107.22,121.11,135,148.89,162.78,176.67,190.56,204.44,218.33,232.22,246.11,260,273.89,287.78,301.67,315.56,329.44,343.33,357.22,371.11,385,398.89,412.78,426.67,440.56,454.44,468.33,482.22,496.11,510,523.89,537.78,551.67,565.56,579.44,593.33,607.22,621.11,635,648.89,662.78,676.67,690.56,704.44",
+                "hasUnit": "degC"
+            },
+            "YieldStrength_array_X_Steel": {
+                "VectorValueSet": "21.1111,23.8889,37.7778,51.6667,65.5556,79.4444,93.3333,107.222,121.111,135,148.889,162.778,176.667,190.556,204.444,218.333,232.222,246.111,260,273.889,287.778,301.667,315.556,329.444,343.333,357.222,371.111,385,398.889,412.778,426.667",
+                "hasUnit": "degC"
+            },
+            "UltimateTensileStrength_array_X_Steel": {
+                "VectorValueSet": "21.1111,23.8889,37.7778,51.6667,65.5556,79.4444,93.3333,107.222,121.111,135,148.889,162.778,176.667,190.556,204.444,218.333,232.222,246.111,260,273.889,287.778,301.667,315.556,329.444,343.333,357.222,371.111,385,398.889,412.778,426.667",
+                "hasUnit": "degC"
+            },
+            "TemperatureDependentThermalExpansionCoefficient(A)_array_X_Steel": {
+                "VectorValueSet": "93.33,107.22,121.11,135,148.89,162.78,176.67,190.56,204.44,218.33,232.22,246.11,260,273.89,287.78,301.67,315.56,329.44,343.33,357.22,371.11,385,398.89,412.78,426.67,440.56,454.44,468.33,482.22,496.11,510,523.89,537.78,551.67,565.56,579.44,593.33,607.22,621.11,635,648.89,662.78,676.67,690.56,704.44,718.33,732.22,746.11,760,773.89,787.78,801.67,815.56",
+                "hasUnit": "degC"
+            }
+        },
+        "ThermalConductivity": "",
+        "ThermalExpansionCoefficient": {
+            "TemperatureDependentThermalExpansionCoefficient(A)_array_Y_Steel": {
+                "VectorValueSet": "1.179e-05,1.188e-05,1.197e-05,1.206e-05,1.2132e-05,1.2222e-05,1.2312e-05,1.2402e-05,1.2492e-05,1.2582e-05,1.2672e-05,1.2762e-05,1.2852e-05,1.2942e-05,1.3032e-05,1.3122e-05,1.3212e-05,1.3302e-05,1.3392e-05,1.3464e-05,1.3554e-05,1.3644e-05,1.3734e-05,1.3806e-05,1.3896e-05,1.3986e-05,1.4058e-05,1.4148e-05,1.4238e-05,1.431e-05,1.44e-05,1.4472e-05,1.4544e-05,1.4616e-05,1.4688e-05,1.4742e-05,1.4796e-05,1.4832e-05,1.4886e-05,1.4904e-05,1.4922e-05,1.4922e-05,1.4922e-05,1.4904e-05,1.4886e-05,1.485e-05,1.4796e-05,1.4724e-05,1.4634e-05,1.4472e-05,1.4256e-05,1.4004e-05,1.368e-05",
+                "hasUnit": "degC^-1",
+                "VariesWith": [
+                    "TemperatureDependentThermalExpansionCoefficient(A)_array_X_Steel"
+                ]
+            }
+        },
+        "Thickness": "",
+        "TurbulenceIntensity": "",
+        "UltimateTensileStrength": {
+            "UltimateTensileStrength_array_Y_Steel": {
+                "VectorValueSet": "275790,262001,262001,262001,262001,262001,262001,262001,262001,262001,262001,262001,262001,262001,262001,262001,262001,262001,261311,260622,259932,257864,254417,249590,243385,236490,228906,220632,212359,202706,193053",
+                "hasUnit": "kPa",
+                "VariesWith": [
+                    "UltimateTensileStrength_array_X_Steel"
+                ]
+            }
+        },
+        "Velocity": "",
+        "Viscosity": "",
+        "Width": "",
+        "XDirection": "",
+        "YDirection": "",
+        "YieldStrength": {
+            "YieldStrength_array_Y_Steel": {
+                "VectorValueSet": "137895,137895,137895,137206,137206,136516,136516,136516,135827,135827,135137,134448,133758,133069,131690,130311,128242,126174,124106,121348,117900,114453,111006,107558,104111,100663,97216.1,93768.7,90321.3,86184.5,82737.1",
+                "hasUnit": "kPa",
+                "VariesWith": [
+                    "YieldStrength_array_X_Steel"
+                ]
+            }
+        },
+        "ZDirection": ""
+    },
+    "BoundaryCondition": {
+        "FEABoundaryCondition": {
+            "FEAConstraintBC": {
+                "AntiSymmetricConstraint": "",
+                "AutomaticCoupling": "",
+                "CylindricalConstraint": "",
+                "EnforcedDisplacementConstraint": "",
+                "FixedConstraint": "",
+                "FixedRotationConstraint": "",
+                "FixedTranslationConstraint": "",
+                "ManualCoupling": "",
+                "PinnedConstraint": "",
+                "RollerConstraint": "",
+                "SimplySupportedConstraint": "",
+                "SliderConstraint": "",
+                "SymmetricConstraint": "",
+                "UserDefinedConstraint": ""
+            },
+            "FEAInteractionBC": {
+                "MechanicalContact": "",
+                "ThermalContact": ""
+            }
+        },
+        "CFDBoundaryCondition": {
+            "CFDConstraintBC": {
+                "FrictionWallBC": "",
+                "TotalPressureBC": "",
+                "VelocityBC": "",
+                "MassFlowBC": "",
+                "MovingWallBC": "",
+                "SmoothWallBC": "",
+                "StationaryWallBC": ""
+            },
+            "CFDInteractionBC": ""
+        },
+        "GenericBoundaryCondition": {
+            "PressureBC": ""
+        }
+    },
+    "PostProcessing": {
+        "Parameters": {
+            "CFDParameters": {
+                "AreaAveragedDynamicPressure": "",
+                "AreaAveragedPressure": "",
+                "AreaAveragedTotalPressure": "",
+                "MassAveragedDynamicPressure": "",
+                "MassAveragedPressure": "",
+                "MassAveragedTotalPressure": "",
+                "MassFlowRate": ""
+            },
+            "FEAParameters": {
+                "DisplacementNodal": "",
+                "ReactionForceNodal": "",
+                "ReactionMomentNodal": "",
+                "RotationNodal": "",
+                "StressElementNodal": "",
+                "StressElemental": ""
+            },
+            "GenericParameters": {
+                "MaxTemperature": ""
+            }
+        },
+        "Plots": {
+            "ContourPlots": {
+                "ContactPressureContour": "",
+                "ContactStatusContour": "",
+                "PressureContour": "",
+                "TotalPressureContour": "",
+                "VelocityContour": ""
+            },
+            "DisplacementPlot": "",
+            "XYPlots": {
+                "MassAveragedTotalPressurePlot": "",
+                "WallYPlus": ""
+            },
+            "StressPlot": {
+                "PrincipalStressPlot": "",
+                "VonMisesStressPlot": ""
+            },
+            "StrainPlot": ""
+        }
+    },
+    "MeshElements": {
+        "AxiSymmetricElement": "",
+        "HexElement": {
+            "CHEXA--1_Transient_sim": {}
+        },
+        "PrismLayer": "",
+        "QuadElement": "",
+        "ShellElement": "",
+        "TetrahedralElement": {
+            "CTETRA--1_Transient_sim": {}
+        }
+    },
+    "GeometricFeature": {
+        "Body": "",
+        "Curve": "",
+        "Edge": "",
+        "Face": "",
+        "Line": "",
+        "Point": ""
+    },
+    "Documentation": {
+        "ConfluencePage": {
+            "ConfluencePage_id_num_1--1_Static_SIM_Track": {
+                "WebSite": ""
+            }
+        },
+        "PPT": {
+            "PPT_id_num_1--1_Static_SIM_Track": {
+                "LocalStorage": [
+                    "LocalStorage_id_num_2--1_Static_SIM_Track"
+                ]
+            }
+        }
+    },
+    "MeshVolume": {
+        "3d_mesh(1)--1_Transient_sim": {
+            "Mesh_Collector": "Gravel",
+            "Mesh_name": "3d_mesh(1)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Gravel_isotropic"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "320",
+            "NumNodes": "726",
+            "Length": [
+                "ElementSize_300mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(16)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(16)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(17)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(17)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(18)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(18)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(19)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(19)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(20)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(20)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(21)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(21)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(22)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(22)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(23)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(23)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(24)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(24)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(25)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(25)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(26)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(26)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(27)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(27)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(28)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(28)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(29)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(29)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(30)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(30)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(31)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(31)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(32)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(32)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(33)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(33)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(34)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(34)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(35)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(35)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(36)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(36)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(37)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(37)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(38)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(38)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "3087",
+            "NumNodes": "4400",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(39)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(39)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "5985",
+            "NumNodes": "8448",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(40)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(40)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "5985",
+            "NumNodes": "8448",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(41)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(41)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "5985",
+            "NumNodes": "8448",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(42)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(42)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "5985",
+            "NumNodes": "8448",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(43)--1_Transient_sim": {
+            "Mesh_Collector": "Trackpads",
+            "Mesh_name": "3d_mesh(43)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Railpad"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "5985",
+            "NumNodes": "8448",
+            "Length": [
+                "ElementSize_8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(44)--1_Transient_sim": {
+            "Mesh_Collector": "Rails",
+            "Mesh_name": "3d_mesh(44)",
+            "Surface Curvature Based Size Variation": "50",
+            "Surface Curvature Threshold": "27.9265 mm",
+            "SolidMaterial": [
+                "Steel"
+            ],
+            "MeshElements": [
+                "CTETRA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "5.53",
+            "NumElements": "15509",
+            "NumNodes": "31591",
+            "Length": [
+                "ElementSize_55.3mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(45)--1_Transient_sim": {
+            "Mesh_Collector": "Rails",
+            "Mesh_name": "3d_mesh(45)",
+            "Surface Curvature Based Size Variation": "50",
+            "Surface Curvature Threshold": "27.9265 mm",
+            "SolidMaterial": [
+                "Steel"
+            ],
+            "MeshElements": [
+                "CTETRA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "5.53",
+            "NumElements": "28112",
+            "NumNodes": "57206",
+            "Length": [
+                "ElementSize_55.3mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(46)--1_Transient_sim": {
+            "Mesh_Collector": "Rails",
+            "Mesh_name": "3d_mesh(46)",
+            "Surface Curvature Based Size Variation": "50",
+            "Surface Curvature Threshold": "38.784 mm",
+            "SolidMaterial": [
+                "Steel"
+            ],
+            "MeshElements": [
+                "CTETRA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "7.68",
+            "NumElements": "16042",
+            "NumNodes": "33435",
+            "Length": [
+                "ElementSize_76.8mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(15)--1_Transient_sim": {
+            "Mesh_Collector": "Sleeper",
+            "Mesh_name": "3d_mesh(15)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Concrete"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "182",
+            "NumNodes": "351",
+            "Length": [
+                "ElementSize_100mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(14)--1_Transient_sim": {
+            "Mesh_Collector": "Sleeper",
+            "Mesh_name": "3d_mesh(14)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Concrete"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "182",
+            "NumNodes": "351",
+            "Length": [
+                "ElementSize_100mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(13)--1_Transient_sim": {
+            "Mesh_Collector": "Sleeper",
+            "Mesh_name": "3d_mesh(13)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Concrete"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "182",
+            "NumNodes": "351",
+            "Length": [
+                "ElementSize_100mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(12)--1_Transient_sim": {
+            "Mesh_Collector": "Sleeper",
+            "Mesh_name": "3d_mesh(12)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Concrete"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "182",
+            "NumNodes": "351",
+            "Length": [
+                "ElementSize_100mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(11)--1_Transient_sim": {
+            "Mesh_Collector": "Sleeper",
+            "Mesh_name": "3d_mesh(11)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Concrete"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "182",
+            "NumNodes": "351",
+            "Length": [
+                "ElementSize_100mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(10)--1_Transient_sim": {
+            "Mesh_Collector": "Sleeper",
+            "Mesh_name": "3d_mesh(10)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Concrete"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "182",
+            "NumNodes": "351",
+            "Length": [
+                "ElementSize_100mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(9)--1_Transient_sim": {
+            "Mesh_Collector": "Sleeper",
+            "Mesh_name": "3d_mesh(9)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Concrete"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "182",
+            "NumNodes": "351",
+            "Length": [
+                "ElementSize_100mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(8)--1_Transient_sim": {
+            "Mesh_Collector": "Sleeper",
+            "Mesh_name": "3d_mesh(8)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Concrete"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "182",
+            "NumNodes": "351",
+            "Length": [
+                "ElementSize_100mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(7)--1_Transient_sim": {
+            "Mesh_Collector": "Sleeper",
+            "Mesh_name": "3d_mesh(7)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Concrete"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "182",
+            "NumNodes": "351",
+            "Length": [
+                "ElementSize_100mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(6)--1_Transient_sim": {
+            "Mesh_Collector": "Sleeper",
+            "Mesh_name": "3d_mesh(6)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Concrete"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "182",
+            "NumNodes": "351",
+            "Length": [
+                "ElementSize_100mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(5)--1_Transient_sim": {
+            "Mesh_Collector": "Sleeper",
+            "Mesh_name": "3d_mesh(5)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Concrete"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "182",
+            "NumNodes": "351",
+            "Length": [
+                "ElementSize_100mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(4)--1_Transient_sim": {
+            "Mesh_Collector": "Sleeper",
+            "Mesh_name": "3d_mesh(4)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Concrete"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "182",
+            "NumNodes": "351",
+            "Length": [
+                "ElementSize_100mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(3)--1_Transient_sim": {
+            "Mesh_Collector": "Sleeper",
+            "Mesh_name": "3d_mesh(3)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Concrete"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "182",
+            "NumNodes": "351",
+            "Length": [
+                "ElementSize_100mm--1_Transient_sim"
+            ]
+        },
+        "3d_mesh(2)--1_Transient_sim": {
+            "Mesh_Collector": "Sleeper",
+            "Mesh_name": "3d_mesh(2)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Concrete"
+            ],
+            "MeshElements": [
+                "CHEXA--1_Transient_sim"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "182",
+            "NumNodes": "351",
+            "Length": [
+                "ElementSize_100mm--1_Transient_sim"
+            ]
+        }
+    },
+    "Project": {
+        "track_analysis": {
+            "People": [
+                "Keshav",
+                "Shyam"
+            ],
+            "Mechanical": [
+                "1_Static_SIM_Track"
+            ],
+            "UpdateEvent": [
+                "UpdateEvent_id_num_1--1_Static_SIM_Track"
+            ],
+            "ProjectStartDate": 1559340000.0,
+            "ProjectEndDate": 1632952800.0
+        }
+    },
+    "UpdateEvent": {
+        "UpdateEvent_id_num_1": {
+            "Comment": "first simulation.",
+            "hasPredecessor": "",
+            "hasSuccessor": ""
+        }
+    }
+}

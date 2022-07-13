@@ -1,0 +1,1084 @@
+{
+    "Analysis": {
+        "AeroMechanical": "",
+        "CFD": "",
+        "CoupledAeroMechanical": "",
+        "Structural": {
+            "Mechanical": {
+                "model1_sim1_Steel_Titanium_alloy": {
+                    "SolidMaterial": [
+                        "Steel",
+                        "Titanium_Alloy"
+                    ],
+                    "is2D": false,
+                    "isTransient": false,
+                    "LocalStorage": [
+                        "LocalStorage_id_num_1--model1_sim1_Steel_Titanium_alloy"
+                    ],
+                    "isHarmonic": false,
+                    "is3D": true,
+                    "Geometry": [
+                        "MODEL1"
+                    ],
+                    "Boundary": [
+                        "Fixed(1)--model1_sim1_Steel_Titanium_alloy",
+                        "Zfixed--model1_sim1_Steel_Titanium_alloy"
+                    ],
+                    "Mesh": [
+                        "model1_fem1_Steel_Titanium_alloy"
+                    ],
+                    "ToolVersion": "v12.0.2.9",
+                    "Result": [
+                        "model1_sim1-staticsolution--model1_sim1_Steel_Titanium_alloy"
+                    ],
+                    "LastModificationDate": 1631010194.0,
+                    "FileSize": 3496534,
+                    "isSteadyState": true,
+                    "People": [
+                        "Shyam"
+                    ],
+                    "FileNameOriginal": "model1_sim1",
+                    "FileNameAlias": "model1_sim1_Steel_Titanium_alloy",
+                    "PointLoad": [
+                        "Force(1)--model1_sim1_Steel_Titanium_alloy"
+                    ],
+                    "PressureLoad": [
+                        "Pressure(1)--model1_sim1_Steel_Titanium_alloy"
+                    ]
+                }
+            },
+            "Thermomechanical": ""
+        }
+    },
+    "Material": {
+        "FluidMaterial": "",
+        "SolidMaterial": {
+            "Steel": {
+                "R0": "1.3",
+                "R45": "1.3",
+                "R90": "1.3",
+                "MaterialCategory": "METAL",
+                "MaterialSubCategory": "Alloy Steel",
+                "Density": [
+                    "Density_7.829e-06_Steel"
+                ],
+                "ModulusOfElasticity": [
+                    "ModulusOfElasticity_206940000_Steel"
+                ],
+                "PoissonRatioArray": [
+                    "Poisson'sRatio(NU)_array_Y_Steel"
+                ],
+                "TypeOfNonlinearity": "1",
+                "YieldFunctionCriterion": "1",
+                "HardeningRule": "1",
+                "YieldStrength": [
+                    "YieldStrength_array_Y_Steel"
+                ],
+                "UltimateTensileStrength": [
+                    "UltimateTensileStrength_array_Y_Steel"
+                ],
+                "InitialStrain": [
+                    "InitialStrain_0.02_Steel"
+                ],
+                "HardeningExponent": "0.2",
+                "StrengthCoefficient": [
+                    "StrengthCoefficient_550_Steel"
+                ],
+                "ThermalExpansionCoefficient": [
+                    "ThermalExpansionCoefficient(A)_array_Y_Steel"
+                ],
+                "ThermalConductivity": [
+                    "ThermalConductivity(K)_array_Y_Steel"
+                ],
+                "SpecificHeat": [
+                    "SpecificHeat_434000000_Steel"
+                ],
+                "CrosshatchPattern": "Steel"
+            },
+            "Titanium_Alloy": {
+                "R0": "1.2",
+                "R45": "1.25",
+                "R90": "1.5",
+                "MaterialCategory": "METAL",
+                "MaterialSubCategory": "Titanium Alloy",
+                "Density": [
+                    "Density_4.454e-06_Titanium_Alloy"
+                ],
+                "ModulusOfElasticity": [
+                    "ModulusOfElasticity_117270000_Titanium_Alloy"
+                ],
+                "PoissonRatio": "0.33",
+                "TypeOfNonlinearity": "1",
+                "YieldFunctionCriterion": "1",
+                "HardeningRule": "1",
+                "YieldStrength": [
+                    "YieldStrength_array_Y_Titanium_Alloy"
+                ],
+                "UltimateTensileStrength": [
+                    "UltimateTensileStrength_array_Y_Titanium_Alloy"
+                ],
+                "InitialStrain": [
+                    "InitialStrain_0.02_Titanium_Alloy"
+                ],
+                "HardeningExponent": "0.26",
+                "StrengthCoefficient": [
+                    "StrengthCoefficient_1527.923_Titanium_Alloy"
+                ],
+                "ThermalExpansionCoefficient": [
+                    "ThermalExpansionCoefficient(A)_array_Y_Titanium_Alloy"
+                ],
+                "ThermalConductivity": [
+                    "ThermalConductivity(K)_array_Y_Titanium_Alloy"
+                ],
+                "SpecificHeat": [
+                    "SpecificHeat_525000000_Titanium_Alloy"
+                ],
+                "CrosshatchPattern": "Refractory"
+            }
+        }
+    },
+    "Boundary": {
+        "Fixed(1)--model1_sim1_Steel_Titanium_alloy": {
+            "FixedConstraint": [
+                "FixedConstraint_id_num_1--model1_sim1_Steel_Titanium_alloy"
+            ],
+            "Face": [
+                "FIXEDFACE--MODEL1"
+            ]
+        },
+        "Zfixed--model1_sim1_Steel_Titanium_alloy": {
+            "UserDefinedConstraint": [
+                "UserDefinedConstraint_id_num_2--model1_sim1_Steel_Titanium_alloy"
+            ]
+        }
+    },
+    "People": {
+        "Shyam": {
+            "Name": "Shyam"
+        },
+        "Chethan": {
+            "Name": "Chethan"
+        }
+    },
+    "Geometry": {
+        "MODEL1": {
+            "SolidMaterial": [
+                "Steel",
+                "Titanium_Alloy"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "LastModificationDate": 1614324142.0,
+            "FileSize": 45394,
+            "FileNameOriginal": "MODEL1",
+            "FileNameAlias": "MODEL1",
+            "Line": [
+                "Line4--MODEL1",
+                "Line1--MODEL1",
+                "Line2--MODEL1",
+                "Line3--MODEL1"
+            ],
+            "Component": [
+                "MODEL1--MODEL1"
+            ],
+            "Face": [
+                "TOPFACE2--MODEL1",
+                "TOPFACE1--MODEL1",
+                "FRONTLOAD--MODEL1",
+                "FIXEDFACE--MODEL1"
+            ]
+        }
+    },
+    "Loads": {
+        "CyclicLoads": "",
+        "HeatFlux": "",
+        "MomentLoad": "",
+        "PointLoad": {
+            "Force(1)--model1_sim1_Steel_Titanium_alloy": {
+                "Name": "Force(1)",
+                "types": [
+                    "FORCE"
+                ],
+                "CSYSOption": 5,
+                "observeNode1": "Observe Node 1",
+                "observeNode2": "Observe Node 2",
+                "observeNode3": "Observe Node 3",
+                "observeNode4": "Observe Node 4",
+                "distributionType": 1,
+                "DistributionField": "NA",
+                "Face": [
+                    "FRONTLOAD--MODEL1"
+                ],
+                "Force": [
+                    "Force_1000000.0_Force(1)--model1_sim1_Steel_Titanium_alloy"
+                ]
+            }
+        },
+        "PressureLoad": {
+            "Pressure(1)--model1_sim1_Steel_Titanium_alloy": {
+                "Name": "Pressure(1)",
+                "types": [
+                    "PLOAD4",
+                    "LOAD"
+                ],
+                "CSYSOption": 10,
+                "distributionType": 32,
+                "Face": [
+                    "TOPFACE1--MODEL1"
+                ],
+                "Pressure": [
+                    "Pressure_10000.0_Pressure(1)--model1_sim1_Steel_Titanium_alloy"
+                ]
+            }
+        },
+        "UDL": ""
+    },
+    "Mesh": {
+        "model1_fem1_Steel_Titanium_alloy": {
+            "MeshVolume": [
+                "3d_mesh(1)--model1_fem1_Steel_Titanium_alloy",
+                "3d_mesh(2)--model1_fem1_Steel_Titanium_alloy"
+            ],
+            "LastModificationDate": 1631010194.0,
+            "FileSize": 2187386,
+            "is2D": false,
+            "is3D": true,
+            "FileNameOriginal": "model1_fem1",
+            "FileNameAlias": "model1_fem1_Steel_Titanium_alloy"
+        }
+    },
+    "Preprocessing": "",
+    "Result": {
+        "model1_sim1-staticsolution--model1_sim1_Steel_Titanium_alloy": {
+            "LastModificationDate": 1631008995.0,
+            "FileSize": 5928364,
+            "DisplacementNodal": [
+                "DisplacementNodal_FIXEDFACE_id_num_4--model1_sim1_Steel_Titanium_alloy",
+                "DisplacementNodal_FRONTLOAD_id_num_5--model1_sim1_Steel_Titanium_alloy",
+                "DisplacementNodal_Model_id_num_6--model1_sim1_Steel_Titanium_alloy",
+                "DisplacementNodal_TOPFACE1_id_num_7--model1_sim1_Steel_Titanium_alloy"
+            ],
+            "ReactionForceNodal": [
+                "ReactionForceNodal_FIXEDFACE_id_num_4--model1_sim1_Steel_Titanium_alloy",
+                "ReactionForceNodal_FRONTLOAD_id_num_5--model1_sim1_Steel_Titanium_alloy",
+                "ReactionForceNodal_Model_id_num_6--model1_sim1_Steel_Titanium_alloy",
+                "ReactionForceNodal_TOPFACE1_id_num_7--model1_sim1_Steel_Titanium_alloy"
+            ],
+            "ReactionMomentNodal": [
+                "ReactionMomentNodal_FIXEDFACE_id_num_4--model1_sim1_Steel_Titanium_alloy",
+                "ReactionMomentNodal_FRONTLOAD_id_num_5--model1_sim1_Steel_Titanium_alloy",
+                "ReactionMomentNodal_Model_id_num_6--model1_sim1_Steel_Titanium_alloy",
+                "ReactionMomentNodal_TOPFACE1_id_num_7--model1_sim1_Steel_Titanium_alloy"
+            ],
+            "RotationNodal": [
+                "RotationNodal_FIXEDFACE_id_num_4--model1_sim1_Steel_Titanium_alloy",
+                "RotationNodal_FRONTLOAD_id_num_5--model1_sim1_Steel_Titanium_alloy",
+                "RotationNodal_Model_id_num_6--model1_sim1_Steel_Titanium_alloy",
+                "RotationNodal_TOPFACE1_id_num_7--model1_sim1_Steel_Titanium_alloy"
+            ],
+            "StressElementNodal": [
+                "StressElementNodal_FIXEDFACE_id_num_4--model1_sim1_Steel_Titanium_alloy",
+                "StressElementNodal_FRONTLOAD_id_num_5--model1_sim1_Steel_Titanium_alloy",
+                "StressElementNodal_Model_id_num_6--model1_sim1_Steel_Titanium_alloy",
+                "StressElementNodal_TOPFACE1_id_num_7--model1_sim1_Steel_Titanium_alloy"
+            ],
+            "StressElemental": [
+                "StressElemental_Model_id_num_6--model1_sim1_Steel_Titanium_alloy"
+            ],
+            "ConfluencePage": [
+                "ConfluencePage_id_num_7--model1_sim1_Steel_Titanium_alloy"
+            ],
+            "PPT": [
+                "PPT_id_num_7--model1_sim1_Steel_Titanium_alloy"
+            ]
+        }
+    },
+    "StorageLocation": {
+        "CloudStorage": "",
+        "LocalStorage": {
+            "LocalStorage_id_num_1--model1_sim1_Steel_Titanium_alloy": {
+                "GID": "z003hz2y",
+                "MachineName": "demlhw7sw110x"
+            },
+            "LocalStorage_id_num_8--model1_sim1_Steel_Titanium_alloy": {
+                "GID": "",
+                "MachineName": ""
+            }
+        },
+        "ServerStorage": "",
+        "TeamcenterStorage": ""
+    },
+    "Supplier": "",
+    "QuantitativeMetric": {
+        "Angle": "",
+        "CyclicStrengthCoefficient": "",
+        "Density": {
+            "Density_7.829e-06_Steel": {
+                "hasMagnitude": "7.829e-06",
+                "hasUnit": "kg/mm^3"
+            },
+            "Density_4.454e-06_Titanium_Alloy": {
+                "hasMagnitude": "4.454e-06",
+                "hasUnit": "kg/mm^3"
+            }
+        },
+        "ElasticStrength": "",
+        "FatigueStrengthCoefficient": "",
+        "Force": {
+            "Force_1000000.0_Force(1)--model1_sim1_Steel_Titanium_alloy": {
+                "hasMagnitude": 1000000.0,
+                "hasUnit": "N"
+            }
+        },
+        "Height": "",
+        "Independent": "",
+        "InitialStrain": {
+            "InitialStrain_0.02_Steel": {
+                "hasMagnitude": "0.02",
+                "hasUnit": "mm/mm"
+            },
+            "InitialStrain_0.02_Titanium_Alloy": {
+                "hasMagnitude": "0.02",
+                "hasUnit": "mm/mm"
+            }
+        },
+        "Length": {
+            "ElementSize_20mm--model1_fem1_Steel_Titanium_alloy": {
+                "hasMagnitude": 20.0,
+                "hasUnit": "mm"
+            }
+        },
+        "Mass_Flow": "",
+        "ModulusOfElasticity": {
+            "ModulusOfElasticity_206940000_Steel": {
+                "hasMagnitude": "206940000",
+                "hasUnit": "mN/mm^2(kPa)"
+            },
+            "ModulusOfElasticity_117270000_Titanium_Alloy": {
+                "hasMagnitude": "117270000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "Moment": "",
+        "PoissonRatioArray": {
+            "Poisson'sRatio(NU)_array_Y_Steel": {
+                "VectorValueSet": "0.288,0.288,0.288,0.288,0.289,0.289,0.29,0.29,0.291,0.291,0.291,0.292,0.292,0.293,0.293,0.293,0.294,0.294,0.294,0.295,0.295,0.296,0.296,0.296,0.297,0.297,0.298,0.298,0.298,0.299,0.299,0.3,0.3,0.301,0.301,0.302,0.302,0.303,0.304,0.304,0.305,0.306,0.307,0.308,0.309,0.31,0.311,0.312,0.313,0.314,0.316,0.317",
+                "hasUnit": "",
+                "VariesWith": [
+                    "Poisson'sRatio(NU)_array_X_Steel"
+                ]
+            }
+        },
+        "Pressure": {
+            "Pressure_10000.0_Pressure(1)--model1_sim1_Steel_Titanium_alloy": {
+                "hasMagnitude": 10000.0,
+                "hasUnit": "N/mm^2(MPa)"
+            }
+        },
+        "ShearModulus": "",
+        "SpecificHeat": {
+            "SpecificHeat_434000000_Steel": {
+                "hasMagnitude": "434000000",
+                "hasUnit": "microJ/kg-dK"
+            },
+            "SpecificHeat_525000000_Titanium_Alloy": {
+                "hasMagnitude": "525000000",
+                "hasUnit": "microJ/kg-dK"
+            }
+        },
+        "StrengthCoefficient": {
+            "StrengthCoefficient_550_Steel": {
+                "hasMagnitude": "550",
+                "hasUnit": "N/mm^2(MPa)"
+            },
+            "StrengthCoefficient_1527.923_Titanium_Alloy": {
+                "hasMagnitude": "1527.923",
+                "hasUnit": "N/mm^2(MPa)"
+            }
+        },
+        "Stress": "",
+        "Temperature": {
+            "Poisson'sRatio(NU)_array_X_Steel": {
+                "VectorValueSet": "20,21.11,23.89,37.78,51.67,65.56,79.44,93.33,107.22,121.11,135,148.89,162.78,176.67,190.56,204.44,218.33,232.22,246.11,260,273.89,287.78,301.67,315.56,329.44,343.33,357.22,371.11,385,398.89,412.78,426.67,440.56,454.44,468.33,482.22,496.11,510,523.89,537.78,551.67,565.56,579.44,593.33,607.22,621.11,635,648.89,662.78,676.67,690.56,704.44",
+                "hasUnit": "C"
+            },
+            "YieldStrength_array_X_Steel": {
+                "VectorValueSet": "20,21.1111,23.8889,37.7778,51.6667,65.5556,79.4444,93.3333,107.222,121.111,135,148.889,162.778,176.667,190.556,204.444,218.333,232.222,246.111,260,273.889,287.778,301.667,315.556,329.444,343.333,357.222,371.111,385,398.889,412.778,426.667",
+                "hasUnit": "C"
+            },
+            "UltimateTensileStrength_array_X_Steel": {
+                "VectorValueSet": "20,21.1111,23.8889,37.7778,51.6667,65.5556,79.4444,93.3333,107.222,121.111,135,148.889,162.778,176.667,190.556,204.444,218.333,232.222,246.111,260,273.889,287.778,301.667,315.556,329.444,343.333,357.222,371.111,385,398.889,412.778,426.667",
+                "hasUnit": "C"
+            },
+            "ThermalExpansionCoefficient(A)_array_X_Steel": {
+                "VectorValueSet": "20,93.33,107.22,121.11,135,148.89,162.78,176.67,190.56,204.44,218.33,232.22,246.11,260,273.89,287.78,301.67,315.56,329.44,343.33,357.22,371.11,385,398.89,412.78,426.67,440.56,454.44,468.33,482.22,496.11,510,523.89,537.78,551.67,565.56,579.44,593.33,607.22,621.11,635,648.89,662.78,676.67,690.56,704.44,718.33,732.22,746.11,760,773.89,787.78,801.67,815.56",
+                "hasUnit": "C"
+            },
+            "ThermalConductivity(K)_array_X_Steel": {
+                "VectorValueSet": "20,21.11,23.89,37.78,51.67,65.56,79.44,93.33,107.22,121.11,135,148.89,162.78,176.67,190.56,204.44,218.33,232.22,246.11,260,273.89,287.78,301.67,315.56,329.44,343.33,357.22,371.11,385,398.89,412.78,426.67,440.56,454.44,468.33,482.22,496.11,510,523.89,537.78,551.67,565.56,579.44,593.33,607.22,621.11,635,648.89,662.78,676.67,690.56,704.44",
+                "hasUnit": "C"
+            },
+            "YieldStrength_array_X_Titanium_Alloy": {
+                "VectorValueSet": "20,21.1111,23.8889,37.7778,51.6667,65.5556,79.4444,93.3333,107.222,121.111,135,148.889,162.778,176.667,190.556,204.444,218.333,232.222,246.111,260,273.889,287.778,301.667,315.556,329.444,343.333,357.222,371.111,385,398.889,412.778,426.667,440.556,454.444,468.333,482.222,496.111,510,523.889,537.778,551.667,565.556,579.444,593.333",
+                "hasUnit": "C"
+            },
+            "UltimateTensileStrength_array_X_Titanium_Alloy": {
+                "VectorValueSet": "20,21.1111,23.8889,37.7778,51.6667,65.5556,79.4444,93.3333,107.222,121.111,135,148.889,162.778,176.667,190.556,204.444,218.333,232.222,246.111,260,273.889,287.778,301.667,315.556,329.444,343.333,357.222,371.111,385,398.889,412.778,426.667,440.556,454.444,468.333,482.222,496.111,510,523.889,537.778,551.667,565.556,579.444,593.333",
+                "hasUnit": "C"
+            },
+            "ThermalExpansionCoefficient(A)_array_X_Titanium_Alloy": {
+                "VectorValueSet": "20,93.33,107.22,121.11,135,148.89,162.78,176.67,190.56,204.44,218.33,232.22,246.11,260,273.89,287.78,301.67,315.56,329.44,343.33,357.22,371.11,385,398.89,412.78,426.67,440.56,454.44,468.33,482.22,496.11,510,523.89,537.78,551.67,565.56,579.44,593.33,607.22,621.11,635,648.89,662.78,676.67,690.56,704.44,718.33,732.22,746.11,760,773.89,787.78,801.67,815.56,829.44,843.33,857.22,871.11,885,898.89,912.78,926.67,940.56,954.44,968.33,982.22",
+                "hasUnit": "C"
+            },
+            "ThermalConductivity(K)_array_X_Titanium_Alloy": {
+                "VectorValueSet": "20,37.78,51.67,65.56,79.44,93.33,107.22,121.11,135,148.89,162.78,176.67,190.56,204.44,218.33,232.22,246.11,260,273.89,287.78,301.67,315.56,329.44,343.33,357.22,371.11,385,398.89,412.78,426.67,440.56,454.44,468.33,482.22,496.11,510,523.89,537.78,551.67,565.56,579.44,593.33,607.22,621.11,635,648.89,662.78,676.67,690.56,704.44,718.33,732.22,746.11,760,773.89,787.78,801.67,815.56",
+                "hasUnit": "C"
+            }
+        },
+        "ThermalConductivity": {
+            "ThermalConductivity(K)_array_Y_Steel": {
+                "VectorValueSet": "55700,55672,55600,55225,54850,54460,54071,53682,53278,52874,52456,52052,51633,51201,50768,50335,49888,49441,48994,48533,48057,47581,47105,46629,46153,45677,45186,44711,44235,43744,43254,42763,42273,41783,41292,40788,40297,39792,39302,38797,38292,37802,37297,36792,36288,35783,35278,34773,34268,33764,33244,32740",
+                "hasUnit": "microW/mm-dC",
+                "VariesWith": [
+                    "ThermalConductivity(K)_array_X_Steel"
+                ]
+            },
+            "ThermalConductivity(K)_array_Y_Titanium_Alloy": {
+                "VectorValueSet": "7625,7788.3,7932.5,8076.7,8235.4,8379.6,8538.3,8682.5,8841.1,8999.8,9158.5,9317.1,9475.8,9634.4,9793.1,9966.1,10125,10283,10456,10630,10788,10961,11134,11307,11481,11654,11827,12000,12173,12346,12519,12706,12880,13067,13255,13456,13644,13846,14048,14250,14452,14668,14870,15086,15303,15519,15735,15966,16182,16413,16644,16875,17105,17351,17581,17827,18072,18317",
+                "hasUnit": "microW/mm-dC",
+                "VariesWith": [
+                    "ThermalConductivity(K)_array_X_Titanium_Alloy"
+                ]
+            }
+        },
+        "ThermalExpansionCoefficient": {
+            "ThermalExpansionCoefficient(A)_array_Y_Steel": {
+                "VectorValueSet": "1.128e-05,1.179e-05,1.188e-05,1.197e-05,1.206e-05,1.2132e-05,1.2222e-05,1.2312e-05,1.2402e-05,1.2492e-05,1.2582e-05,1.2672e-05,1.2762e-05,1.2852e-05,1.2942e-05,1.3032e-05,1.3122e-05,1.3212e-05,1.3302e-05,1.3392e-05,1.3464e-05,1.3554e-05,1.3644e-05,1.3734e-05,1.3806e-05,1.3896e-05,1.3986e-05,1.4058e-05,1.4148e-05,1.4238e-05,1.431e-05,1.44e-05,1.4472e-05,1.4544e-05,1.4616e-05,1.4688e-05,1.4742e-05,1.4796e-05,1.4832e-05,1.4886e-05,1.4904e-05,1.4922e-05,1.4922e-05,1.4922e-05,1.4904e-05,1.4886e-05,1.485e-05,1.4796e-05,1.4724e-05,1.4634e-05,1.4472e-05,1.4256e-05,1.4004e-05,1.368e-05",
+                "hasUnit": "1/dC",
+                "VariesWith": [
+                    "ThermalExpansionCoefficient(A)_array_X_Steel"
+                ]
+            },
+            "ThermalExpansionCoefficient(A)_array_Y_Titanium_Alloy": {
+                "VectorValueSet": "9.3599e-06,9.3599e-06,9.3599e-06,9.3779e-06,9.3779e-06,9.3779e-06,9.3779e-06,9.3779e-06,9.3959e-06,9.3959e-06,9.3959e-06,9.4139e-06,9.4139e-06,9.4139e-06,9.4319e-06,9.4319e-06,9.4499e-06,9.4679e-06,9.4679e-06,9.4859e-06,9.5039e-06,9.5039e-06,9.5219e-06,9.5399e-06,9.5579e-06,9.5759e-06,9.5939e-06,9.6119e-06,9.6299e-06,9.6479e-06,9.6659e-06,9.6839e-06,9.7019e-06,9.7199e-06,9.7379e-06,9.7739e-06,9.7919e-06,9.8099e-06,9.8279e-06,9.8639e-06,9.8819e-06,9.8999e-06,9.9359e-06,9.9539e-06,9.9719e-06,1.0008e-05,1.0026e-05,1.0044e-05,1.0062e-05,1.008e-05,1.0116e-05,1.0134e-05,1.0152e-05,1.017e-05,1.0188e-05,1.0188e-05,1.0206e-05,1.0224e-05,1.0242e-05,1.0242e-05,1.026e-05,1.0278e-05,1.0278e-05,1.0296e-05,1.0296e-05,1.0314e-05",
+                "hasUnit": "1/dC",
+                "VariesWith": [
+                    "ThermalExpansionCoefficient(A)_array_X_Titanium_Alloy"
+                ]
+            }
+        },
+        "Thickness": "",
+        "TurbulenceIntensity": "",
+        "UltimateTensileStrength": {
+            "UltimateTensileStrength_array_Y_Steel": {
+                "VectorValueSet": "276000,275790,262001,262001,262001,262001,262001,262001,262001,262001,262001,262001,262001,262001,262001,262001,262001,262001,262001,261311,260622,259932,257864,254417,249590,243385,236490,228906,220632,212359,202706,193053",
+                "hasUnit": "mN/mm^2(kPa)",
+                "VariesWith": [
+                    "UltimateTensileStrength_array_X_Steel"
+                ]
+            },
+            "UltimateTensileStrength_array_Y_Titanium_Alloy": {
+                "VectorValueSet": "829500,827371,821855,794965,769455,745323,722571,700507,680513,661207,643970,627423,612254,599154,586744,575023,564681,555717,547444,539170,531586,525380,519175,512970,506765,501249,496423,490907,486080,480565,475049,468843,462638,456433,449538,441264,432301,422649,411617,397827,381280,361975,340601,317159",
+                "hasUnit": "mN/mm^2(kPa)",
+                "VariesWith": [
+                    "UltimateTensileStrength_array_X_Titanium_Alloy"
+                ]
+            }
+        },
+        "Velocity": "",
+        "Viscosity": "",
+        "Width": "",
+        "XDirection": "",
+        "YDirection": "",
+        "YieldStrength": {
+            "YieldStrength_array_Y_Steel": {
+                "VectorValueSet": "137895,137895,137895,137895,137206,137206,136516,136516,136516,135827,135827,135137,134448,133758,133069,131690,130311,128242,126174,124106,121348,117900,114453,111006,107558,104111,100663,97216.1,93768.7,90321.3,86184.5,82737.1",
+                "hasUnit": "mN/mm^2(kPa)",
+                "VariesWith": [
+                    "YieldStrength_array_X_Steel"
+                ]
+            },
+            "YieldStrength_array_Y_Titanium_Alloy": {
+                "VectorValueSet": "761500,758423,752218,723260,694992,668102,641902,617081,593639,571575,550891,530896,512280,495044,479186,465396,452296,440575,430233,419891,410928,401964,393691,386106,379212,373006,368180,362664,357838,353012,348875,344738,341290,337843,334396,330259,326122,319227,310954,299922,286132,268896,249590,227527",
+                "hasUnit": "mN/mm^2(kPa)",
+                "VariesWith": [
+                    "YieldStrength_array_X_Titanium_Alloy"
+                ]
+            }
+        },
+        "ZDirection": ""
+    },
+    "BoundaryCondition": {
+        "FEABoundaryCondition": {
+            "FEAConstraintBC": {
+                "AntiSymmetricConstraint": "",
+                "AutomaticCoupling": "",
+                "CylindricalConstraint": "",
+                "EnforcedDisplacementConstraint": "",
+                "FixedConstraint": {
+                    "FixedConstraint_id_num_1--model1_sim1_Steel_Titanium_alloy": {
+                        "Name": "Fixed(1)",
+                        "CSYSOption": 0,
+                        "DOF1": 0.0,
+                        "DOF2": 0.0,
+                        "DOF3": 0.0,
+                        "DOF4": 0.0,
+                        "DOF5": 0.0,
+                        "DOF6": 0.0,
+                        "DescriptorName": "fixedConstraint",
+                        "Face": [
+                            "FIXEDFACE--MODEL1"
+                        ],
+                        "DistributionType": 5,
+                        "ConstraintType": "SPC"
+                    }
+                },
+                "FixedRotationConstraint": "",
+                "FixedTranslationConstraint": "",
+                "ManualCoupling": "",
+                "PinnedConstraint": "",
+                "RollerConstraint": "",
+                "SimplySupportedConstraint": "",
+                "SliderConstraint": "",
+                "SymmetricConstraint": "",
+                "UserDefinedConstraint": {
+                    "UserDefinedConstraint_id_num_2--model1_sim1_Steel_Titanium_alloy": {
+                        "Name": "Zfixed",
+                        "CSYSOption": 0,
+                        "Local Csys": null,
+                        "DOF1": -777777.0,
+                        "DOF2": -777777.0,
+                        "DOF3": 0.0,
+                        "DOF4": -777777.0,
+                        "DOF5": -777777.0,
+                        "DOF6": -777777.0,
+                        "DCID": "CORD2R",
+                        "DCID2": "CORD2C",
+                        "DCID3": "CORD2S",
+                        "DescriptorName": "UserDefinedDisplacementConstraint",
+                        "DistributionType": 5,
+                        "ConstraintType": "SPC"
+                    }
+                }
+            },
+            "FEAInteractionBC": {
+                "MechanicalContact": "",
+                "ThermalContact": ""
+            }
+        },
+        "CFDBoundaryCondition": {
+            "CFDConstraintBC": {
+                "FrictionWallBC": "",
+                "TotalPressureBC": "",
+                "VelocityBC": "",
+                "MassFlowBC": "",
+                "MovingWallBC": "",
+                "SmoothWallBC": "",
+                "StationaryWallBC": ""
+            },
+            "CFDInteractionBC": ""
+        },
+        "GenericBoundaryCondition": {
+            "PressureBC": ""
+        }
+    },
+    "PostProcessing": {
+        "Parameters": {
+            "CFDParameters": {
+                "AreaAveragedDynamicPressure": "",
+                "AreaAveragedPressure": "",
+                "AreaAveragedTotalPressure": "",
+                "MassAveragedDynamicPressure": "",
+                "MassAveragedPressure": "",
+                "MassAveragedTotalPressure": "",
+                "MassFlowRate": ""
+            },
+            "FEAParameters": {
+                "DisplacementNodal": {
+                    "DisplacementNodal_FIXEDFACE_id_num_4--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "4.916850095190134e-20",
+                        "Magnitude-Minimum": "-1.6011220289783254e-35",
+                        "X-Maximum": "3.337606563226697e-20",
+                        "X-Minimum": "-1.0525479091476607e-20",
+                        "Y-Maximum": "2.994526941821793e-20",
+                        "Y-Minimum": "-1.9542405312268103e-20",
+                        "Z-Maximum": "2.289529791472084e-20",
+                        "Z-Minimum": "-7.435163915998872e-36"
+                    },
+                    "DisplacementNodal_FRONTLOAD_id_num_5--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "0.132166787981987",
+                        "Magnitude-Minimum": "0.1149410828948021",
+                        "X-Maximum": "0.04871870204806328",
+                        "X-Minimum": "-0.03868561238050461",
+                        "Y-Maximum": "0.0015003824373707175",
+                        "Y-Minimum": "-0.0015060767764225602",
+                        "Z-Maximum": "-0.11455084383487701",
+                        "Z-Minimum": "-0.12290827929973602"
+                    },
+                    "DisplacementNodal_Model_id_num_6--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "0.132166787981987",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.04871870204806328",
+                        "X-Minimum": "-0.038786664605140686",
+                        "Y-Maximum": "0.007417526561766863",
+                        "Y-Minimum": "-0.007401547860354185",
+                        "Z-Maximum": "0.002146746264770627",
+                        "Z-Minimum": "-0.12290827929973602"
+                    },
+                    "DisplacementNodal_TOPFACE1_id_num_7--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "0.13211630284786224",
+                        "Magnitude-Minimum": "0.03782001510262489",
+                        "X-Maximum": "0.04871870204806328",
+                        "X-Minimum": "0.028269656002521515",
+                        "Y-Maximum": "0.0018891809741035104",
+                        "Y-Minimum": "-0.0018920981092378497",
+                        "Z-Maximum": "-0.025083061307668686",
+                        "Z-Minimum": "-0.12282411754131317"
+                    }
+                },
+                "ReactionForceNodal": {
+                    "ReactionForceNodal_FIXEDFACE_id_num_4--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "1604492.5",
+                        "Magnitude-Minimum": "1142.1204833984375",
+                        "X-Maximum": "1398637.5",
+                        "X-Minimum": "-1550067.0",
+                        "Y-Maximum": "446269.28125",
+                        "Y-Minimum": "-444864.46875",
+                        "Z-Maximum": "313386.4375",
+                        "Z-Minimum": "-704044.9375"
+                    },
+                    "ReactionForceNodal_FRONTLOAD_id_num_5--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionForceNodal_Model_id_num_6--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "15789185.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "1398637.5",
+                        "X-Minimum": "-1550067.0",
+                        "Y-Maximum": "446269.28125",
+                        "Y-Minimum": "-444864.46875",
+                        "Z-Maximum": "15789185.0",
+                        "Z-Minimum": "-704044.9375"
+                    },
+                    "ReactionForceNodal_TOPFACE1_id_num_7--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "ReactionMomentNodal": {
+                    "ReactionMomentNodal_FIXEDFACE_id_num_4--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionMomentNodal_FRONTLOAD_id_num_5--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionMomentNodal_Model_id_num_6--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionMomentNodal_TOPFACE1_id_num_7--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "RotationNodal": {
+                    "RotationNodal_FIXEDFACE_id_num_4--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "RotationNodal_FRONTLOAD_id_num_5--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "RotationNodal_Model_id_num_6--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "RotationNodal_TOPFACE1_id_num_7--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "StressElementNodal": {
+                    "StressElementNodal_FIXEDFACE_id_num_4--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "2036737245184.0",
+                        "Determinant-Minimum": "-1366592192512.0",
+                        "MaximumPrincipal-Maximum": "27003.064453125",
+                        "MaximumPrincipal-Minimum": "-6501.8818359375",
+                        "MaximumShear-Maximum": "9714.4169921875",
+                        "MaximumShear-Minimum": "3641.482666015625",
+                        "Mean-Maximum": "14845.1845703125",
+                        "Mean-Minimum": "-13077.8212890625",
+                        "MiddlePrincipal-Maximum": "9958.2607421875",
+                        "MiddlePrincipal-Minimum": "-8772.7001953125",
+                        "MinimumPrincipal-Maximum": "7574.2294921875",
+                        "MinimumPrincipal-Minimum": "-23958.8828125",
+                        "Octahedral-Maximum": "8651.8369140625",
+                        "Octahedral-Minimum": "3433.22265625",
+                        "VonMises-Maximum": "18353.318359375",
+                        "VonMises-Minimum": "7282.96484375",
+                        "WorstPrincipal-Maximum": "27003.064453125",
+                        "WorstPrincipal-Minimum": "-23958.8828125",
+                        "XX-Maximum": "24619.033203125",
+                        "XX-Minimum": "-21688.064453125",
+                        "XY-Maximum": "6323.33642578125",
+                        "XY-Minimum": "-6078.85400390625",
+                        "YY-Maximum": "9958.2607421875",
+                        "YY-Minimum": "-8772.7001953125",
+                        "YZ-Maximum": "342.088134765625",
+                        "YZ-Minimum": "-32.01710510253906",
+                        "ZX-Maximum": "6813.34716796875",
+                        "ZX-Minimum": "-3474.042724609375",
+                        "ZZ-Maximum": "9958.2607421875",
+                        "ZZ-Minimum": "-8772.7001953125"
+                    },
+                    "StressElementNodal_FRONTLOAD_id_num_5--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "138488976.0",
+                        "Determinant-Minimum": "-2111382016.0",
+                        "MaximumPrincipal-Maximum": "741.8726196289062",
+                        "MaximumPrincipal-Minimum": "98.72037506103516",
+                        "MaximumShear-Maximum": "5186.49609375",
+                        "MaximumShear-Minimum": "112.95723724365234",
+                        "Mean-Maximum": "107.89852905273438",
+                        "Mean-Minimum": "-3350.216552734375",
+                        "MiddlePrincipal-Maximum": "523.0325317382812",
+                        "MiddlePrincipal-Minimum": "-76.0979995727539",
+                        "MinimumPrincipal-Maximum": "-80.4889144897461",
+                        "MinimumPrincipal-Minimum": "-10099.9326171875",
+                        "Octahedral-Maximum": "4824.1787109375",
+                        "Octahedral-Minimum": "96.72965240478516",
+                        "VonMises-Maximum": "10233.6279296875",
+                        "VonMises-Minimum": "205.19456481933594",
+                        "WorstPrincipal-Maximum": "258.3877258300781",
+                        "WorstPrincipal-Minimum": "-10099.9326171875",
+                        "XX-Maximum": "586.43212890625",
+                        "XX-Minimum": "-82.66232299804688",
+                        "XY-Maximum": "43.423736572265625",
+                        "XY-Minimum": "-43.428367614746094",
+                        "YY-Maximum": "523.0325317382812",
+                        "YY-Minimum": "-339.84661865234375",
+                        "YZ-Maximum": "133.650146484375",
+                        "YZ-Minimum": "-133.5898895263672",
+                        "ZX-Maximum": "72.7286376953125",
+                        "ZX-Minimum": "-1105.5660400390625",
+                        "ZZ-Maximum": "163.1815185546875",
+                        "ZZ-Minimum": "-10099.876953125"
+                    },
+                    "StressElementNodal_Model_id_num_6--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "9556178501632.0",
+                        "Determinant-Minimum": "-353989392596992.0",
+                        "MaximumPrincipal-Maximum": "43018.6328125",
+                        "MaximumPrincipal-Minimum": "-34047.7890625",
+                        "MaximumShear-Maximum": "50185.82421875",
+                        "MaximumShear-Minimum": "97.40448760986328",
+                        "Mean-Maximum": "18338.85546875",
+                        "Mean-Minimum": "-81077.609375",
+                        "MiddlePrincipal-Maximum": "10262.7861328125",
+                        "MiddlePrincipal-Minimum": "-81295.40625",
+                        "MinimumPrincipal-Maximum": "7688.66357421875",
+                        "MinimumPrincipal-Minimum": "-127889.625",
+                        "Octahedral-Maximum": "40978.75",
+                        "Octahedral-Minimum": "79.53089904785156",
+                        "VonMises-Maximum": "86929.0546875",
+                        "VonMises-Minimum": "168.71051025390625",
+                        "WorstPrincipal-Maximum": "43018.6328125",
+                        "WorstPrincipal-Minimum": "-127889.625",
+                        "XX-Maximum": "42844.53125",
+                        "XX-Minimum": "-100755.3828125",
+                        "XY-Maximum": "13929.5810546875",
+                        "XY-Minimum": "-12957.6513671875",
+                        "YY-Maximum": "13838.6123046875",
+                        "YY-Minimum": "-34090.79296875",
+                        "YZ-Maximum": "11777.7138671875",
+                        "YZ-Minimum": "-10605.2021484375",
+                        "ZX-Maximum": "23881.107421875",
+                        "ZX-Minimum": "-18771.54296875",
+                        "ZZ-Maximum": "10059.4658203125",
+                        "ZZ-Minimum": "-108386.640625"
+                    },
+                    "StressElementNodal_TOPFACE1_id_num_7--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "2664526249984.0",
+                        "Determinant-Minimum": "-715336384512.0",
+                        "MaximumPrincipal-Maximum": "33281.79296875",
+                        "MaximumPrincipal-Minimum": "58.74409866333008",
+                        "MaximumShear-Maximum": "23013.857421875",
+                        "MaximumShear-Minimum": "4943.25732421875",
+                        "Mean-Maximum": "7660.18115234375",
+                        "Mean-Minimum": "-3350.216552734375",
+                        "MiddlePrincipal-Maximum": "2549.1640625",
+                        "MiddlePrincipal-Minimum": "-6277.43212890625",
+                        "MinimumPrincipal-Maximum": "-8633.71484375",
+                        "MinimumPrincipal-Minimum": "-16692.58203125",
+                        "Octahedral-Maximum": "19811.001953125",
+                        "Octahedral-Minimum": "4636.9697265625",
+                        "VonMises-Maximum": "42025.48046875",
+                        "VonMises-Minimum": "9836.4990234375",
+                        "WorstPrincipal-Maximum": "33281.79296875",
+                        "WorstPrincipal-Minimum": "-10647.734375",
+                        "XX-Maximum": "31233.38671875",
+                        "XX-Minimum": "-56.526268005371094",
+                        "XY-Maximum": "599.93408203125",
+                        "XY-Minimum": "-1406.9241943359375",
+                        "YY-Maximum": "2549.165283203125",
+                        "YY-Minimum": "-6294.4130859375",
+                        "YZ-Maximum": "89.63379669189453",
+                        "YZ-Minimum": "-991.636474609375",
+                        "ZX-Maximum": "21.770437240600586",
+                        "ZX-Minimum": "-11517.6982421875",
+                        "ZZ-Maximum": "-8473.0322265625",
+                        "ZZ-Minimum": "-13243.236328125"
+                    }
+                },
+                "StressElemental": {
+                    "StressElemental_Model_id_num_6--model1_sim1_Steel_Titanium_alloy": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "2682111918080.0",
+                        "Determinant-Minimum": "-95172700405760.0",
+                        "MaximumPrincipal-Maximum": "36608.22265625",
+                        "MaximumPrincipal-Minimum": "-18234.431640625",
+                        "MaximumShear-Maximum": "36439.22265625",
+                        "MaximumShear-Minimum": "70.86243438720703",
+                        "Mean-Maximum": "12630.548828125",
+                        "Mean-Minimum": "-55174.9296875",
+                        "MiddlePrincipal-Maximum": "5473.1474609375",
+                        "MiddlePrincipal-Minimum": "-59354.7109375",
+                        "MinimumPrincipal-Maximum": "4114.0791015625",
+                        "MinimumPrincipal-Minimum": "-87935.6484375",
+                        "Octahedral-Maximum": "30145.23046875",
+                        "Octahedral-Minimum": "58.072509765625",
+                        "VonMises-Maximum": "63947.69140625",
+                        "VonMises-Minimum": "123.19039916992188",
+                        "WorstPrincipal-Maximum": "36608.22265625",
+                        "WorstPrincipal-Minimum": "-87935.6484375",
+                        "XX-Maximum": "36604.26171875",
+                        "XX-Minimum": "-67456.828125",
+                        "XY-Maximum": "3580.707275390625",
+                        "XY-Minimum": "-3578.8154296875",
+                        "YY-Maximum": "4833.166015625",
+                        "YY-Minimum": "-18239.71875",
+                        "YZ-Maximum": "4225.1025390625",
+                        "YZ-Minimum": "-4153.3408203125",
+                        "ZX-Maximum": "12884.9052734375",
+                        "ZX-Minimum": "-18758.345703125",
+                        "ZZ-Maximum": "5469.50537109375",
+                        "ZZ-Minimum": "-79828.2421875"
+                    }
+                }
+            },
+            "GenericParameters": {
+                "MaxTemperature": ""
+            }
+        },
+        "Plots": {
+            "ContourPlots": {
+                "ContactPressureContour": "",
+                "ContactStatusContour": "",
+                "PressureContour": "",
+                "TotalPressureContour": "",
+                "VelocityContour": ""
+            },
+            "DisplacementPlot": "",
+            "XYPlots": {
+                "MassAveragedTotalPressurePlot": "",
+                "WallYPlus": ""
+            },
+            "StressPlot": {
+                "PrincipalStressPlot": "",
+                "VonMisesStressPlot": ""
+            },
+            "StrainPlot": ""
+        }
+    },
+    "MeshElements": {
+        "AxiSymmetricElement": "",
+        "HexElement": {
+            "CHEXA--model1_fem1_Steel_Titanium_alloy": {}
+        },
+        "PrismLayer": "",
+        "QuadElement": "",
+        "ShellElement": "",
+        "TetrahedralElement": {
+            "CTETRA--model1_fem1_Steel_Titanium_alloy": {}
+        }
+    },
+    "GeometricFeature": {
+        "Body": "",
+        "Curve": "",
+        "Edge": "",
+        "Face": {
+            "TOPFACE2--MODEL1": {},
+            "TOPFACE1--MODEL1": {},
+            "FRONTLOAD--MODEL1": {},
+            "FIXEDFACE--MODEL1": {}
+        },
+        "Line": {
+            "Line4--MODEL1": {},
+            "Line1--MODEL1": {},
+            "Line2--MODEL1": {},
+            "Line3--MODEL1": {}
+        },
+        "Point": ""
+    },
+    "Documentation": {
+        "ConfluencePage": {
+            "ConfluencePage_id_num_7--model1_sim1_Steel_Titanium_alloy": {
+                "WebSite": ""
+            }
+        },
+        "PPT": {
+            "PPT_id_num_7--model1_sim1_Steel_Titanium_alloy": {
+                "LocalStorage": [
+                    "LocalStorage_id_num_8--model1_sim1_Steel_Titanium_alloy"
+                ]
+            }
+        }
+    },
+    "MeshVolume": {
+        "3d_mesh(1)--model1_fem1_Steel_Titanium_alloy": {
+            "Mesh_Collector": "Solid(1)",
+            "Mesh_name": "3d_mesh(1)",
+            "Surface Curvature Based Size Variation": "50",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Steel"
+            ],
+            "MeshElements": [
+                "CTETRA--model1_fem1_Steel_Titanium_alloy"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "2",
+            "NumElements": "3025",
+            "NumNodes": "5070",
+            "Length": [
+                "ElementSize_20mm--model1_fem1_Steel_Titanium_alloy"
+            ]
+        },
+        "3d_mesh(2)--model1_fem1_Steel_Titanium_alloy": {
+            "Mesh_Collector": "Solid(2)",
+            "Mesh_name": "3d_mesh(2)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Titanium_Alloy"
+            ],
+            "MeshElements": [
+                "CHEXA--model1_fem1_Steel_Titanium_alloy"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "500",
+            "NumNodes": "726",
+            "Length": [
+                "ElementSize_20mm--model1_fem1_Steel_Titanium_alloy"
+            ]
+        }
+    },
+    "Project": {
+        "3d_cantilever_analysis": {
+            "People": [
+                "Shyam",
+                "Chethan"
+            ],
+            "Mechanical": [
+                "model1_sim1_Steel_Titanium_alloy"
+            ],
+            "UpdateEvent": [
+                "UpdateEvent_id_num_7--model1_sim1_Steel_Titanium_alloy"
+            ],
+            "ProjectStartDate": 1580511600.0,
+            "ProjectEndDate": 1634680800.0
+        }
+    },
+    "UpdateEvent": {
+        "UpdateEvent_id_num_7": {
+            "Comment": "changed material to Steel_Titanium_alloy",
+            "hasPredecessor": "model1_sim1",
+            "hasSuccessor": ""
+        }
+    }
+}

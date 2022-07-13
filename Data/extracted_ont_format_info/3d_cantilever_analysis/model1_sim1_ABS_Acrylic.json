@@ -1,0 +1,953 @@
+{
+    "Analysis": {
+        "AeroMechanical": "",
+        "CFD": "",
+        "CoupledAeroMechanical": "",
+        "Structural": {
+            "Mechanical": {
+                "model1_sim1_ABS_Acrylic": {
+                    "SolidMaterial": [
+                        "ABS",
+                        "Acrylic"
+                    ],
+                    "is2D": false,
+                    "isTransient": false,
+                    "LocalStorage": [
+                        "LocalStorage_id_num_1--model1_sim1_ABS_Acrylic"
+                    ],
+                    "isHarmonic": false,
+                    "is3D": true,
+                    "Geometry": [
+                        "MODEL1"
+                    ],
+                    "Boundary": [
+                        "Fixed(1)--model1_sim1_ABS_Acrylic",
+                        "Zfixed--model1_sim1_ABS_Acrylic"
+                    ],
+                    "Mesh": [
+                        "model1_fem1_ABS_Acrylic"
+                    ],
+                    "ToolVersion": "v12.0.2.9",
+                    "Result": [
+                        "model1_sim1-staticsolution--model1_sim1_ABS_Acrylic"
+                    ],
+                    "LastModificationDate": 1631003545.0,
+                    "FileSize": 3495830,
+                    "isSteadyState": true,
+                    "People": [
+                        "Shyam"
+                    ],
+                    "FileNameOriginal": "model1_sim1",
+                    "FileNameAlias": "model1_sim1_ABS_Acrylic",
+                    "PointLoad": [
+                        "Force(1)--model1_sim1_ABS_Acrylic"
+                    ],
+                    "PressureLoad": [
+                        "Pressure(1)--model1_sim1_ABS_Acrylic"
+                    ]
+                }
+            },
+            "Thermomechanical": ""
+        }
+    },
+    "Material": {
+        "FluidMaterial": "",
+        "SolidMaterial": {
+            "ABS": {
+                "MaterialCategory": "PLASTIC",
+                "MaterialSubCategory": "ABS Polymer",
+                "Density": [
+                    "Density_1.05e-06_ABS"
+                ],
+                "ModulusOfElasticity": [
+                    "ModulusOfElasticity_2000000_ABS"
+                ],
+                "PoissonRatio": "0.4",
+                "TypeOfNonlinearity": "1",
+                "YieldFunctionCriterion": "1",
+                "HardeningRule": "1",
+                "YieldStrength": [
+                    "YieldStrength_40000_ABS"
+                ],
+                "ThermalExpansionCoefficient": [
+                    "ThermalExpansionCoefficient_7e-051_ABS"
+                ],
+                "ThermalConductivity": [
+                    "ThermalConductivity_170_ABS"
+                ],
+                "SpecificHeat": [
+                    "SpecificHeat_1800000000_ABS"
+                ],
+                "CrosshatchPattern": "Rubber/Plastic"
+            },
+            "Acrylic": {
+                "MaterialCategory": "PLASTIC",
+                "MaterialSubCategory": "Acrylic",
+                "Density": [
+                    "Density_1.2e-06_Acrylic"
+                ],
+                "ModulusOfElasticity": [
+                    "ModulusOfElasticity_2000000_Acrylic"
+                ],
+                "PoissonRatio": "0.4",
+                "TypeOfNonlinearity": "1",
+                "YieldFunctionCriterion": "1",
+                "HardeningRule": "1",
+                "YieldStrength": [
+                    "YieldStrength_48000_Acrylic"
+                ],
+                "ThermalConductivity": [
+                    "ThermalConductivity_215.62_Acrylic"
+                ],
+                "SpecificHeat": [
+                    "SpecificHeat_1500000000_Acrylic"
+                ],
+                "CrosshatchPattern": "Rubber/Plastic"
+            }
+        }
+    },
+    "Boundary": {
+        "Fixed(1)--model1_sim1_ABS_Acrylic": {
+            "FixedConstraint": [
+                "FixedConstraint_id_num_1--model1_sim1_ABS_Acrylic"
+            ],
+            "Face": [
+                "FIXEDFACE--MODEL1"
+            ]
+        },
+        "Zfixed--model1_sim1_ABS_Acrylic": {
+            "UserDefinedConstraint": [
+                "UserDefinedConstraint_id_num_2--model1_sim1_ABS_Acrylic"
+            ]
+        }
+    },
+    "People": {
+        "Shyam": {
+            "Name": "Shyam"
+        },
+        "Chethan": {
+            "Name": "Chethan"
+        }
+    },
+    "Geometry": {
+        "MODEL1": {
+            "SolidMaterial": [
+                "ABS",
+                "Acrylic"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "LastModificationDate": 1614324142.0,
+            "FileSize": 45394,
+            "FileNameOriginal": "MODEL1",
+            "FileNameAlias": "MODEL1",
+            "Line": [
+                "Line4--MODEL1",
+                "Line1--MODEL1",
+                "Line2--MODEL1",
+                "Line3--MODEL1"
+            ],
+            "Component": [
+                "MODEL1--MODEL1"
+            ],
+            "Face": [
+                "TOPFACE2--MODEL1",
+                "TOPFACE1--MODEL1",
+                "FRONTLOAD--MODEL1",
+                "FIXEDFACE--MODEL1"
+            ]
+        }
+    },
+    "Loads": {
+        "CyclicLoads": "",
+        "HeatFlux": "",
+        "MomentLoad": "",
+        "PointLoad": {
+            "Force(1)--model1_sim1_ABS_Acrylic": {
+                "Name": "Force(1)",
+                "types": [
+                    "FORCE"
+                ],
+                "CSYSOption": 5,
+                "observeNode1": "Observe Node 1",
+                "observeNode2": "Observe Node 2",
+                "observeNode3": "Observe Node 3",
+                "observeNode4": "Observe Node 4",
+                "distributionType": 1,
+                "DistributionField": "NA",
+                "Face": [
+                    "FRONTLOAD--MODEL1"
+                ],
+                "Force": [
+                    "Force_1000000.0_Force(1)--model1_sim1_ABS_Acrylic"
+                ]
+            }
+        },
+        "PressureLoad": {
+            "Pressure(1)--model1_sim1_ABS_Acrylic": {
+                "Name": "Pressure(1)",
+                "types": [
+                    "PLOAD4",
+                    "LOAD"
+                ],
+                "CSYSOption": 10,
+                "distributionType": 32,
+                "Face": [
+                    "TOPFACE1--MODEL1"
+                ],
+                "Pressure": [
+                    "Pressure_10000.0_Pressure(1)--model1_sim1_ABS_Acrylic"
+                ]
+            }
+        },
+        "UDL": ""
+    },
+    "Mesh": {
+        "model1_fem1_ABS_Acrylic": {
+            "MeshVolume": [
+                "3d_mesh(1)--model1_fem1_ABS_Acrylic",
+                "3d_mesh(2)--model1_fem1_ABS_Acrylic"
+            ],
+            "LastModificationDate": 1631003545.0,
+            "FileSize": 2083831,
+            "is2D": false,
+            "is3D": true,
+            "FileNameOriginal": "model1_fem1",
+            "FileNameAlias": "model1_fem1_ABS_Acrylic"
+        }
+    },
+    "Preprocessing": "",
+    "Result": {
+        "model1_sim1-staticsolution--model1_sim1_ABS_Acrylic": {
+            "LastModificationDate": 1631003462.0,
+            "FileSize": 5918584,
+            "DisplacementNodal": [
+                "DisplacementNodal_FIXEDFACE_id_num_4--model1_sim1_ABS_Acrylic",
+                "DisplacementNodal_FRONTLOAD_id_num_5--model1_sim1_ABS_Acrylic",
+                "DisplacementNodal_Model_id_num_6--model1_sim1_ABS_Acrylic",
+                "DisplacementNodal_TOPFACE1_id_num_7--model1_sim1_ABS_Acrylic"
+            ],
+            "ReactionForceNodal": [
+                "ReactionForceNodal_FIXEDFACE_id_num_4--model1_sim1_ABS_Acrylic",
+                "ReactionForceNodal_FRONTLOAD_id_num_5--model1_sim1_ABS_Acrylic",
+                "ReactionForceNodal_Model_id_num_6--model1_sim1_ABS_Acrylic",
+                "ReactionForceNodal_TOPFACE1_id_num_7--model1_sim1_ABS_Acrylic"
+            ],
+            "ReactionMomentNodal": [
+                "ReactionMomentNodal_FIXEDFACE_id_num_4--model1_sim1_ABS_Acrylic",
+                "ReactionMomentNodal_FRONTLOAD_id_num_5--model1_sim1_ABS_Acrylic",
+                "ReactionMomentNodal_Model_id_num_6--model1_sim1_ABS_Acrylic",
+                "ReactionMomentNodal_TOPFACE1_id_num_7--model1_sim1_ABS_Acrylic"
+            ],
+            "RotationNodal": [
+                "RotationNodal_FIXEDFACE_id_num_4--model1_sim1_ABS_Acrylic",
+                "RotationNodal_FRONTLOAD_id_num_5--model1_sim1_ABS_Acrylic",
+                "RotationNodal_Model_id_num_6--model1_sim1_ABS_Acrylic",
+                "RotationNodal_TOPFACE1_id_num_7--model1_sim1_ABS_Acrylic"
+            ],
+            "StressElementNodal": [
+                "StressElementNodal_FIXEDFACE_id_num_4--model1_sim1_ABS_Acrylic",
+                "StressElementNodal_FRONTLOAD_id_num_5--model1_sim1_ABS_Acrylic",
+                "StressElementNodal_Model_id_num_6--model1_sim1_ABS_Acrylic",
+                "StressElementNodal_TOPFACE1_id_num_7--model1_sim1_ABS_Acrylic"
+            ],
+            "StressElemental": [
+                "StressElemental_Model_id_num_6--model1_sim1_ABS_Acrylic"
+            ],
+            "ConfluencePage": [
+                "ConfluencePage_id_num_7--model1_sim1_ABS_Acrylic"
+            ],
+            "PPT": [
+                "PPT_id_num_7--model1_sim1_ABS_Acrylic"
+            ]
+        }
+    },
+    "StorageLocation": {
+        "CloudStorage": "",
+        "LocalStorage": {
+            "LocalStorage_id_num_1--model1_sim1_ABS_Acrylic": {
+                "GID": "z003hz2y",
+                "MachineName": "demlhw7sw110x"
+            },
+            "LocalStorage_id_num_8--model1_sim1_ABS_Acrylic": {
+                "GID": "",
+                "MachineName": ""
+            }
+        },
+        "ServerStorage": "",
+        "TeamcenterStorage": ""
+    },
+    "Supplier": "",
+    "QuantitativeMetric": {
+        "Angle": "",
+        "CyclicStrengthCoefficient": "",
+        "Density": {
+            "Density_1.05e-06_ABS": {
+                "hasMagnitude": "1.05e-06",
+                "hasUnit": "kg/mm^3"
+            },
+            "Density_1.2e-06_Acrylic": {
+                "hasMagnitude": "1.2e-06",
+                "hasUnit": "kg/mm^3"
+            }
+        },
+        "ElasticStrength": "",
+        "FatigueStrengthCoefficient": "",
+        "Force": {
+            "Force_1000000.0_Force(1)--model1_sim1_ABS_Acrylic": {
+                "hasMagnitude": 1000000.0,
+                "hasUnit": "N"
+            }
+        },
+        "Height": "",
+        "Independent": "",
+        "InitialStrain": "",
+        "Length": {
+            "ElementSize_20mm--model1_fem1_ABS_Acrylic": {
+                "hasMagnitude": 20.0,
+                "hasUnit": "mm"
+            }
+        },
+        "Mass_Flow": "",
+        "ModulusOfElasticity": {
+            "ModulusOfElasticity_2000000_ABS": {
+                "hasMagnitude": "2000000",
+                "hasUnit": "mN/mm^2(kPa)"
+            },
+            "ModulusOfElasticity_2000000_Acrylic": {
+                "hasMagnitude": "2000000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "Moment": "",
+        "PoissonRatioArray": "",
+        "Pressure": {
+            "Pressure_10000.0_Pressure(1)--model1_sim1_ABS_Acrylic": {
+                "hasMagnitude": 10000.0,
+                "hasUnit": "N/mm^2(MPa)"
+            }
+        },
+        "ShearModulus": "",
+        "SpecificHeat": {
+            "SpecificHeat_1800000000_ABS": {
+                "hasMagnitude": "1800000000",
+                "hasUnit": "microJ/kg-dK"
+            },
+            "SpecificHeat_1500000000_Acrylic": {
+                "hasMagnitude": "1500000000",
+                "hasUnit": "microJ/kg-dK"
+            }
+        },
+        "StrengthCoefficient": "",
+        "Stress": "",
+        "Temperature": "",
+        "ThermalConductivity": {
+            "ThermalConductivity_170_ABS": {
+                "hasMagnitude": "170",
+                "hasUnit": "microW/mm-dC"
+            },
+            "ThermalConductivity_215.62_Acrylic": {
+                "hasMagnitude": "215.62",
+                "hasUnit": "microW/mm-dC"
+            }
+        },
+        "ThermalExpansionCoefficient": {
+            "ThermalExpansionCoefficient_7e-051_ABS": {
+                "hasMagnitude": "7e-051",
+                "hasUnit": "/dC"
+            }
+        },
+        "Thickness": "",
+        "TurbulenceIntensity": "",
+        "UltimateTensileStrength": "",
+        "Velocity": "",
+        "Viscosity": "",
+        "Width": "",
+        "XDirection": "",
+        "YDirection": "",
+        "YieldStrength": {
+            "YieldStrength_40000_ABS": {
+                "hasMagnitude": "40000",
+                "hasUnit": "mN/mm^2(kPa)"
+            },
+            "YieldStrength_48000_Acrylic": {
+                "hasMagnitude": "48000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "ZDirection": ""
+    },
+    "BoundaryCondition": {
+        "FEABoundaryCondition": {
+            "FEAConstraintBC": {
+                "AntiSymmetricConstraint": "",
+                "AutomaticCoupling": "",
+                "CylindricalConstraint": "",
+                "EnforcedDisplacementConstraint": "",
+                "FixedConstraint": {
+                    "FixedConstraint_id_num_1--model1_sim1_ABS_Acrylic": {
+                        "Name": "Fixed(1)",
+                        "CSYSOption": 0,
+                        "DOF1": 0.0,
+                        "DOF2": 0.0,
+                        "DOF3": 0.0,
+                        "DOF4": 0.0,
+                        "DOF5": 0.0,
+                        "DOF6": 0.0,
+                        "DescriptorName": "fixedConstraint",
+                        "Face": [
+                            "FIXEDFACE--MODEL1"
+                        ],
+                        "DistributionType": 5,
+                        "ConstraintType": "SPC"
+                    }
+                },
+                "FixedRotationConstraint": "",
+                "FixedTranslationConstraint": "",
+                "ManualCoupling": "",
+                "PinnedConstraint": "",
+                "RollerConstraint": "",
+                "SimplySupportedConstraint": "",
+                "SliderConstraint": "",
+                "SymmetricConstraint": "",
+                "UserDefinedConstraint": {
+                    "UserDefinedConstraint_id_num_2--model1_sim1_ABS_Acrylic": {
+                        "Name": "Zfixed",
+                        "CSYSOption": 0,
+                        "Local Csys": null,
+                        "DOF1": -777777.0,
+                        "DOF2": -777777.0,
+                        "DOF3": 0.0,
+                        "DOF4": -777777.0,
+                        "DOF5": -777777.0,
+                        "DOF6": -777777.0,
+                        "DCID": "CORD2R",
+                        "DCID2": "CORD2C",
+                        "DCID3": "CORD2S",
+                        "DescriptorName": "UserDefinedDisplacementConstraint",
+                        "DistributionType": 5,
+                        "ConstraintType": "SPC"
+                    }
+                }
+            },
+            "FEAInteractionBC": {
+                "MechanicalContact": "",
+                "ThermalContact": ""
+            }
+        },
+        "CFDBoundaryCondition": {
+            "CFDConstraintBC": {
+                "FrictionWallBC": "",
+                "TotalPressureBC": "",
+                "VelocityBC": "",
+                "MassFlowBC": "",
+                "MovingWallBC": "",
+                "SmoothWallBC": "",
+                "StationaryWallBC": ""
+            },
+            "CFDInteractionBC": ""
+        },
+        "GenericBoundaryCondition": {
+            "PressureBC": ""
+        }
+    },
+    "PostProcessing": {
+        "Parameters": {
+            "CFDParameters": {
+                "AreaAveragedDynamicPressure": "",
+                "AreaAveragedPressure": "",
+                "AreaAveragedTotalPressure": "",
+                "MassAveragedDynamicPressure": "",
+                "MassAveragedPressure": "",
+                "MassAveragedTotalPressure": "",
+                "MassFlowRate": ""
+            },
+            "FEAParameters": {
+                "DisplacementNodal": {
+                    "DisplacementNodal_FIXEDFACE_id_num_4--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "5.5518580140339166e-18",
+                        "Magnitude-Minimum": "-1.3690350875813616e-33",
+                        "X-Maximum": "2.5501173851864135e-18",
+                        "X-Minimum": "-1.6847708659653423e-18",
+                        "Y-Maximum": "4.502773794454351e-18",
+                        "Y-Minimum": "-2.915812072839729e-18",
+                        "Z-Maximum": "2.747614407854115e-18",
+                        "Z-Minimum": "-1.2974722772002469e-33"
+                    },
+                    "DisplacementNodal_FRONTLOAD_id_num_5--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "10.281962394714355",
+                        "Magnitude-Minimum": "9.048999786376953",
+                        "X-Maximum": "3.9296951293945312",
+                        "X-Minimum": "-3.0047683715820312",
+                        "Y-Maximum": "0.10614898800849915",
+                        "Y-Minimum": "-0.10723458975553513",
+                        "Z-Maximum": "-9.031251907348633",
+                        "Z-Minimum": "-9.505309104919434"
+                    },
+                    "DisplacementNodal_Model_id_num_6--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "10.281962394714355",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "3.9296951293945312",
+                        "X-Minimum": "-3.0139212608337402",
+                        "Y-Maximum": "0.8399096727371216",
+                        "Y-Minimum": "-0.8378897905349731",
+                        "Z-Maximum": "0.2859789729118347",
+                        "Z-Minimum": "-9.505309104919434"
+                    },
+                    "DisplacementNodal_TOPFACE1_id_num_7--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "10.27842903137207",
+                        "Magnitude-Minimum": "3.389647960662842",
+                        "X-Maximum": "3.9296951293945312",
+                        "X-Minimum": "2.6181654930114746",
+                        "Y-Maximum": "0.13750846683979034",
+                        "Y-Minimum": "-0.13814225792884827",
+                        "Z-Maximum": "-2.1487181186676025",
+                        "Z-Minimum": "-9.499045372009277"
+                    }
+                },
+                "ReactionForceNodal": {
+                    "ReactionForceNodal_FIXEDFACE_id_num_4--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "1466613.0",
+                        "Magnitude-Minimum": "805.5189819335938",
+                        "X-Maximum": "1301775.125",
+                        "X-Minimum": "-1410026.875",
+                        "Y-Maximum": "719728.25",
+                        "Y-Minimum": "-727556.9375",
+                        "Z-Maximum": "535142.0",
+                        "Z-Minimum": "-755085.1875"
+                    },
+                    "ReactionForceNodal_FRONTLOAD_id_num_5--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionForceNodal_Model_id_num_6--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "18730086.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "1301775.125",
+                        "X-Minimum": "-1410026.875",
+                        "Y-Maximum": "719728.25",
+                        "Y-Minimum": "-727556.9375",
+                        "Z-Maximum": "18730086.0",
+                        "Z-Minimum": "-755085.1875"
+                    },
+                    "ReactionForceNodal_TOPFACE1_id_num_7--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "ReactionMomentNodal": {
+                    "ReactionMomentNodal_FIXEDFACE_id_num_4--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionMomentNodal_FRONTLOAD_id_num_5--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionMomentNodal_Model_id_num_6--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionMomentNodal_TOPFACE1_id_num_7--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "RotationNodal": {
+                    "RotationNodal_FIXEDFACE_id_num_4--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "RotationNodal_FRONTLOAD_id_num_5--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "RotationNodal_Model_id_num_6--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "RotationNodal_TOPFACE1_id_num_7--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "StressElementNodal": {
+                    "StressElementNodal_FIXEDFACE_id_num_4--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "10241052770304.0",
+                        "Determinant-Minimum": "-7801978486784.0",
+                        "MaximumPrincipal-Maximum": "34340.828125",
+                        "MaximumPrincipal-Minimum": "-13378.06640625",
+                        "MaximumShear-Maximum": "9841.74609375",
+                        "MaximumShear-Minimum": "1900.3492431640625",
+                        "Mean-Maximum": "23065.0703125",
+                        "Mean-Minimum": "-21211.8671875",
+                        "MiddlePrincipal-Maximum": "19770.060546875",
+                        "MiddlePrincipal-Minimum": "-18181.599609375",
+                        "MinimumPrincipal-Maximum": "15084.3232421875",
+                        "MinimumPrincipal-Minimum": "-32075.93359375",
+                        "Octahedral-Maximum": "8355.900390625",
+                        "Octahedral-Minimum": "1791.664794921875",
+                        "VonMises-Maximum": "17725.541015625",
+                        "VonMises-Minimum": "3800.695068359375",
+                        "WorstPrincipal-Maximum": "34340.828125",
+                        "WorstPrincipal-Minimum": "-32075.93359375",
+                        "XX-Maximum": "29655.08984375",
+                        "XX-Minimum": "-27272.400390625",
+                        "XY-Maximum": "8425.9677734375",
+                        "XY-Minimum": "-8166.1796875",
+                        "YY-Maximum": "19770.060546875",
+                        "YY-Minimum": "-18181.599609375",
+                        "YZ-Maximum": "464.67120361328125",
+                        "YZ-Minimum": "-31.408124923706055",
+                        "ZX-Maximum": "7417.9755859375",
+                        "ZX-Minimum": "-5096.31298828125",
+                        "ZZ-Maximum": "19770.060546875",
+                        "ZZ-Minimum": "-18181.599609375"
+                    },
+                    "StressElementNodal_FRONTLOAD_id_num_5--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "138607360.0",
+                        "Determinant-Minimum": "-3719505152.0",
+                        "MaximumPrincipal-Maximum": "918.9397583007812",
+                        "MaximumPrincipal-Minimum": "94.55841827392578",
+                        "MaximumShear-Maximum": "5207.953125",
+                        "MaximumShear-Minimum": "99.9765625",
+                        "Mean-Maximum": "179.61546325683594",
+                        "Mean-Minimum": "-3331.668701171875",
+                        "MiddlePrincipal-Maximum": "718.010009765625",
+                        "MiddlePrincipal-Minimum": "-85.759521484375",
+                        "MinimumPrincipal-Maximum": "-20.725177764892578",
+                        "MinimumPrincipal-Minimum": "-10092.349609375",
+                        "Octahedral-Maximum": "4826.19482421875",
+                        "Octahedral-Minimum": "83.10992431640625",
+                        "VonMises-Maximum": "10237.9052734375",
+                        "VonMises-Minimum": "176.3027801513672",
+                        "WorstPrincipal-Maximum": "500.47271728515625",
+                        "WorstPrincipal-Minimum": "-10092.349609375",
+                        "XX-Maximum": "756.3712768554688",
+                        "XX-Minimum": "-87.09524536132812",
+                        "XY-Maximum": "52.683006286621094",
+                        "XY-Minimum": "-52.701866149902344",
+                        "YY-Maximum": "718.010009765625",
+                        "YY-Minimum": "-410.56561279296875",
+                        "YZ-Maximum": "163.78221130371094",
+                        "YZ-Minimum": "-163.7162628173828",
+                        "ZX-Maximum": "98.51226043701172",
+                        "ZX-Minimum": "-1152.1114501953125",
+                        "ZZ-Maximum": "226.1415252685547",
+                        "ZZ-Minimum": "-10092.2646484375"
+                    },
+                    "StressElementNodal_Model_id_num_6--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "11362730246144.0",
+                        "Determinant-Minimum": "-1221040948641792.0",
+                        "MaximumPrincipal-Maximum": "35750.8046875",
+                        "MaximumPrincipal-Minimum": "-75009.3828125",
+                        "MaximumShear-Maximum": "42960.19140625",
+                        "MaximumShear-Minimum": "81.44007873535156",
+                        "Mean-Maximum": "23822.375",
+                        "Mean-Minimum": "-111499.6875",
+                        "MiddlePrincipal-Maximum": "26213.943359375",
+                        "MiddlePrincipal-Minimum": "-106181.8671875",
+                        "MinimumPrincipal-Maximum": "15777.19140625",
+                        "MinimumPrincipal-Minimum": "-153307.8125",
+                        "Octahedral-Maximum": "35098.71484375",
+                        "Octahedral-Minimum": "68.11466979980469",
+                        "VonMises-Maximum": "74455.6171875",
+                        "VonMises-Minimum": "144.4930419921875",
+                        "WorstPrincipal-Maximum": "35750.8046875",
+                        "WorstPrincipal-Minimum": "-153307.8125",
+                        "XX-Maximum": "35425.03515625",
+                        "XX-Minimum": "-120974.265625",
+                        "XY-Maximum": "9260.6240234375",
+                        "XY-Minimum": "-8838.5712890625",
+                        "YY-Maximum": "26415.193359375",
+                        "YY-Minimum": "-75031.765625",
+                        "YZ-Maximum": "13773.361328125",
+                        "YZ-Minimum": "-12028.1552734375",
+                        "ZX-Maximum": "22417.822265625",
+                        "ZX-Minimum": "-23230.0078125",
+                        "ZZ-Maximum": "20419.177734375",
+                        "ZZ-Minimum": "-138493.03125"
+                    },
+                    "StressElementNodal_TOPFACE1_id_num_7--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "463948447744.0",
+                        "Determinant-Minimum": "-336814931968.0",
+                        "MaximumPrincipal-Maximum": "29036.068359375",
+                        "MaximumPrincipal-Minimum": "43.98797607421875",
+                        "MaximumShear-Maximum": "17784.728515625",
+                        "MaximumShear-Minimum": "4943.82275390625",
+                        "Mean-Maximum": "8765.00390625",
+                        "Mean-Minimum": "-3341.53076171875",
+                        "MiddlePrincipal-Maximum": "1459.8992919921875",
+                        "MiddlePrincipal-Minimum": "-2405.37646484375",
+                        "MinimumPrincipal-Maximum": "-4200.9541015625",
+                        "MinimumPrincipal-Minimum": "-11501.375",
+                        "Octahedral-Maximum": "14938.4384765625",
+                        "Octahedral-Minimum": "4639.39697265625",
+                        "VonMises-Maximum": "31689.212890625",
+                        "VonMises-Minimum": "9841.6474609375",
+                        "WorstPrincipal-Maximum": "29036.068359375",
+                        "WorstPrincipal-Minimum": "-10947.0595703125",
+                        "XX-Maximum": "28223.81640625",
+                        "XX-Minimum": "-45.646278381347656",
+                        "XY-Maximum": "998.20654296875",
+                        "XY-Minimum": "-1545.1934814453125",
+                        "YY-Maximum": "1496.904541015625",
+                        "YY-Minimum": "-2403.729736328125",
+                        "YZ-Maximum": "51.43607711791992",
+                        "YZ-Minimum": "-462.39013671875",
+                        "ZX-Maximum": "7.855622291564941",
+                        "ZX-Minimum": "-5447.80810546875",
+                        "ZZ-Maximum": "-3425.7080078125",
+                        "ZZ-Minimum": "-11342.583984375"
+                    }
+                },
+                "StressElemental": {
+                    "StressElemental_Model_id_num_6--model1_sim1_ABS_Acrylic": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "1301081620480.0",
+                        "Determinant-Minimum": "-267980558565376.0",
+                        "MaximumPrincipal-Maximum": "32779.94140625",
+                        "MaximumPrincipal-Minimum": "-39523.75",
+                        "MaximumShear-Maximum": "31437.62109375",
+                        "MaximumShear-Minimum": "95.76473999023438",
+                        "Mean-Maximum": "12404.8203125",
+                        "Mean-Minimum": "-68910.0078125",
+                        "MiddlePrincipal-Maximum": "9292.765625",
+                        "MiddlePrincipal-Minimum": "-69137.8828125",
+                        "MinimumPrincipal-Maximum": "6551.724609375",
+                        "MinimumPrincipal-Minimum": "-98068.390625",
+                        "Octahedral-Maximum": "25789.66015625",
+                        "Octahedral-Minimum": "78.5648193359375",
+                        "VonMises-Maximum": "54708.12890625",
+                        "VonMises-Minimum": "166.66114807128906",
+                        "WorstPrincipal-Maximum": "32779.94140625",
+                        "WorstPrincipal-Minimum": "-98068.390625",
+                        "XX-Maximum": "32778.93359375",
+                        "XX-Minimum": "-77006.5",
+                        "XY-Maximum": "5335.955078125",
+                        "XY-Minimum": "-5335.71728515625",
+                        "YY-Maximum": "9145.2431640625",
+                        "YY-Minimum": "-39527.27734375",
+                        "YZ-Maximum": "4821.7529296875",
+                        "YZ-Minimum": "-4692.48779296875",
+                        "ZX-Maximum": "12876.2958984375",
+                        "ZX-Minimum": "-23224.44921875",
+                        "ZZ-Maximum": "9276.603515625",
+                        "ZZ-Minimum": "-90196.25"
+                    }
+                }
+            },
+            "GenericParameters": {
+                "MaxTemperature": ""
+            }
+        },
+        "Plots": {
+            "ContourPlots": {
+                "ContactPressureContour": "",
+                "ContactStatusContour": "",
+                "PressureContour": "",
+                "TotalPressureContour": "",
+                "VelocityContour": ""
+            },
+            "DisplacementPlot": "",
+            "XYPlots": {
+                "MassAveragedTotalPressurePlot": "",
+                "WallYPlus": ""
+            },
+            "StressPlot": {
+                "PrincipalStressPlot": "",
+                "VonMisesStressPlot": ""
+            },
+            "StrainPlot": ""
+        }
+    },
+    "MeshElements": {
+        "AxiSymmetricElement": "",
+        "HexElement": {
+            "CHEXA--model1_fem1_ABS_Acrylic": {}
+        },
+        "PrismLayer": "",
+        "QuadElement": "",
+        "ShellElement": "",
+        "TetrahedralElement": {
+            "CTETRA--model1_fem1_ABS_Acrylic": {}
+        }
+    },
+    "GeometricFeature": {
+        "Body": "",
+        "Curve": "",
+        "Edge": "",
+        "Face": {
+            "TOPFACE2--MODEL1": {},
+            "TOPFACE1--MODEL1": {},
+            "FRONTLOAD--MODEL1": {},
+            "FIXEDFACE--MODEL1": {}
+        },
+        "Line": {
+            "Line4--MODEL1": {},
+            "Line1--MODEL1": {},
+            "Line2--MODEL1": {},
+            "Line3--MODEL1": {}
+        },
+        "Point": ""
+    },
+    "Documentation": {
+        "ConfluencePage": {
+            "ConfluencePage_id_num_7--model1_sim1_ABS_Acrylic": {
+                "WebSite": ""
+            }
+        },
+        "PPT": {
+            "PPT_id_num_7--model1_sim1_ABS_Acrylic": {
+                "LocalStorage": [
+                    "LocalStorage_id_num_8--model1_sim1_ABS_Acrylic"
+                ]
+            }
+        }
+    },
+    "MeshVolume": {
+        "3d_mesh(1)--model1_fem1_ABS_Acrylic": {
+            "Mesh_Collector": "Solid(1)",
+            "Mesh_name": "3d_mesh(1)",
+            "Surface Curvature Based Size Variation": "50",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "ABS"
+            ],
+            "MeshElements": [
+                "CTETRA--model1_fem1_ABS_Acrylic"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "2",
+            "NumElements": "3025",
+            "NumNodes": "5070",
+            "Length": [
+                "ElementSize_20mm--model1_fem1_ABS_Acrylic"
+            ]
+        },
+        "3d_mesh(2)--model1_fem1_ABS_Acrylic": {
+            "Mesh_Collector": "Solid(2)",
+            "Mesh_name": "3d_mesh(2)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Acrylic"
+            ],
+            "MeshElements": [
+                "CHEXA--model1_fem1_ABS_Acrylic"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "500",
+            "NumNodes": "726",
+            "Length": [
+                "ElementSize_20mm--model1_fem1_ABS_Acrylic"
+            ]
+        }
+    },
+    "Project": {
+        "3d_cantilever_analysis": {
+            "People": [
+                "Shyam",
+                "Chethan"
+            ],
+            "Mechanical": [
+                "model1_sim1_ABS_Acrylic"
+            ],
+            "UpdateEvent": [
+                "UpdateEvent_id_num_7--model1_sim1_ABS_Acrylic"
+            ],
+            "ProjectStartDate": 1580511600.0,
+            "ProjectEndDate": 1634680800.0
+        }
+    },
+    "UpdateEvent": {
+        "UpdateEvent_id_num_7": {
+            "Comment": "changed material to ABS_Acrylic",
+            "hasPredecessor": "model1_sim1",
+            "hasSuccessor": ""
+        }
+    }
+}

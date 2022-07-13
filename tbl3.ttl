@@ -1,0 +1,450 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+"Body" a "JournalIdentifier",
+        "Name" ;
+    "JournalIdentifier" "HANDLE R-1798" ;
+    "Name" "" .
+
+"CONSTRAINT_INFO" "CSYSOption" 0 ;
+    "DOF1" 0e+00 ;
+    "DOF2" 0e+00 ;
+    "DOF3" 0e+00 ;
+    "DOF4" 0e+00 ;
+    "DOF5" 0e+00 ;
+    "DOF6" 0e+00 ;
+    "DescriptorName" "fixedConstraint" ;
+    "Name" "Fixed(1)" ;
+    "distributionType" 5 ;
+    "types" "SPC" .
+
+"CartesianCoordinateSystem" a "JournalIdentifier",
+        "Name" ;
+    "JournalIdentifier" "HANDLE R-122" ;
+    "Name" "" .
+
+"Component" a "JournalIdentifier",
+        "Name",
+        "PRT_Name" ;
+    "JournalIdentifier" "COMPONENT 2Dmodel 1" ;
+    "Name" "2DMODEL" ;
+    "PRT_Name" "2Dmodel.prt" .
+
+"DatumAxis" a "JournalIdentifier",
+        "Name" ;
+    "JournalIdentifier" "HANDLE R-130" ;
+    "Name" "" .
+
+"DatumPlane" a "JournalIdentifier",
+        "Name" ;
+    "JournalIdentifier" "HANDLE R-126" ;
+    "Name" "" .
+
+"Displacement - Nodal" a "Magnitude",
+        "X",
+        "Y",
+        "Z" .
+
+"Edge" a "JournalIdentifier",
+        "Name" ;
+    "JournalIdentifier" "HANDLE R-1804" ;
+    "Name" "LOADINGEDGE" .
+
+"Face" a "JournalIdentifier",
+        "Name" ;
+    "JournalIdentifier" "HANDLE R-1801" ;
+    "Name" "" .
+
+"GEOM_INFO" "RootComponent" "2Dmodel_fem2_i" .
+
+"LOAD_INFO" "CSYSOption" 5 ;
+    "DistributionField" "NA" ;
+    "Name" "FrontLoad" ;
+    "distributionType" 1 ;
+    "geom_feature" "LOADINGEDGE" ;
+    "observeNode1" "Observe Node 1" ;
+    "observeNode2" "Observe Node 2" ;
+    "observeNode3" "Observe Node 3" ;
+    "observeNode4" "Observe Node 4" ;
+    "types" "FORCE" .
+
+"Line" a "JournalIdentifier",
+        "Name" ;
+    "JournalIdentifier" "HANDLE R-296" ;
+    "Name" "Line4" .
+
+"MESH_INFO" "MeshFileDateModified" 1.630996e+09 ;
+    "MeshFileName" "2Dmodel_fem2" ;
+    "MeshFileSize" 1785929 .
+
+"MeshVolume" a "ELEMENT_TYPES",
+        "Element Size",
+        "Mesh_Collector",
+        "Mesh_name",
+        "Minimum Element Length",
+        "Number of elements in the mesh",
+        "Number of nodes in the mesh",
+        "SolidMaterial",
+        "Surface Curvature Based Size Variation",
+        "Surface Curvature Threshold",
+        "Type of mesh" ;
+    "ELEMENT_TYPES" "CQUAD8" ;
+    "Element Size" "5 mm" ;
+    "Mesh_Collector" "ThinShell(1)" ;
+    "Mesh_name" "2d_mesh(1)" ;
+    "Minimum Element Length" "0.5" ;
+    "Number of elements in the mesh" "1200" ;
+    "Number of nodes in the mesh" "3761" ;
+    "SolidMaterial" "ABS" ;
+    "Surface Curvature Based Size Variation" "50" ;
+    "Surface Curvature Threshold" "2.525 mm" ;
+    "Type of mesh" "2D" .
+
+"PROPERTY_INFO" "Name" "PSHELL1" ;
+    "types" "PSHELL" .
+
+"Point" a "JournalIdentifier",
+        "Name" ;
+    "JournalIdentifier" "HANDLE R-123" ;
+    "Name" "" .
+
+"RESULT_INFO" "ResultFileDateModified" 1.631e+09 ;
+    "ResultFileName" "2dmodel_sim2-structural" ;
+    "ResultFileSize" 2774400 .
+
+"Reaction Force - Nodal" a "Magnitude",
+        "X",
+        "Y",
+        "Z" .
+
+"Reaction Moment - Nodal" a "Magnitude",
+        "X",
+        "Y",
+        "Z" .
+
+"ResultDetails" a "LOADINGEDGE",
+        "Model",
+        "TOPEDGE" .
+
+"Rotation - Nodal" a "Magnitude",
+        "X",
+        "Y",
+        "Z" .
+
+"Stress Bottom - Element-Nodal" a "Determinant",
+        "Max Principal",
+        "Max Shear",
+        "Mean",
+        "Mid Principal",
+        "Min Principal",
+        "Octahedral",
+        "Von-Mises",
+        "Worst Principal",
+        "XX",
+        "XY",
+        "YY",
+        "YZ",
+        "ZX",
+        "ZZ" .
+
+"Stress Bottom - Elemental" a "Determinant",
+        "Max Principal",
+        "Max Shear",
+        "Mean",
+        "Mid Principal",
+        "Min Principal",
+        "Octahedral",
+        "Von-Mises",
+        "Worst Principal",
+        "XX",
+        "XY",
+        "YY",
+        "YZ",
+        "ZX",
+        "ZZ" .
+
+"Stress Top - Element-Nodal" a "Determinant",
+        "Max Principal",
+        "Max Shear",
+        "Mean",
+        "Mid Principal",
+        "Min Principal",
+        "Octahedral",
+        "Von-Mises",
+        "Worst Principal",
+        "XX",
+        "XY",
+        "YY",
+        "YZ",
+        "ZX",
+        "ZZ" .
+
+"Stress Top - Elemental" a "Determinant",
+        "Max Principal",
+        "Max Shear",
+        "Mean",
+        "Mid Principal",
+        "Min Principal",
+        "Octahedral",
+        "Von-Mises",
+        "Worst Principal",
+        "XX",
+        "XY",
+        "YY",
+        "YZ",
+        "ZX",
+        "ZZ" .
+
+"TotalForce" a "Magnitude",
+        "Unit" ;
+    "Magnitude" 1e+06 ;
+    "Unit" "N" .
+
+"UNITS" "FORCE" "milli-newton" ;
+    "LENGTH" "mm" ;
+    "MASS" "kilogram (kg)" ;
+    "TEMPERATURE" "deg Celsius" ;
+    "THERMAL_ENERGY" "mN-mm (micro-joule)" ;
+    "TIME" "sec" .
+
+"geom_name" a "current_name",
+        "new_name" ;
+    "current_name" "2DMODEL" ;
+    "new_name" "2DMODEL_ABS" .
+
+"manual_info" "confluence_url" "" ;
+    "new_project" false ;
+    "ppt_cloud_extn" "" ;
+    "ppt_cloud_hostname" "" ;
+    "ppt_cloud_loc" "" ;
+    "ppt_gid" "" ;
+    "ppt_machine_name" "" ;
+    "ppt_name" "" ;
+    "ppt_server_bucket" "" ;
+    "ppt_server_extn" "" ;
+    "ppt_server_hostname" "" ;
+    "ppt_server_loc" "" ;
+    "ppt_storage_location" "Local" ;
+    "ppt_tc_path" "" ;
+    "ppt_tc_project_id" "" ;
+    "ppt_tc_server_loc" "ORL" ;
+    "predecessor_analysis" "2Dmodel_sim2" ;
+    "project_contributors" "Chethan",
+        "Shyam" ;
+    "project_end_date" "20-Oct-2021" ;
+    "project_name" "2d_cantilever_analysis" ;
+    "project_start_date" "21-Dec-2020" ;
+    "simulation_contributors" "Shyam" ;
+    "successor_analysis" "" ;
+    "update_event_comment" "changed material to ABS" .
+
+"mesh_name" a "current_name",
+        "new_name" ;
+    "current_name" "2Dmodel_fem2" ;
+    "new_name" "2Dmodel_fem2_ABS" .
+
+"root" "ANALYSIS_TYPE" "Structural" ;
+    "DateModified" 1.631002e+09 ;
+    "FileSize" 3459902 ;
+    "REGION_INFO" () ;
+    "ToolVersion" "v12.0.2.9" ;
+    "isHarmonic" false ;
+    "isSteadyState" true ;
+    "isTransient" false .
+
+"sim_name" a "current_name",
+        "new_name" ;
+    "current_name" "2Dmodel_sim2" ;
+    "new_name" "2Dmodel_sim2_ABS" .
+
+"2Dmodel_fem2_i" a "GeometryFileDateModified",
+        "GeometryFileName",
+        "GeometryFileSize",
+        "all_objects",
+        "is2D",
+        "is3D",
+        "isAssembly" ;
+    "GeometryFileDateModified" 1.613118e+09 ;
+    "GeometryFileName" "2Dmodel_fem2_i.prt" ;
+    "GeometryFileSize" 37850 ;
+    "is2D" true ;
+    "is3D" false ;
+    "isAssembly" false .
+
+"ABS" a "Category",
+        "Crosshatch Pattern",
+        "Hardening Rule (HR)",
+        "Mass Density (RHO)",
+        "Poisson's Ratio (NU)",
+        "Specific Heat (CP)",
+        "Sub-Category",
+        "Thermal Conductivity (K)",
+        "Thermal Expansion Coefficient (A)",
+        "Type of Nonlinearity (TYPE)",
+        "Yield Function Criterion (YF)",
+        "Yield Strength",
+        "Young's Modulus (E)" ;
+    "Category" "PLASTIC" ;
+    "Crosshatch Pattern" "Rubber/Plastic" ;
+    "Sub-Category" "ABS Polymer" .
+
+"Hardening Rule (HR)" "Magnitude" "1" ;
+    "Unit" "" .
+
+"Mass Density (RHO)" "Magnitude" "1.05e-06" ;
+    "Unit" "kg/mm^3" .
+
+"Poisson's Ratio (NU)" "Magnitude" "0.4" ;
+    "Unit" "" .
+
+"Specific Heat (CP)" "Magnitude" "1800000000" ;
+    "Unit" "microJ/kg-dK" .
+
+"Thermal Conductivity (K)" "Magnitude" "170" ;
+    "Unit" "microW/mm-dC" .
+
+"Thermal Expansion Coefficient (A)" "Magnitude" "7e-051" ;
+    "Unit" "/dC" .
+
+"Type of Nonlinearity (TYPE)" "Magnitude" "1" ;
+    "Unit" "" .
+
+"Yield Function Criterion (YF)" "Magnitude" "1" ;
+    "Unit" "" .
+
+"Yield Strength" "Magnitude" "40000" ;
+    "Unit" "mN/mm^2(kPa)" .
+
+"Young's Modulus (E)" "Magnitude" "2000000" ;
+    "Unit" "mN/mm^2(kPa)" .
+
+"Determinant" "Maximum" 0e+00 ;
+    "Minimum" 0e+00 .
+
+"Max Principal" "Maximum" 2.016793e+03,
+        5.748355e+03,
+        5.554357e+04,
+        9.068916e+04 ;
+    "Minimum" -4.829417e-10,
+        -4.183676e-11,
+        -1.818989e-11,
+        1.997257e+03 .
+
+"Max Shear" "Maximum" 1.020544e+03,
+        2.777179e+04,
+        4.36087e+04,
+        4.534458e+04 ;
+    "Minimum" 8.344271e+02,
+        8.395735e+02,
+        9.986283e+02 .
+
+"Mean" "Maximum" 1.237591e+03,
+        1.237962e+03,
+        2.097612e+04,
+        3.692561e+04 ;
+    "Minimum" -3.513641e+04,
+        -1.911946e+04,
+        6.516857e+02 .
+
+"Mid Principal" "Maximum" 1.669484e+03,
+        1.711499e+03,
+        9.319766e+03,
+        2.008767e+04 ;
+    "Minimum" -1.819182e+04,
+        -7.5093e+03,
+        -5.002221e-12 .
+
+"Min Principal" "Maximum" 1.136868e-12,
+        1.118678e-10,
+        6.835762e-09,
+        7.545168e-09 ;
+    "Minimum" -8.721741e+04,
+        -5.171195e+04,
+        -4.271791e+01 .
+
+"Octahedral" "Maximum" 9.52269e+02,
+        2.462811e+04,
+        3.756823e+04,
+        3.889103e+04 ;
+    "Minimum" 6.814145e+02,
+        6.814199e+02,
+        6.8767e+02,
+        8.167174e+02 .
+
+"Von-Mises" "Maximum" 2.020068e+03,
+        5.22441e+04,
+        7.969426e+04,
+        8.250033e+04 ;
+    "Minimum" 1.445498e+03,
+        1.44551e+03,
+        1.458768e+03,
+        1.732519e+03 .
+
+"Worst Principal" "Maximum" 2.016793e+03,
+        2.049251e+03,
+        5.554357e+04,
+        9.068916e+04 ;
+    "Minimum" -8.721741e+04,
+        -5.171195e+04,
+        1.997257e+03 .
+
+"X" "Maximum" 0e+00,
+        2.291458e+00,
+        2.536169e+00,
+        4.190876e+05,
+        7.812597e+05 ;
+    "Minimum" -8.471592e+05,
+        -2.064897e+00,
+        -2.035991e+00,
+        0e+00 .
+
+"XX" "Maximum" 2.01679e+03,
+        2.048805e+03,
+        5.367163e+04,
+        8.217998e+04 ;
+    "Minimum" -7.835812e+04,
+        -4.972769e+04,
+        1.997256e+03 .
+
+"XY" "Maximum" 0e+00 ;
+    "Minimum" 0e+00 .
+
+"Y" "Maximum" 0e+00 ;
+    "Minimum" 0e+00 .
+
+"YY" "Maximum" 0e+00 ;
+    "Minimum" 0e+00 .
+
+"YZ" "Maximum" 0e+00 ;
+    "Minimum" 0e+00 .
+
+"Z" "Maximum" 0e+00,
+        1.139111e+01 ;
+    "Minimum" -2.239394e+05,
+        0e+00,
+        1.092819e+01 .
+
+"ZX" "Maximum" 2.518324e+00,
+        9.352464e+03,
+        2.308744e+04 ;
+    "Minimum" -4.864386e+03,
+        -4.020965e+02,
+        -5.780968e+00,
+        -3.908751e+00 .
+
+"ZZ" "Maximum" 1.711531e+03,
+        5.747395e+03,
+        1.16044e+04,
+        2.859685e+04 ;
+    "Minimum" -2.705109e+04,
+        -9.992031e+03,
+        -4.271308e+01 .
+
+"Magnitude" "Maximum" 0e+00,
+        1.157164e+01,
+        1.16684e+01,
+        4.751666e+05,
+        8.522138e+05 ;
+    "Minimum" 0e+00,
+        1.116689e+01 .
+

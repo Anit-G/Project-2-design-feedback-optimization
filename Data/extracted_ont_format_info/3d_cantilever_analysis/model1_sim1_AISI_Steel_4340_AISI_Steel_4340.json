@@ -1,0 +1,955 @@
+{
+    "Analysis": {
+        "AeroMechanical": "",
+        "CFD": "",
+        "CoupledAeroMechanical": "",
+        "Structural": {
+            "Mechanical": {
+                "model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                    "SolidMaterial": [
+                        "AISI_Steel_4340"
+                    ],
+                    "is2D": false,
+                    "isTransient": false,
+                    "LocalStorage": [
+                        "LocalStorage_id_num_1--model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+                    ],
+                    "isHarmonic": false,
+                    "is3D": true,
+                    "Geometry": [
+                        "MODEL1"
+                    ],
+                    "Boundary": [
+                        "Fixed(1)--model1_sim1_AISI_Steel_4340_AISI_Steel_4340",
+                        "Zfixed--model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+                    ],
+                    "Mesh": [
+                        "model1_fem1_AISI_Steel_4340_AISI_Steel_4340"
+                    ],
+                    "ToolVersion": "v12.0.2.9",
+                    "Result": [
+                        "model1_sim1-staticsolution--model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+                    ],
+                    "LastModificationDate": 1631003888.0,
+                    "FileSize": 3495940,
+                    "isSteadyState": true,
+                    "People": [
+                        "Shyam"
+                    ],
+                    "FileNameOriginal": "model1_sim1",
+                    "FileNameAlias": "model1_sim1_AISI_Steel_4340_AISI_Steel_4340",
+                    "PointLoad": [
+                        "Force(1)--model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+                    ],
+                    "PressureLoad": [
+                        "Pressure(1)--model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+                    ]
+                }
+            },
+            "Thermomechanical": ""
+        }
+    },
+    "Material": {
+        "FluidMaterial": "",
+        "SolidMaterial": {
+            "AISI_Steel_4340": {
+                "R0": "2.5",
+                "R45": "3",
+                "R90": "2.7",
+                "MaterialCategory": "METAL",
+                "MaterialSubCategory": "Carbon Steel",
+                "Density": [
+                    "Density_7.85e-06_AISI_Steel_4340"
+                ],
+                "ModulusOfElasticity": [
+                    "ModulusOfElasticity_193000000_AISI_Steel_4340"
+                ],
+                "PoissonRatio": "0.284",
+                "TypeOfNonlinearity": "1",
+                "YieldFunctionCriterion": "1",
+                "HardeningRule": "1",
+                "YieldStrength": [
+                    "YieldStrength_1178000_AISI_Steel_4340"
+                ],
+                "UltimateTensileStrength": [
+                    "UltimateTensileStrength_1240000_AISI_Steel_4340"
+                ],
+                "FatigueStrengthCoefficient": [
+                    "FatigueStrengthCoefficient_1917000_AISI_Steel_4340"
+                ],
+                "FatigueStrengthExponent": "-0.099",
+                "FatigueDuctilityCoefficient": "1.122",
+                "FatigueDuctilityExponent": "-0.72",
+                "CyclicStrengthCoefficient": [
+                    "CyclicStrengthCoefficient_1887000_AISI_Steel_4340"
+                ],
+                "CyclicStrainHardeningExponent": "0.137",
+                "InitialStrain": [
+                    "InitialStrain_0.02_AISI_Steel_4340"
+                ],
+                "HardeningExponent": "0.22",
+                "StrengthCoefficient": [
+                    "StrengthCoefficient_2182.004_AISI_Steel_4340"
+                ],
+                "ThermalExpansionCoefficient": [
+                    "ThermalExpansionCoefficient_1.23e-051_AISI_Steel_4340"
+                ],
+                "ThermalConductivity": [
+                    "ThermalConductivity_44500_AISI_Steel_4340"
+                ],
+                "SpecificHeat": [
+                    "SpecificHeat_475000000_AISI_Steel_4340"
+                ],
+                "CrosshatchPattern": "Steel"
+            }
+        }
+    },
+    "Boundary": {
+        "Fixed(1)--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+            "FixedConstraint": [
+                "FixedConstraint_id_num_1--model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+            ],
+            "Face": [
+                "FIXEDFACE--MODEL1"
+            ]
+        },
+        "Zfixed--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+            "UserDefinedConstraint": [
+                "UserDefinedConstraint_id_num_2--model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+            ]
+        }
+    },
+    "People": {
+        "Shyam": {
+            "Name": "Shyam"
+        },
+        "Chethan": {
+            "Name": "Chethan"
+        }
+    },
+    "Geometry": {
+        "MODEL1": {
+            "SolidMaterial": [
+                "AISI_Steel_4340"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "LastModificationDate": 1614324142.0,
+            "FileSize": 45394,
+            "FileNameOriginal": "MODEL1",
+            "FileNameAlias": "MODEL1",
+            "Line": [
+                "Line4--MODEL1",
+                "Line1--MODEL1",
+                "Line2--MODEL1",
+                "Line3--MODEL1"
+            ],
+            "Component": [
+                "MODEL1--MODEL1"
+            ],
+            "Face": [
+                "TOPFACE2--MODEL1",
+                "TOPFACE1--MODEL1",
+                "FRONTLOAD--MODEL1",
+                "FIXEDFACE--MODEL1"
+            ]
+        }
+    },
+    "Loads": {
+        "CyclicLoads": "",
+        "HeatFlux": "",
+        "MomentLoad": "",
+        "PointLoad": {
+            "Force(1)--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                "Name": "Force(1)",
+                "types": [
+                    "FORCE"
+                ],
+                "CSYSOption": 5,
+                "observeNode1": "Observe Node 1",
+                "observeNode2": "Observe Node 2",
+                "observeNode3": "Observe Node 3",
+                "observeNode4": "Observe Node 4",
+                "distributionType": 1,
+                "DistributionField": "NA",
+                "Face": [
+                    "FRONTLOAD--MODEL1"
+                ],
+                "Force": [
+                    "Force_1000000.0_Force(1)--model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+                ]
+            }
+        },
+        "PressureLoad": {
+            "Pressure(1)--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                "Name": "Pressure(1)",
+                "types": [
+                    "PLOAD4",
+                    "LOAD"
+                ],
+                "CSYSOption": 10,
+                "distributionType": 32,
+                "Face": [
+                    "TOPFACE1--MODEL1"
+                ],
+                "Pressure": [
+                    "Pressure_10000.0_Pressure(1)--model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+                ]
+            }
+        },
+        "UDL": ""
+    },
+    "Mesh": {
+        "model1_fem1_AISI_Steel_4340_AISI_Steel_4340": {
+            "MeshVolume": [
+                "3d_mesh(1)--model1_fem1_AISI_Steel_4340_AISI_Steel_4340",
+                "3d_mesh(2)--model1_fem1_AISI_Steel_4340_AISI_Steel_4340"
+            ],
+            "LastModificationDate": 1631003888.0,
+            "FileSize": 2083947,
+            "is2D": false,
+            "is3D": true,
+            "FileNameOriginal": "model1_fem1",
+            "FileNameAlias": "model1_fem1_AISI_Steel_4340_AISI_Steel_4340"
+        }
+    },
+    "Preprocessing": "",
+    "Result": {
+        "model1_sim1-staticsolution--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+            "LastModificationDate": 1631003830.0,
+            "FileSize": 5918264,
+            "DisplacementNodal": [
+                "DisplacementNodal_FIXEDFACE_id_num_4--model1_sim1_AISI_Steel_4340_AISI_Steel_4340",
+                "DisplacementNodal_FRONTLOAD_id_num_5--model1_sim1_AISI_Steel_4340_AISI_Steel_4340",
+                "DisplacementNodal_Model_id_num_6--model1_sim1_AISI_Steel_4340_AISI_Steel_4340",
+                "DisplacementNodal_TOPFACE1_id_num_7--model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+            ],
+            "ReactionForceNodal": [
+                "ReactionForceNodal_FIXEDFACE_id_num_4--model1_sim1_AISI_Steel_4340_AISI_Steel_4340",
+                "ReactionForceNodal_FRONTLOAD_id_num_5--model1_sim1_AISI_Steel_4340_AISI_Steel_4340",
+                "ReactionForceNodal_Model_id_num_6--model1_sim1_AISI_Steel_4340_AISI_Steel_4340",
+                "ReactionForceNodal_TOPFACE1_id_num_7--model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+            ],
+            "ReactionMomentNodal": [
+                "ReactionMomentNodal_FIXEDFACE_id_num_4--model1_sim1_AISI_Steel_4340_AISI_Steel_4340",
+                "ReactionMomentNodal_FRONTLOAD_id_num_5--model1_sim1_AISI_Steel_4340_AISI_Steel_4340",
+                "ReactionMomentNodal_Model_id_num_6--model1_sim1_AISI_Steel_4340_AISI_Steel_4340",
+                "ReactionMomentNodal_TOPFACE1_id_num_7--model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+            ],
+            "RotationNodal": [
+                "RotationNodal_FIXEDFACE_id_num_4--model1_sim1_AISI_Steel_4340_AISI_Steel_4340",
+                "RotationNodal_FRONTLOAD_id_num_5--model1_sim1_AISI_Steel_4340_AISI_Steel_4340",
+                "RotationNodal_Model_id_num_6--model1_sim1_AISI_Steel_4340_AISI_Steel_4340",
+                "RotationNodal_TOPFACE1_id_num_7--model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+            ],
+            "StressElementNodal": [
+                "StressElementNodal_FIXEDFACE_id_num_4--model1_sim1_AISI_Steel_4340_AISI_Steel_4340",
+                "StressElementNodal_FRONTLOAD_id_num_5--model1_sim1_AISI_Steel_4340_AISI_Steel_4340",
+                "StressElementNodal_Model_id_num_6--model1_sim1_AISI_Steel_4340_AISI_Steel_4340",
+                "StressElementNodal_TOPFACE1_id_num_7--model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+            ],
+            "StressElemental": [
+                "StressElemental_Model_id_num_6--model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+            ],
+            "ConfluencePage": [
+                "ConfluencePage_id_num_7--model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+            ],
+            "PPT": [
+                "PPT_id_num_7--model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+            ]
+        }
+    },
+    "StorageLocation": {
+        "CloudStorage": "",
+        "LocalStorage": {
+            "LocalStorage_id_num_1--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                "GID": "z003hz2y",
+                "MachineName": "demlhw7sw110x"
+            },
+            "LocalStorage_id_num_8--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                "GID": "",
+                "MachineName": ""
+            }
+        },
+        "ServerStorage": "",
+        "TeamcenterStorage": ""
+    },
+    "Supplier": "",
+    "QuantitativeMetric": {
+        "Angle": "",
+        "CyclicStrengthCoefficient": {
+            "CyclicStrengthCoefficient_1887000_AISI_Steel_4340": {
+                "hasMagnitude": "1887000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "Density": {
+            "Density_7.85e-06_AISI_Steel_4340": {
+                "hasMagnitude": "7.85e-06",
+                "hasUnit": "kg/mm^3"
+            }
+        },
+        "ElasticStrength": "",
+        "FatigueStrengthCoefficient": {
+            "FatigueStrengthCoefficient_1917000_AISI_Steel_4340": {
+                "hasMagnitude": "1917000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "Force": {
+            "Force_1000000.0_Force(1)--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                "hasMagnitude": 1000000.0,
+                "hasUnit": "N"
+            }
+        },
+        "Height": "",
+        "Independent": "",
+        "InitialStrain": {
+            "InitialStrain_0.02_AISI_Steel_4340": {
+                "hasMagnitude": "0.02",
+                "hasUnit": "mm/mm"
+            }
+        },
+        "Length": {
+            "ElementSize_20mm--model1_fem1_AISI_Steel_4340_AISI_Steel_4340": {
+                "hasMagnitude": 20.0,
+                "hasUnit": "mm"
+            }
+        },
+        "Mass_Flow": "",
+        "ModulusOfElasticity": {
+            "ModulusOfElasticity_193000000_AISI_Steel_4340": {
+                "hasMagnitude": "193000000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "Moment": "",
+        "PoissonRatioArray": "",
+        "Pressure": {
+            "Pressure_10000.0_Pressure(1)--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                "hasMagnitude": 10000.0,
+                "hasUnit": "N/mm^2(MPa)"
+            }
+        },
+        "ShearModulus": "",
+        "SpecificHeat": {
+            "SpecificHeat_475000000_AISI_Steel_4340": {
+                "hasMagnitude": "475000000",
+                "hasUnit": "microJ/kg-dK"
+            }
+        },
+        "StrengthCoefficient": {
+            "StrengthCoefficient_2182.004_AISI_Steel_4340": {
+                "hasMagnitude": "2182.004",
+                "hasUnit": "N/mm^2(MPa)"
+            }
+        },
+        "Stress": "",
+        "Temperature": "",
+        "ThermalConductivity": {
+            "ThermalConductivity_44500_AISI_Steel_4340": {
+                "hasMagnitude": "44500",
+                "hasUnit": "microW/mm-dC"
+            }
+        },
+        "ThermalExpansionCoefficient": {
+            "ThermalExpansionCoefficient_1.23e-051_AISI_Steel_4340": {
+                "hasMagnitude": "1.23e-051",
+                "hasUnit": "/dC"
+            }
+        },
+        "Thickness": "",
+        "TurbulenceIntensity": "",
+        "UltimateTensileStrength": {
+            "UltimateTensileStrength_1240000_AISI_Steel_4340": {
+                "hasMagnitude": "1240000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "Velocity": "",
+        "Viscosity": "",
+        "Width": "",
+        "XDirection": "",
+        "YDirection": "",
+        "YieldStrength": {
+            "YieldStrength_1178000_AISI_Steel_4340": {
+                "hasMagnitude": "1178000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "ZDirection": ""
+    },
+    "BoundaryCondition": {
+        "FEABoundaryCondition": {
+            "FEAConstraintBC": {
+                "AntiSymmetricConstraint": "",
+                "AutomaticCoupling": "",
+                "CylindricalConstraint": "",
+                "EnforcedDisplacementConstraint": "",
+                "FixedConstraint": {
+                    "FixedConstraint_id_num_1--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "Name": "Fixed(1)",
+                        "CSYSOption": 0,
+                        "DOF1": 0.0,
+                        "DOF2": 0.0,
+                        "DOF3": 0.0,
+                        "DOF4": 0.0,
+                        "DOF5": 0.0,
+                        "DOF6": 0.0,
+                        "DescriptorName": "fixedConstraint",
+                        "Face": [
+                            "FIXEDFACE--MODEL1"
+                        ],
+                        "DistributionType": 5,
+                        "ConstraintType": "SPC"
+                    }
+                },
+                "FixedRotationConstraint": "",
+                "FixedTranslationConstraint": "",
+                "ManualCoupling": "",
+                "PinnedConstraint": "",
+                "RollerConstraint": "",
+                "SimplySupportedConstraint": "",
+                "SliderConstraint": "",
+                "SymmetricConstraint": "",
+                "UserDefinedConstraint": {
+                    "UserDefinedConstraint_id_num_2--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "Name": "Zfixed",
+                        "CSYSOption": 0,
+                        "Local Csys": null,
+                        "DOF1": -777777.0,
+                        "DOF2": -777777.0,
+                        "DOF3": 0.0,
+                        "DOF4": -777777.0,
+                        "DOF5": -777777.0,
+                        "DOF6": -777777.0,
+                        "DCID": "CORD2R",
+                        "DCID2": "CORD2C",
+                        "DCID3": "CORD2S",
+                        "DescriptorName": "UserDefinedDisplacementConstraint",
+                        "DistributionType": 5,
+                        "ConstraintType": "SPC"
+                    }
+                }
+            },
+            "FEAInteractionBC": {
+                "MechanicalContact": "",
+                "ThermalContact": ""
+            }
+        },
+        "CFDBoundaryCondition": {
+            "CFDConstraintBC": {
+                "FrictionWallBC": "",
+                "TotalPressureBC": "",
+                "VelocityBC": "",
+                "MassFlowBC": "",
+                "MovingWallBC": "",
+                "SmoothWallBC": "",
+                "StationaryWallBC": ""
+            },
+            "CFDInteractionBC": ""
+        },
+        "GenericBoundaryCondition": {
+            "PressureBC": ""
+        }
+    },
+    "PostProcessing": {
+        "Parameters": {
+            "CFDParameters": {
+                "AreaAveragedDynamicPressure": "",
+                "AreaAveragedPressure": "",
+                "AreaAveragedTotalPressure": "",
+                "MassAveragedDynamicPressure": "",
+                "MassAveragedPressure": "",
+                "MassAveragedTotalPressure": "",
+                "MassFlowRate": ""
+            },
+            "FEAParameters": {
+                "DisplacementNodal": {
+                    "DisplacementNodal_FIXEDFACE_id_num_4--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "4.857869532575689e-20",
+                        "Magnitude-Minimum": "-1.5969545628612683e-35",
+                        "X-Maximum": "3.319069962687266e-20",
+                        "X-Minimum": "-1.0620094336385895e-20",
+                        "Y-Maximum": "2.912358826426867e-20",
+                        "Y-Minimum": "-1.890192679566911e-20",
+                        "Z-Maximum": "2.3174489142915958e-20",
+                        "Z-Minimum": "-6.857215875013712e-36"
+                    },
+                    "DisplacementNodal_FRONTLOAD_id_num_5--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "0.10710684955120087",
+                        "Magnitude-Minimum": "0.09486472606658936",
+                        "X-Maximum": "0.03966761752963066",
+                        "X-Minimum": "-0.03293830156326294",
+                        "Y-Maximum": "0.0007805896457284689",
+                        "Y-Minimum": "-0.0007862530183047056",
+                        "Z-Maximum": "-0.09464704245328903",
+                        "Z-Minimum": "-0.0995192602276802"
+                    },
+                    "DisplacementNodal_Model_id_num_6--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "0.10710684955120087",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.03966761752963066",
+                        "X-Minimum": "-0.033019497990608215",
+                        "Y-Maximum": "0.006121544167399406",
+                        "Y-Minimum": "-0.00610840879380703",
+                        "Z-Maximum": "0.0022542099468410015",
+                        "Z-Minimum": "-0.0995192602276802"
+                    },
+                    "DisplacementNodal_TOPFACE1_id_num_7--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "0.10708117485046387",
+                        "Magnitude-Minimum": "0.035415492951869965",
+                        "X-Maximum": "0.03966761752963066",
+                        "X-Minimum": "0.027281299233436584",
+                        "Y-Maximum": "0.0010123385582119226",
+                        "Y-Minimum": "-0.0010163801489397883",
+                        "Z-Maximum": "-0.022559963166713715",
+                        "Z-Minimum": "-0.09947370737791061"
+                    }
+                },
+                "ReactionForceNodal": {
+                    "ReactionForceNodal_FIXEDFACE_id_num_4--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "1487465.75",
+                        "Magnitude-Minimum": "871.1644287109375",
+                        "X-Maximum": "1307308.5",
+                        "X-Minimum": "-1435470.5",
+                        "Y-Maximum": "404246.40625",
+                        "Y-Minimum": "-402927.875",
+                        "Z-Maximum": "272729.25",
+                        "Z-Minimum": "-667027.8125"
+                    },
+                    "ReactionForceNodal_FRONTLOAD_id_num_5--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionForceNodal_Model_id_num_6--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "18850498.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "1307308.5",
+                        "X-Minimum": "-1435470.5",
+                        "Y-Maximum": "404246.40625",
+                        "Y-Minimum": "-402927.875",
+                        "Z-Maximum": "18850498.0",
+                        "Z-Minimum": "-667027.8125"
+                    },
+                    "ReactionForceNodal_TOPFACE1_id_num_7--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "ReactionMomentNodal": {
+                    "ReactionMomentNodal_FIXEDFACE_id_num_4--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionMomentNodal_FRONTLOAD_id_num_5--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionMomentNodal_Model_id_num_6--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionMomentNodal_TOPFACE1_id_num_7--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "RotationNodal": {
+                    "RotationNodal_FIXEDFACE_id_num_4--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "RotationNodal_FRONTLOAD_id_num_5--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "RotationNodal_Model_id_num_6--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "RotationNodal_TOPFACE1_id_num_7--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "StressElementNodal": {
+                    "StressElementNodal_FIXEDFACE_id_num_4--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "1444030054400.0",
+                        "Determinant-Minimum": "-1044611137536.0",
+                        "MaximumPrincipal-Maximum": "24363.01953125",
+                        "MaximumPrincipal-Minimum": "-5919.9775390625",
+                        "MaximumShear-Maximum": "8866.1904296875",
+                        "MaximumShear-Minimum": "3457.640869140625",
+                        "Mean-Maximum": "13301.5419921875",
+                        "Mean-Minimum": "-12010.2958984375",
+                        "MiddlePrincipal-Maximum": "8826.2568359375",
+                        "MiddlePrincipal-Minimum": "-7969.44921875",
+                        "MinimumPrincipal-Maximum": "6715.3486328125",
+                        "MinimumPrincipal-Minimum": "-22141.462890625",
+                        "Octahedral-Maximum": "7868.97705078125",
+                        "Octahedral-Minimum": "3259.89501953125",
+                        "VonMises-Maximum": "16692.62109375",
+                        "VonMises-Minimum": "6915.28125",
+                        "WorstPrincipal-Maximum": "24363.01953125",
+                        "WorstPrincipal-Minimum": "-22141.462890625",
+                        "XX-Maximum": "22252.111328125",
+                        "XX-Minimum": "-20091.990234375",
+                        "XY-Maximum": "5722.8115234375",
+                        "XY-Minimum": "-5514.6591796875",
+                        "YY-Maximum": "8826.2568359375",
+                        "YY-Minimum": "-7969.44921875",
+                        "YZ-Maximum": "314.2087707519531",
+                        "YZ-Minimum": "-27.877946853637695",
+                        "ZX-Maximum": "6429.55908203125",
+                        "ZX-Minimum": "-3015.37255859375",
+                        "ZZ-Maximum": "8826.2568359375",
+                        "ZZ-Minimum": "-7969.44921875"
+                    },
+                    "StressElementNodal_FRONTLOAD_id_num_5--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "78939192.0",
+                        "Determinant-Minimum": "-1620523264.0",
+                        "MaximumPrincipal-Maximum": "667.5728759765625",
+                        "MaximumPrincipal-Minimum": "91.85790252685547",
+                        "MaximumShear-Maximum": "5154.03173828125",
+                        "MaximumShear-Minimum": "115.95046997070312",
+                        "Mean-Maximum": "105.3880844116211",
+                        "Mean-Minimum": "-3345.09814453125",
+                        "MiddlePrincipal-Maximum": "440.9357604980469",
+                        "MiddlePrincipal-Minimum": "-65.8747787475586",
+                        "MinimumPrincipal-Maximum": "-67.19086456298828",
+                        "MinimumPrincipal-Minimum": "-10086.203125",
+                        "Octahedral-Maximum": "4797.86572265625",
+                        "Octahedral-Minimum": "101.25740051269531",
+                        "VonMises-Maximum": "10177.8095703125",
+                        "VonMises-Minimum": "214.79937744140625",
+                        "WorstPrincipal-Maximum": "276.5251159667969",
+                        "WorstPrincipal-Minimum": "-10086.203125",
+                        "XX-Maximum": "518.1011352539062",
+                        "XX-Minimum": "-65.28400421142578",
+                        "XY-Maximum": "37.59629821777344",
+                        "XY-Minimum": "-37.61149215698242",
+                        "YY-Maximum": "440.9357604980469",
+                        "YY-Minimum": "-297.2225036621094",
+                        "YZ-Maximum": "120.57553100585938",
+                        "YZ-Minimum": "-120.5398941040039",
+                        "ZX-Maximum": "85.40251159667969",
+                        "ZX-Minimum": "-1113.6004638671875",
+                        "ZZ-Maximum": "235.76275634765625",
+                        "ZZ-Minimum": "-10086.1591796875"
+                    },
+                    "StressElementNodal_Model_id_num_6--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "4106579607552.0",
+                        "Determinant-Minimum": "-485786436763648.0",
+                        "MaximumPrincipal-Maximum": "34977.6015625",
+                        "MaximumPrincipal-Minimum": "-42724.6875",
+                        "MaximumShear-Maximum": "48658.65234375",
+                        "MaximumShear-Minimum": "77.90535736083984",
+                        "Mean-Maximum": "13637.0615234375",
+                        "Mean-Minimum": "-87265.515625",
+                        "MiddlePrincipal-Maximum": "11701.716796875",
+                        "MiddlePrincipal-Minimum": "-84476.7421875",
+                        "MinimumPrincipal-Maximum": "6816.18359375",
+                        "MinimumPrincipal-Minimum": "-134595.125",
+                        "Octahedral-Maximum": "39736.41796875",
+                        "Octahedral-Minimum": "65.68778228759766",
+                        "VonMises-Maximum": "84293.671875",
+                        "VonMises-Minimum": "139.34483337402344",
+                        "WorstPrincipal-Maximum": "34977.6015625",
+                        "WorstPrincipal-Minimum": "-134595.125",
+                        "XX-Maximum": "34973.94140625",
+                        "XX-Minimum": "-108346.546875",
+                        "XY-Maximum": "12780.9287109375",
+                        "XY-Minimum": "-11668.623046875",
+                        "YY-Maximum": "13232.46484375",
+                        "YY-Minimum": "-42734.80859375",
+                        "YZ-Maximum": "12546.611328125",
+                        "YZ-Minimum": "-11175.0185546875",
+                        "ZX-Maximum": "25491.689453125",
+                        "ZX-Minimum": "-23372.525390625",
+                        "ZZ-Maximum": "10058.828125",
+                        "ZZ-Minimum": "-110715.203125"
+                    },
+                    "StressElementNodal_TOPFACE1_id_num_7--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "282328170496.0",
+                        "Determinant-Minimum": "-220653518848.0",
+                        "MaximumPrincipal-Maximum": "28668.5546875",
+                        "MaximumPrincipal-Minimum": "21.09152603149414",
+                        "MaximumShear-Maximum": "17945.771484375",
+                        "MaximumShear-Minimum": "4935.40087890625",
+                        "Mean-Maximum": "7983.51708984375",
+                        "Mean-Minimum": "-3345.09814453125",
+                        "MiddlePrincipal-Maximum": "880.84521484375",
+                        "MiddlePrincipal-Minimum": "-1459.7462158203125",
+                        "MinimumPrincipal-Maximum": "-5366.83740234375",
+                        "MinimumPrincipal-Minimum": "-10951.7998046875",
+                        "Octahedral-Maximum": "15092.1455078125",
+                        "Octahedral-Minimum": "4639.6962890625",
+                        "VonMises-Maximum": "32015.275390625",
+                        "VonMises-Minimum": "9842.2822265625",
+                        "WorstPrincipal-Maximum": "28668.5546875",
+                        "WorstPrincipal-Minimum": "-10576.2646484375",
+                        "XX-Maximum": "27772.439453125",
+                        "XX-Minimum": "-39.2733268737793",
+                        "XY-Maximum": "717.8924560546875",
+                        "XY-Minimum": "-1631.281005859375",
+                        "YY-Maximum": "898.3956298828125",
+                        "YY-Minimum": "-1471.3363037109375",
+                        "YZ-Maximum": "44.041099548339844",
+                        "YZ-Minimum": "-452.2674560546875",
+                        "ZX-Maximum": "2.1671290397644043",
+                        "ZX-Minimum": "-6131.8212890625",
+                        "ZZ-Maximum": "-4489.54736328125",
+                        "ZZ-Minimum": "-10808.5556640625"
+                    }
+                },
+                "StressElemental": {
+                    "StressElemental_Model_id_num_6--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "425681715200.0",
+                        "Determinant-Minimum": "-135515235942400.0",
+                        "MaximumPrincipal-Maximum": "32548.71484375",
+                        "MaximumPrincipal-Minimum": "-24529.62109375",
+                        "MaximumShear-Maximum": "34285.75390625",
+                        "MaximumShear-Minimum": "82.61213684082031",
+                        "Mean-Maximum": "11148.0380859375",
+                        "Mean-Minimum": "-58691.4921875",
+                        "MiddlePrincipal-Maximum": "4891.9052734375",
+                        "MiddlePrincipal-Minimum": "-61044.71484375",
+                        "MinimumPrincipal-Maximum": "3665.666259765625",
+                        "MinimumPrincipal-Minimum": "-90500.140625",
+                        "Octahedral-Maximum": "28203.248046875",
+                        "Octahedral-Minimum": "68.6249008178711",
+                        "VonMises-Maximum": "59828.125",
+                        "VonMises-Minimum": "145.57540893554688",
+                        "WorstPrincipal-Maximum": "32548.71484375",
+                        "WorstPrincipal-Minimum": "-90500.140625",
+                        "XX-Maximum": "32548.03125",
+                        "XX-Minimum": "-71999.4296875",
+                        "XY-Maximum": "3633.985595703125",
+                        "XY-Minimum": "-3628.322021484375",
+                        "YY-Maximum": "5938.8916015625",
+                        "YY-Minimum": "-24536.63671875",
+                        "YZ-Maximum": "3399.046142578125",
+                        "YZ-Minimum": "-3413.87744140625",
+                        "ZX-Maximum": "14240.0830078125",
+                        "ZX-Minimum": "-23353.548828125",
+                        "ZZ-Maximum": "4890.31640625",
+                        "ZZ-Minimum": "-79538.40625"
+                    }
+                }
+            },
+            "GenericParameters": {
+                "MaxTemperature": ""
+            }
+        },
+        "Plots": {
+            "ContourPlots": {
+                "ContactPressureContour": "",
+                "ContactStatusContour": "",
+                "PressureContour": "",
+                "TotalPressureContour": "",
+                "VelocityContour": ""
+            },
+            "DisplacementPlot": "",
+            "XYPlots": {
+                "MassAveragedTotalPressurePlot": "",
+                "WallYPlus": ""
+            },
+            "StressPlot": {
+                "PrincipalStressPlot": "",
+                "VonMisesStressPlot": ""
+            },
+            "StrainPlot": ""
+        }
+    },
+    "MeshElements": {
+        "AxiSymmetricElement": "",
+        "HexElement": {
+            "CHEXA--model1_fem1_AISI_Steel_4340_AISI_Steel_4340": {}
+        },
+        "PrismLayer": "",
+        "QuadElement": "",
+        "ShellElement": "",
+        "TetrahedralElement": {
+            "CTETRA--model1_fem1_AISI_Steel_4340_AISI_Steel_4340": {}
+        }
+    },
+    "GeometricFeature": {
+        "Body": "",
+        "Curve": "",
+        "Edge": "",
+        "Face": {
+            "TOPFACE2--MODEL1": {},
+            "TOPFACE1--MODEL1": {},
+            "FRONTLOAD--MODEL1": {},
+            "FIXEDFACE--MODEL1": {}
+        },
+        "Line": {
+            "Line4--MODEL1": {},
+            "Line1--MODEL1": {},
+            "Line2--MODEL1": {},
+            "Line3--MODEL1": {}
+        },
+        "Point": ""
+    },
+    "Documentation": {
+        "ConfluencePage": {
+            "ConfluencePage_id_num_7--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                "WebSite": ""
+            }
+        },
+        "PPT": {
+            "PPT_id_num_7--model1_sim1_AISI_Steel_4340_AISI_Steel_4340": {
+                "LocalStorage": [
+                    "LocalStorage_id_num_8--model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+                ]
+            }
+        }
+    },
+    "MeshVolume": {
+        "3d_mesh(1)--model1_fem1_AISI_Steel_4340_AISI_Steel_4340": {
+            "Mesh_Collector": "Solid(1)",
+            "Mesh_name": "3d_mesh(1)",
+            "Surface Curvature Based Size Variation": "50",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "AISI_Steel_4340"
+            ],
+            "MeshElements": [
+                "CTETRA--model1_fem1_AISI_Steel_4340_AISI_Steel_4340"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "2",
+            "NumElements": "3025",
+            "NumNodes": "5070",
+            "Length": [
+                "ElementSize_20mm--model1_fem1_AISI_Steel_4340_AISI_Steel_4340"
+            ]
+        },
+        "3d_mesh(2)--model1_fem1_AISI_Steel_4340_AISI_Steel_4340": {
+            "Mesh_Collector": "Solid(2)",
+            "Mesh_name": "3d_mesh(2)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "AISI_Steel_4340"
+            ],
+            "MeshElements": [
+                "CHEXA--model1_fem1_AISI_Steel_4340_AISI_Steel_4340"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "500",
+            "NumNodes": "726",
+            "Length": [
+                "ElementSize_20mm--model1_fem1_AISI_Steel_4340_AISI_Steel_4340"
+            ]
+        }
+    },
+    "Project": {
+        "3d_cantilever_analysis": {
+            "People": [
+                "Shyam",
+                "Chethan"
+            ],
+            "Mechanical": [
+                "model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+            ],
+            "UpdateEvent": [
+                "UpdateEvent_id_num_7--model1_sim1_AISI_Steel_4340_AISI_Steel_4340"
+            ],
+            "ProjectStartDate": 1580511600.0,
+            "ProjectEndDate": 1634680800.0
+        }
+    },
+    "UpdateEvent": {
+        "UpdateEvent_id_num_7": {
+            "Comment": "changed material to AISI_Steel_4340_AISI_Steel_4340",
+            "hasPredecessor": "model1_sim1",
+            "hasSuccessor": ""
+        }
+    }
+}

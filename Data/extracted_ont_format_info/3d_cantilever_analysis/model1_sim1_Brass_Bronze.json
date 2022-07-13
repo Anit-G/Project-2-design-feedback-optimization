@@ -1,0 +1,1013 @@
+{
+    "Analysis": {
+        "AeroMechanical": "",
+        "CFD": "",
+        "CoupledAeroMechanical": "",
+        "Structural": {
+            "Mechanical": {
+                "model1_sim1_Brass_Bronze": {
+                    "SolidMaterial": [
+                        "Brass",
+                        "Bronze"
+                    ],
+                    "is2D": false,
+                    "isTransient": false,
+                    "LocalStorage": [
+                        "LocalStorage_id_num_1--model1_sim1_Brass_Bronze"
+                    ],
+                    "isHarmonic": false,
+                    "is3D": true,
+                    "Geometry": [
+                        "MODEL1"
+                    ],
+                    "Boundary": [
+                        "Fixed(1)--model1_sim1_Brass_Bronze",
+                        "Zfixed--model1_sim1_Brass_Bronze"
+                    ],
+                    "Mesh": [
+                        "model1_fem1_Brass_Bronze"
+                    ],
+                    "ToolVersion": "v12.0.2.9",
+                    "Result": [
+                        "model1_sim1-staticsolution--model1_sim1_Brass_Bronze"
+                    ],
+                    "LastModificationDate": 1631004269.0,
+                    "FileSize": 3496252,
+                    "isSteadyState": true,
+                    "People": [
+                        "Shyam"
+                    ],
+                    "FileNameOriginal": "model1_sim1",
+                    "FileNameAlias": "model1_sim1_Brass_Bronze",
+                    "PointLoad": [
+                        "Force(1)--model1_sim1_Brass_Bronze"
+                    ],
+                    "PressureLoad": [
+                        "Pressure(1)--model1_sim1_Brass_Bronze"
+                    ]
+                }
+            },
+            "Thermomechanical": ""
+        }
+    },
+    "Material": {
+        "FluidMaterial": "",
+        "SolidMaterial": {
+            "Brass": {
+                "R0": "1",
+                "R45": "1",
+                "R90": "1",
+                "MaterialCategory": "METAL",
+                "MaterialSubCategory": "Copper Alloy",
+                "Density": [
+                    "Density_8.409e-06_Brass"
+                ],
+                "ModulusOfElasticity": [
+                    "ModulusOfElasticity_103400000_Brass"
+                ],
+                "PoissonRatio": "0.35",
+                "TypeOfNonlinearity": "1",
+                "YieldFunctionCriterion": "1",
+                "HardeningRule": "1",
+                "YieldStrength": [
+                    "YieldStrength_440000_Brass"
+                ],
+                "UltimateTensileStrength": [
+                    "UltimateTensileStrength_1100000_Brass"
+                ],
+                "InitialStrain": [
+                    "InitialStrain_0.02_Brass"
+                ],
+                "HardeningExponent": "0.21",
+                "StrengthCoefficient": [
+                    "StrengthCoefficient_1155.685_Brass"
+                ],
+                "ThermalExpansionCoefficient": [
+                    "ThermalExpansionCoefficient_2.124e-051_Brass"
+                ],
+                "ThermalConductivity": [
+                    "ThermalConductivity_116000_Brass"
+                ],
+                "SpecificHeat": [
+                    "SpecificHeat_380000000_Brass"
+                ],
+                "CrosshatchPattern": "Brass/Copper"
+            },
+            "Bronze": {
+                "R0": "1",
+                "R45": "1",
+                "R90": "1",
+                "MaterialCategory": "METAL",
+                "MaterialSubCategory": "Copper Alloy",
+                "Density": [
+                    "Density_8.852e-06_Bronze"
+                ],
+                "ModulusOfElasticity": [
+                    "ModulusOfElasticity_103400000_Bronze"
+                ],
+                "PoissonRatio": "0.34",
+                "TypeOfNonlinearity": "1",
+                "YieldFunctionCriterion": "1",
+                "HardeningRule": "1",
+                "YieldStrength": [
+                    "YieldStrength_260000_Bronze"
+                ],
+                "UltimateTensileStrength": [
+                    "UltimateTensileStrength_100000000_Bronze"
+                ],
+                "InitialStrain": [
+                    "InitialStrain_0.02_Bronze"
+                ],
+                "HardeningExponent": "0.19",
+                "StrengthCoefficient": [
+                    "StrengthCoefficient_629.9939_Bronze"
+                ],
+                "ThermalExpansionCoefficient": [
+                    "ThermalExpansionCoefficient_1.782e-051_Bronze"
+                ],
+                "ThermalConductivity": [
+                    "ThermalConductivity_69230_Bronze"
+                ],
+                "SpecificHeat": [
+                    "SpecificHeat_376000000_Bronze"
+                ],
+                "CrosshatchPattern": "Brass/Copper"
+            }
+        }
+    },
+    "Boundary": {
+        "Fixed(1)--model1_sim1_Brass_Bronze": {
+            "FixedConstraint": [
+                "FixedConstraint_id_num_1--model1_sim1_Brass_Bronze"
+            ],
+            "Face": [
+                "FIXEDFACE--MODEL1"
+            ]
+        },
+        "Zfixed--model1_sim1_Brass_Bronze": {
+            "UserDefinedConstraint": [
+                "UserDefinedConstraint_id_num_2--model1_sim1_Brass_Bronze"
+            ]
+        }
+    },
+    "People": {
+        "Shyam": {
+            "Name": "Shyam"
+        },
+        "Chethan": {
+            "Name": "Chethan"
+        }
+    },
+    "Geometry": {
+        "MODEL1": {
+            "SolidMaterial": [
+                "Brass",
+                "Bronze"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "LastModificationDate": 1614324142.0,
+            "FileSize": 45394,
+            "FileNameOriginal": "MODEL1",
+            "FileNameAlias": "MODEL1",
+            "Line": [
+                "Line4--MODEL1",
+                "Line1--MODEL1",
+                "Line2--MODEL1",
+                "Line3--MODEL1"
+            ],
+            "Component": [
+                "MODEL1--MODEL1"
+            ],
+            "Face": [
+                "TOPFACE2--MODEL1",
+                "TOPFACE1--MODEL1",
+                "FRONTLOAD--MODEL1",
+                "FIXEDFACE--MODEL1"
+            ]
+        }
+    },
+    "Loads": {
+        "CyclicLoads": "",
+        "HeatFlux": "",
+        "MomentLoad": "",
+        "PointLoad": {
+            "Force(1)--model1_sim1_Brass_Bronze": {
+                "Name": "Force(1)",
+                "types": [
+                    "FORCE"
+                ],
+                "CSYSOption": 5,
+                "observeNode1": "Observe Node 1",
+                "observeNode2": "Observe Node 2",
+                "observeNode3": "Observe Node 3",
+                "observeNode4": "Observe Node 4",
+                "distributionType": 1,
+                "DistributionField": "NA",
+                "Face": [
+                    "FRONTLOAD--MODEL1"
+                ],
+                "Force": [
+                    "Force_1000000.0_Force(1)--model1_sim1_Brass_Bronze"
+                ]
+            }
+        },
+        "PressureLoad": {
+            "Pressure(1)--model1_sim1_Brass_Bronze": {
+                "Name": "Pressure(1)",
+                "types": [
+                    "PLOAD4",
+                    "LOAD"
+                ],
+                "CSYSOption": 10,
+                "distributionType": 32,
+                "Face": [
+                    "TOPFACE1--MODEL1"
+                ],
+                "Pressure": [
+                    "Pressure_10000.0_Pressure(1)--model1_sim1_Brass_Bronze"
+                ]
+            }
+        },
+        "UDL": ""
+    },
+    "Mesh": {
+        "model1_fem1_Brass_Bronze": {
+            "MeshVolume": [
+                "3d_mesh(1)--model1_fem1_Brass_Bronze",
+                "3d_mesh(2)--model1_fem1_Brass_Bronze"
+            ],
+            "LastModificationDate": 1631004269.0,
+            "FileSize": 2123200,
+            "is2D": false,
+            "is3D": true,
+            "FileNameOriginal": "model1_fem1",
+            "FileNameAlias": "model1_fem1_Brass_Bronze"
+        }
+    },
+    "Preprocessing": "",
+    "Result": {
+        "model1_sim1-staticsolution--model1_sim1_Brass_Bronze": {
+            "LastModificationDate": 1631004228.0,
+            "FileSize": 5918584,
+            "DisplacementNodal": [
+                "DisplacementNodal_FIXEDFACE_id_num_4--model1_sim1_Brass_Bronze",
+                "DisplacementNodal_FRONTLOAD_id_num_5--model1_sim1_Brass_Bronze",
+                "DisplacementNodal_Model_id_num_6--model1_sim1_Brass_Bronze",
+                "DisplacementNodal_TOPFACE1_id_num_7--model1_sim1_Brass_Bronze"
+            ],
+            "ReactionForceNodal": [
+                "ReactionForceNodal_FIXEDFACE_id_num_4--model1_sim1_Brass_Bronze",
+                "ReactionForceNodal_FRONTLOAD_id_num_5--model1_sim1_Brass_Bronze",
+                "ReactionForceNodal_Model_id_num_6--model1_sim1_Brass_Bronze",
+                "ReactionForceNodal_TOPFACE1_id_num_7--model1_sim1_Brass_Bronze"
+            ],
+            "ReactionMomentNodal": [
+                "ReactionMomentNodal_FIXEDFACE_id_num_4--model1_sim1_Brass_Bronze",
+                "ReactionMomentNodal_FRONTLOAD_id_num_5--model1_sim1_Brass_Bronze",
+                "ReactionMomentNodal_Model_id_num_6--model1_sim1_Brass_Bronze",
+                "ReactionMomentNodal_TOPFACE1_id_num_7--model1_sim1_Brass_Bronze"
+            ],
+            "RotationNodal": [
+                "RotationNodal_FIXEDFACE_id_num_4--model1_sim1_Brass_Bronze",
+                "RotationNodal_FRONTLOAD_id_num_5--model1_sim1_Brass_Bronze",
+                "RotationNodal_Model_id_num_6--model1_sim1_Brass_Bronze",
+                "RotationNodal_TOPFACE1_id_num_7--model1_sim1_Brass_Bronze"
+            ],
+            "StressElementNodal": [
+                "StressElementNodal_FIXEDFACE_id_num_4--model1_sim1_Brass_Bronze",
+                "StressElementNodal_FRONTLOAD_id_num_5--model1_sim1_Brass_Bronze",
+                "StressElementNodal_Model_id_num_6--model1_sim1_Brass_Bronze",
+                "StressElementNodal_TOPFACE1_id_num_7--model1_sim1_Brass_Bronze"
+            ],
+            "StressElemental": [
+                "StressElemental_Model_id_num_6--model1_sim1_Brass_Bronze"
+            ],
+            "ConfluencePage": [
+                "ConfluencePage_id_num_7--model1_sim1_Brass_Bronze"
+            ],
+            "PPT": [
+                "PPT_id_num_7--model1_sim1_Brass_Bronze"
+            ]
+        }
+    },
+    "StorageLocation": {
+        "CloudStorage": "",
+        "LocalStorage": {
+            "LocalStorage_id_num_1--model1_sim1_Brass_Bronze": {
+                "GID": "z003hz2y",
+                "MachineName": "demlhw7sw110x"
+            },
+            "LocalStorage_id_num_8--model1_sim1_Brass_Bronze": {
+                "GID": "",
+                "MachineName": ""
+            }
+        },
+        "ServerStorage": "",
+        "TeamcenterStorage": ""
+    },
+    "Supplier": "",
+    "QuantitativeMetric": {
+        "Angle": "",
+        "CyclicStrengthCoefficient": "",
+        "Density": {
+            "Density_8.409e-06_Brass": {
+                "hasMagnitude": "8.409e-06",
+                "hasUnit": "kg/mm^3"
+            },
+            "Density_8.852e-06_Bronze": {
+                "hasMagnitude": "8.852e-06",
+                "hasUnit": "kg/mm^3"
+            }
+        },
+        "ElasticStrength": "",
+        "FatigueStrengthCoefficient": "",
+        "Force": {
+            "Force_1000000.0_Force(1)--model1_sim1_Brass_Bronze": {
+                "hasMagnitude": 1000000.0,
+                "hasUnit": "N"
+            }
+        },
+        "Height": "",
+        "Independent": "",
+        "InitialStrain": {
+            "InitialStrain_0.02_Brass": {
+                "hasMagnitude": "0.02",
+                "hasUnit": "mm/mm"
+            },
+            "InitialStrain_0.02_Bronze": {
+                "hasMagnitude": "0.02",
+                "hasUnit": "mm/mm"
+            }
+        },
+        "Length": {
+            "ElementSize_20mm--model1_fem1_Brass_Bronze": {
+                "hasMagnitude": 20.0,
+                "hasUnit": "mm"
+            }
+        },
+        "Mass_Flow": "",
+        "ModulusOfElasticity": {
+            "ModulusOfElasticity_103400000_Brass": {
+                "hasMagnitude": "103400000",
+                "hasUnit": "mN/mm^2(kPa)"
+            },
+            "ModulusOfElasticity_103400000_Bronze": {
+                "hasMagnitude": "103400000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "Moment": "",
+        "PoissonRatioArray": "",
+        "Pressure": {
+            "Pressure_10000.0_Pressure(1)--model1_sim1_Brass_Bronze": {
+                "hasMagnitude": 10000.0,
+                "hasUnit": "N/mm^2(MPa)"
+            }
+        },
+        "ShearModulus": "",
+        "SpecificHeat": {
+            "SpecificHeat_380000000_Brass": {
+                "hasMagnitude": "380000000",
+                "hasUnit": "microJ/kg-dK"
+            },
+            "SpecificHeat_376000000_Bronze": {
+                "hasMagnitude": "376000000",
+                "hasUnit": "microJ/kg-dK"
+            }
+        },
+        "StrengthCoefficient": {
+            "StrengthCoefficient_1155.685_Brass": {
+                "hasMagnitude": "1155.685",
+                "hasUnit": "N/mm^2(MPa)"
+            },
+            "StrengthCoefficient_629.9939_Bronze": {
+                "hasMagnitude": "629.9939",
+                "hasUnit": "N/mm^2(MPa)"
+            }
+        },
+        "Stress": "",
+        "Temperature": "",
+        "ThermalConductivity": {
+            "ThermalConductivity_116000_Brass": {
+                "hasMagnitude": "116000",
+                "hasUnit": "microW/mm-dC"
+            },
+            "ThermalConductivity_69230_Bronze": {
+                "hasMagnitude": "69230",
+                "hasUnit": "microW/mm-dC"
+            }
+        },
+        "ThermalExpansionCoefficient": {
+            "ThermalExpansionCoefficient_2.124e-051_Brass": {
+                "hasMagnitude": "2.124e-051",
+                "hasUnit": "/dC"
+            },
+            "ThermalExpansionCoefficient_1.782e-051_Bronze": {
+                "hasMagnitude": "1.782e-051",
+                "hasUnit": "/dC"
+            }
+        },
+        "Thickness": "",
+        "TurbulenceIntensity": "",
+        "UltimateTensileStrength": {
+            "UltimateTensileStrength_1100000_Brass": {
+                "hasMagnitude": "1100000",
+                "hasUnit": "mN/mm^2(kPa)"
+            },
+            "UltimateTensileStrength_100000000_Bronze": {
+                "hasMagnitude": "100000000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "Velocity": "",
+        "Viscosity": "",
+        "Width": "",
+        "XDirection": "",
+        "YDirection": "",
+        "YieldStrength": {
+            "YieldStrength_440000_Brass": {
+                "hasMagnitude": "440000",
+                "hasUnit": "mN/mm^2(kPa)"
+            },
+            "YieldStrength_260000_Bronze": {
+                "hasMagnitude": "260000",
+                "hasUnit": "mN/mm^2(kPa)"
+            }
+        },
+        "ZDirection": ""
+    },
+    "BoundaryCondition": {
+        "FEABoundaryCondition": {
+            "FEAConstraintBC": {
+                "AntiSymmetricConstraint": "",
+                "AutomaticCoupling": "",
+                "CylindricalConstraint": "",
+                "EnforcedDisplacementConstraint": "",
+                "FixedConstraint": {
+                    "FixedConstraint_id_num_1--model1_sim1_Brass_Bronze": {
+                        "Name": "Fixed(1)",
+                        "CSYSOption": 0,
+                        "DOF1": 0.0,
+                        "DOF2": 0.0,
+                        "DOF3": 0.0,
+                        "DOF4": 0.0,
+                        "DOF5": 0.0,
+                        "DOF6": 0.0,
+                        "DescriptorName": "fixedConstraint",
+                        "Face": [
+                            "FIXEDFACE--MODEL1"
+                        ],
+                        "DistributionType": 5,
+                        "ConstraintType": "SPC"
+                    }
+                },
+                "FixedRotationConstraint": "",
+                "FixedTranslationConstraint": "",
+                "ManualCoupling": "",
+                "PinnedConstraint": "",
+                "RollerConstraint": "",
+                "SimplySupportedConstraint": "",
+                "SliderConstraint": "",
+                "SymmetricConstraint": "",
+                "UserDefinedConstraint": {
+                    "UserDefinedConstraint_id_num_2--model1_sim1_Brass_Bronze": {
+                        "Name": "Zfixed",
+                        "CSYSOption": 0,
+                        "Local Csys": null,
+                        "DOF1": -777777.0,
+                        "DOF2": -777777.0,
+                        "DOF3": 0.0,
+                        "DOF4": -777777.0,
+                        "DOF5": -777777.0,
+                        "DOF6": -777777.0,
+                        "DCID": "CORD2R",
+                        "DCID2": "CORD2C",
+                        "DCID3": "CORD2S",
+                        "DescriptorName": "UserDefinedDisplacementConstraint",
+                        "DistributionType": 5,
+                        "ConstraintType": "SPC"
+                    }
+                }
+            },
+            "FEAInteractionBC": {
+                "MechanicalContact": "",
+                "ThermalContact": ""
+            }
+        },
+        "CFDBoundaryCondition": {
+            "CFDConstraintBC": {
+                "FrictionWallBC": "",
+                "TotalPressureBC": "",
+                "VelocityBC": "",
+                "MassFlowBC": "",
+                "MovingWallBC": "",
+                "SmoothWallBC": "",
+                "StationaryWallBC": ""
+            },
+            "CFDInteractionBC": ""
+        },
+        "GenericBoundaryCondition": {
+            "PressureBC": ""
+        }
+    },
+    "PostProcessing": {
+        "Parameters": {
+            "CFDParameters": {
+                "AreaAveragedDynamicPressure": "",
+                "AreaAveragedPressure": "",
+                "AreaAveragedTotalPressure": "",
+                "MassAveragedDynamicPressure": "",
+                "MassAveragedPressure": "",
+                "MassAveragedTotalPressure": "",
+                "MassFlowRate": ""
+            },
+            "FEAParameters": {
+                "DisplacementNodal": {
+                    "DisplacementNodal_FIXEDFACE_id_num_4--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "1.001209655287896e-19",
+                        "Magnitude-Minimum": "-2.7905306054122506e-35",
+                        "X-Maximum": "5.710509859654304e-20",
+                        "X-Minimum": "-2.6420950096162115e-20",
+                        "Y-Maximum": "7.241161054274225e-20",
+                        "Y-Minimum": "-4.677543512804275e-20",
+                        "Z-Maximum": "4.8561266371756453e-20",
+                        "Z-Minimum": "-1.9680536237368342e-35"
+                    },
+                    "DisplacementNodal_FRONTLOAD_id_num_5--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "0.19920383393764496",
+                        "Magnitude-Minimum": "0.17584140598773956",
+                        "X-Maximum": "0.0750134214758873",
+                        "X-Minimum": "-0.05969154089689255",
+                        "Y-Maximum": "0.0017452682368457317",
+                        "Y-Minimum": "-0.0017594294622540474",
+                        "Z-Maximum": "-0.1754743754863739",
+                        "Z-Minimum": "-0.1846049427986145"
+                    },
+                    "DisplacementNodal_Model_id_num_6--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "0.19920383393764496",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0750134214758873",
+                        "X-Minimum": "-0.059854745864868164",
+                        "Y-Maximum": "0.013948374427855015",
+                        "Y-Minimum": "-0.013917297124862671",
+                        "Z-Maximum": "0.004928188864141703",
+                        "Z-Minimum": "-0.1846049427986145"
+                    },
+                    "DisplacementNodal_TOPFACE1_id_num_7--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "mm",
+                        "Magnitude-Maximum": "0.19914619624614716",
+                        "Magnitude-Minimum": "0.06580734997987747",
+                        "X-Maximum": "0.0750134214758873",
+                        "X-Minimum": "0.05078059062361717",
+                        "Y-Maximum": "0.002275722334161401",
+                        "Y-Minimum": "-0.002284919610247016",
+                        "Z-Maximum": "-0.0417947992682457",
+                        "Z-Minimum": "-0.18450257182121277"
+                    }
+                },
+                "ReactionForceNodal": {
+                    "ReactionForceNodal_FIXEDFACE_id_num_4--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "1471540.5",
+                        "Magnitude-Minimum": "1055.082275390625",
+                        "X-Maximum": "1300951.75",
+                        "X-Minimum": "-1416248.625",
+                        "Y-Maximum": "562160.5625",
+                        "Y-Minimum": "-562610.3125",
+                        "Z-Maximum": "408202.28125",
+                        "Z-Minimum": "-717387.5"
+                    },
+                    "ReactionForceNodal_FRONTLOAD_id_num_5--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionForceNodal_Model_id_num_6--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "18689932.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "1300951.75",
+                        "X-Minimum": "-1416248.625",
+                        "Y-Maximum": "562160.5625",
+                        "Y-Minimum": "-562610.3125",
+                        "Z-Maximum": "18689932.0",
+                        "Z-Minimum": "-717387.5"
+                    },
+                    "ReactionForceNodal_TOPFACE1_id_num_7--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "milli-newton",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "ReactionMomentNodal": {
+                    "ReactionMomentNodal_FIXEDFACE_id_num_4--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionMomentNodal_FRONTLOAD_id_num_5--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionMomentNodal_Model_id_num_6--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "ReactionMomentNodal_TOPFACE1_id_num_7--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "milli-newton-mm",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "RotationNodal": {
+                    "RotationNodal_FIXEDFACE_id_num_4--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "RotationNodal_FRONTLOAD_id_num_5--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "RotationNodal_Model_id_num_6--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    },
+                    "RotationNodal_TOPFACE1_id_num_7--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "deg",
+                        "Magnitude-Maximum": "0.0",
+                        "Magnitude-Minimum": "0.0",
+                        "X-Maximum": "0.0",
+                        "X-Minimum": "0.0",
+                        "Y-Maximum": "0.0",
+                        "Y-Minimum": "0.0",
+                        "Z-Maximum": "0.0",
+                        "Z-Minimum": "0.0"
+                    }
+                },
+                "StressElementNodal": {
+                    "StressElementNodal_FIXEDFACE_id_num_4--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "4207546466304.0",
+                        "Determinant-Minimum": "-3096677974016.0",
+                        "MaximumPrincipal-Maximum": "29104.18359375",
+                        "MaximumPrincipal-Minimum": "-9185.716796875",
+                        "MaximumShear-Maximum": "9410.1025390625",
+                        "MaximumShear-Minimum": "2632.9228515625",
+                        "Mean-Maximum": "17796.78515625",
+                        "Mean-Minimum": "-16184.8212890625",
+                        "MiddlePrincipal-Maximum": "13841.9443359375",
+                        "MiddlePrincipal-Minimum": "-12588.1943359375",
+                        "MinimumPrincipal-Maximum": "10444.2294921875",
+                        "MinimumPrincipal-Minimum": "-26780.5546875",
+                        "Octahedral-Maximum": "8146.59326171875",
+                        "Octahedral-Minimum": "2482.34326171875",
+                        "VonMises-Maximum": "17281.533203125",
+                        "VonMises-Minimum": "5265.84521484375",
+                        "WorstPrincipal-Maximum": "29104.18359375",
+                        "WorstPrincipal-Minimum": "-26780.5546875",
+                        "XX-Maximum": "25706.46875",
+                        "XX-Minimum": "-23378.076171875",
+                        "XY-Maximum": "7259.79345703125",
+                        "XY-Minimum": "-6989.19140625",
+                        "YY-Maximum": "13841.9443359375",
+                        "YY-Minimum": "-12588.1943359375",
+                        "YZ-Maximum": "428.74969482421875",
+                        "YZ-Minimum": "-30.944011688232422",
+                        "ZX-Maximum": "6992.66015625",
+                        "ZX-Minimum": "-4237.13427734375",
+                        "ZZ-Maximum": "13841.9443359375",
+                        "ZZ-Minimum": "-12588.1943359375"
+                    },
+                    "StressElementNodal_FRONTLOAD_id_num_5--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "103501424.0",
+                        "Determinant-Minimum": "-2436696320.0",
+                        "MaximumPrincipal-Maximum": "778.5275268554688",
+                        "MaximumPrincipal-Minimum": "108.80650329589844",
+                        "MaximumShear-Maximum": "5179.46533203125",
+                        "MaximumShear-Minimum": "114.81509399414062",
+                        "Mean-Maximum": "126.86905670166016",
+                        "Mean-Minimum": "-3338.521240234375",
+                        "MiddlePrincipal-Maximum": "563.8045654296875",
+                        "MiddlePrincipal-Minimum": "-73.36409759521484",
+                        "MinimumPrincipal-Maximum": "-44.65395736694336",
+                        "MinimumPrincipal-Minimum": "-10088.2421875",
+                        "Octahedral-Maximum": "4810.0888671875",
+                        "Octahedral-Minimum": "94.77957916259766",
+                        "VonMises-Maximum": "10203.7392578125",
+                        "VonMises-Minimum": "201.05784606933594",
+                        "WorstPrincipal-Maximum": "279.47119140625",
+                        "WorstPrincipal-Minimum": "-10088.2421875",
+                        "XX-Maximum": "622.3297729492188",
+                        "XX-Minimum": "-73.40676879882812",
+                        "XY-Maximum": "44.83852005004883",
+                        "XY-Minimum": "-44.855377197265625",
+                        "YY-Maximum": "563.8045654296875",
+                        "YY-Minimum": "-352.5806884765625",
+                        "YZ-Maximum": "141.6821746826172",
+                        "YZ-Minimum": "-141.63522338867188",
+                        "ZX-Maximum": "91.66471099853516",
+                        "ZX-Minimum": "-1132.4473876953125",
+                        "ZZ-Maximum": "231.55149841308594",
+                        "ZZ-Minimum": "-10088.1806640625"
+                    },
+                    "StressElementNodal_Model_id_num_6--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "6349468991488.0",
+                        "Determinant-Minimum": "-798713593200640.0",
+                        "MaximumPrincipal-Maximum": "35171.859375",
+                        "MaximumPrincipal-Minimum": "-58888.3203125",
+                        "MaximumShear-Maximum": "45272.8203125",
+                        "MaximumShear-Minimum": "79.91236877441406",
+                        "Mean-Maximum": "18117.72265625",
+                        "Mean-Minimum": "-98875.859375",
+                        "MiddlePrincipal-Maximum": "18056.3125",
+                        "MiddlePrincipal-Minimum": "-95062.1328125",
+                        "MinimumPrincipal-Maximum": "10721.607421875",
+                        "MinimumPrincipal-Minimum": "-142677.125",
+                        "Octahedral-Maximum": "36976.16796875",
+                        "Octahedral-Minimum": "67.04013061523438",
+                        "VonMises-Maximum": "78438.296875",
+                        "VonMises-Minimum": "142.21359252929688",
+                        "WorstPrincipal-Maximum": "35171.859375",
+                        "WorstPrincipal-Minimum": "-142677.125",
+                        "XX-Maximum": "35167.62109375",
+                        "XX-Minimum": "-113542.6484375",
+                        "XY-Maximum": "10703.716796875",
+                        "XY-Minimum": "-9625.126953125",
+                        "YY-Maximum": "18081.26171875",
+                        "YY-Minimum": "-58902.79296875",
+                        "YZ-Maximum": "13189.6943359375",
+                        "YZ-Minimum": "-11628.6259765625",
+                        "ZX-Maximum": "23686.638671875",
+                        "ZX-Minimum": "-23184.708984375",
+                        "ZZ-Maximum": "14091.5615234375",
+                        "ZZ-Minimum": "-124182.1328125"
+                    },
+                    "StressElementNodal_TOPFACE1_id_num_7--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "360475295744.0",
+                        "Determinant-Minimum": "-273930633216.0",
+                        "MaximumPrincipal-Maximum": "28726.306640625",
+                        "MaximumPrincipal-Minimum": "31.133832931518555",
+                        "MaximumShear-Maximum": "17882.892578125",
+                        "MaximumShear-Minimum": "4936.46875",
+                        "Mean-Maximum": "8407.0771484375",
+                        "Mean-Minimum": "-3338.521240234375",
+                        "MiddlePrincipal-Maximum": "1128.7567138671875",
+                        "MiddlePrincipal-Minimum": "-1821.41552734375",
+                        "MinimumPrincipal-Maximum": "-4633.83203125",
+                        "MinimumPrincipal-Minimum": "-11171.640625",
+                        "Octahedral-Maximum": "15036.08984375",
+                        "Octahedral-Minimum": "4640.19091796875",
+                        "VonMises-Maximum": "31896.36328125",
+                        "VonMises-Minimum": "9843.33203125",
+                        "WorstPrincipal-Maximum": "28726.306640625",
+                        "WorstPrincipal-Minimum": "-10739.3896484375",
+                        "XX-Maximum": "27898.076171875",
+                        "XX-Minimum": "-41.488101959228516",
+                        "XY-Maximum": "910.8919067382812",
+                        "XY-Minimum": "-1627.137451171875",
+                        "YY-Maximum": "1159.6044921875",
+                        "YY-Minimum": "-1816.7679443359375",
+                        "YZ-Maximum": "46.91374588012695",
+                        "YZ-Minimum": "-403.077880859375",
+                        "ZX-Maximum": "4.744826316833496",
+                        "ZX-Minimum": "-5627.4443359375",
+                        "ZZ-Maximum": "-3836.44970703125",
+                        "ZZ-Minimum": "-11018.89453125"
+                    }
+                },
+                "StressElemental": {
+                    "StressElemental_Model_id_num_6--model1_sim1_Brass_Bronze": {
+                        "hasUnit": "milli-newton/mm^2",
+                        "Determinant-Maximum": "694573400064.0",
+                        "Determinant-Minimum": "-200077041729536.0",
+                        "MaximumPrincipal-Maximum": "32664.76953125",
+                        "MaximumPrincipal-Minimum": "-32611.744140625",
+                        "MaximumShear-Maximum": "32475.67578125",
+                        "MaximumShear-Minimum": "88.75053405761719",
+                        "Mean-Maximum": "11250.990234375",
+                        "Mean-Minimum": "-63968.875",
+                        "MiddlePrincipal-Maximum": "7078.98779296875",
+                        "MiddlePrincipal-Minimum": "-65204.7109375",
+                        "MinimumPrincipal-Maximum": "4999.7421875",
+                        "MinimumPrincipal-Minimum": "-94090.171875",
+                        "Octahedral-Maximum": "26678.345703125",
+                        "Octahedral-Minimum": "73.18370819091797",
+                        "VonMises-Maximum": "56593.31640625",
+                        "VonMises-Minimum": "155.24607849121094",
+                        "WorstPrincipal-Maximum": "32664.76953125",
+                        "WorstPrincipal-Minimum": "-94090.171875",
+                        "XX-Maximum": "32664.005859375",
+                        "XX-Minimum": "-74203.75",
+                        "XY-Maximum": "4574.95068359375",
+                        "XY-Minimum": "-4571.49658203125",
+                        "YY-Maximum": "7454.30029296875",
+                        "YY-Minimum": "-32616.970703125",
+                        "YZ-Maximum": "4137.509765625",
+                        "YZ-Minimum": "-4087.263671875",
+                        "ZX-Maximum": "13381.1416015625",
+                        "ZX-Minimum": "-23172.193359375",
+                        "ZZ-Maximum": "7061.79345703125",
+                        "ZZ-Minimum": "-85085.90625"
+                    }
+                }
+            },
+            "GenericParameters": {
+                "MaxTemperature": ""
+            }
+        },
+        "Plots": {
+            "ContourPlots": {
+                "ContactPressureContour": "",
+                "ContactStatusContour": "",
+                "PressureContour": "",
+                "TotalPressureContour": "",
+                "VelocityContour": ""
+            },
+            "DisplacementPlot": "",
+            "XYPlots": {
+                "MassAveragedTotalPressurePlot": "",
+                "WallYPlus": ""
+            },
+            "StressPlot": {
+                "PrincipalStressPlot": "",
+                "VonMisesStressPlot": ""
+            },
+            "StrainPlot": ""
+        }
+    },
+    "MeshElements": {
+        "AxiSymmetricElement": "",
+        "HexElement": {
+            "CHEXA--model1_fem1_Brass_Bronze": {}
+        },
+        "PrismLayer": "",
+        "QuadElement": "",
+        "ShellElement": "",
+        "TetrahedralElement": {
+            "CTETRA--model1_fem1_Brass_Bronze": {}
+        }
+    },
+    "GeometricFeature": {
+        "Body": "",
+        "Curve": "",
+        "Edge": "",
+        "Face": {
+            "TOPFACE2--MODEL1": {},
+            "TOPFACE1--MODEL1": {},
+            "FRONTLOAD--MODEL1": {},
+            "FIXEDFACE--MODEL1": {}
+        },
+        "Line": {
+            "Line4--MODEL1": {},
+            "Line1--MODEL1": {},
+            "Line2--MODEL1": {},
+            "Line3--MODEL1": {}
+        },
+        "Point": ""
+    },
+    "Documentation": {
+        "ConfluencePage": {
+            "ConfluencePage_id_num_7--model1_sim1_Brass_Bronze": {
+                "WebSite": ""
+            }
+        },
+        "PPT": {
+            "PPT_id_num_7--model1_sim1_Brass_Bronze": {
+                "LocalStorage": [
+                    "LocalStorage_id_num_8--model1_sim1_Brass_Bronze"
+                ]
+            }
+        }
+    },
+    "MeshVolume": {
+        "3d_mesh(1)--model1_fem1_Brass_Bronze": {
+            "Mesh_Collector": "Solid(1)",
+            "Mesh_name": "3d_mesh(1)",
+            "Surface Curvature Based Size Variation": "50",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Brass"
+            ],
+            "MeshElements": [
+                "CTETRA--model1_fem1_Brass_Bronze"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "2",
+            "NumElements": "3025",
+            "NumNodes": "5070",
+            "Length": [
+                "ElementSize_20mm--model1_fem1_Brass_Bronze"
+            ]
+        },
+        "3d_mesh(2)--model1_fem1_Brass_Bronze": {
+            "Mesh_Collector": "Solid(2)",
+            "Mesh_name": "3d_mesh(2)",
+            "Surface Curvature Based Size Variation": "NA",
+            "Surface Curvature Threshold": "NA",
+            "SolidMaterial": [
+                "Bronze"
+            ],
+            "MeshElements": [
+                "CHEXA--model1_fem1_Brass_Bronze"
+            ],
+            "is2D": false,
+            "is3D": true,
+            "MinElementLength": "NA",
+            "NumElements": "500",
+            "NumNodes": "726",
+            "Length": [
+                "ElementSize_20mm--model1_fem1_Brass_Bronze"
+            ]
+        }
+    },
+    "Project": {
+        "3d_cantilever_analysis": {
+            "People": [
+                "Shyam",
+                "Chethan"
+            ],
+            "Mechanical": [
+                "model1_sim1_Brass_Bronze"
+            ],
+            "UpdateEvent": [
+                "UpdateEvent_id_num_7--model1_sim1_Brass_Bronze"
+            ],
+            "ProjectStartDate": 1580511600.0,
+            "ProjectEndDate": 1634680800.0
+        }
+    },
+    "UpdateEvent": {
+        "UpdateEvent_id_num_7": {
+            "Comment": "changed material to Brass_Bronze",
+            "hasPredecessor": "model1_sim1",
+            "hasSuccessor": ""
+        }
+    }
+}

@@ -1,0 +1,1553 @@
+{
+    "ANALYSIS_TYPE": "Structural",
+    "UNITS": {
+        "LENGTH": "mm",
+        "TIME": "sec",
+        "MASS": "kilogram (kg)",
+        "TEMPERATURE": "deg Celsius",
+        "FORCE": "milli-newton",
+        "THERMAL_ENERGY": "mN-mm (micro-joule)"
+    },
+    "SOLUTION_INFO": [],
+    "MESH_INFO": {
+        "MeshVolume": [
+            {
+                "Mesh_Collector": "Gravel",
+                "Mesh_name": "3d_mesh(1)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Gravel_isotropic",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "320",
+                "Number of nodes in the mesh": "726",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "300 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(16)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(17)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(18)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(19)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(20)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(21)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(22)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(23)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(24)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(25)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(26)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(27)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(28)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(29)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(30)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(31)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(32)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(33)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(34)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(35)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(36)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(37)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(38)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "3087",
+                "Number of nodes in the mesh": "4400",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(39)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "5985",
+                "Number of nodes in the mesh": "8448",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(40)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "5985",
+                "Number of nodes in the mesh": "8448",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(41)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "5985",
+                "Number of nodes in the mesh": "8448",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(42)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "5985",
+                "Number of nodes in the mesh": "8448",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Trackpads",
+                "Mesh_name": "3d_mesh(43)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Railpad",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "5985",
+                "Number of nodes in the mesh": "8448",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "8 mm"
+            },
+            {
+                "Mesh_Collector": "Rails",
+                "Mesh_name": "3d_mesh(44)",
+                "Surface Curvature Based Size Variation": "50",
+                "Surface Curvature Threshold": "27.9265 mm",
+                "SolidMaterial": "Steel",
+                "Minimum Element Length": "5.53",
+                "Number of elements in the mesh": "15509",
+                "Number of nodes in the mesh": "31591",
+                "ELEMENT_TYPES": [
+                    "CTETRA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "55.3 mm"
+            },
+            {
+                "Mesh_Collector": "Rails",
+                "Mesh_name": "3d_mesh(45)",
+                "Surface Curvature Based Size Variation": "50",
+                "Surface Curvature Threshold": "27.9265 mm",
+                "SolidMaterial": "Steel",
+                "Minimum Element Length": "5.53",
+                "Number of elements in the mesh": "28112",
+                "Number of nodes in the mesh": "57206",
+                "ELEMENT_TYPES": [
+                    "CTETRA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "55.3 mm"
+            },
+            {
+                "Mesh_Collector": "Rails",
+                "Mesh_name": "3d_mesh(46)",
+                "Surface Curvature Based Size Variation": "50",
+                "Surface Curvature Threshold": "38.784 mm",
+                "SolidMaterial": "Steel",
+                "Minimum Element Length": "7.68",
+                "Number of elements in the mesh": "16042",
+                "Number of nodes in the mesh": "33435",
+                "ELEMENT_TYPES": [
+                    "CTETRA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "76.8 mm"
+            },
+            {
+                "Mesh_Collector": "Sleeper",
+                "Mesh_name": "3d_mesh(15)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Concrete",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "182",
+                "Number of nodes in the mesh": "351",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "100 mm"
+            },
+            {
+                "Mesh_Collector": "Sleeper",
+                "Mesh_name": "3d_mesh(14)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Concrete",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "182",
+                "Number of nodes in the mesh": "351",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "100 mm"
+            },
+            {
+                "Mesh_Collector": "Sleeper",
+                "Mesh_name": "3d_mesh(13)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Concrete",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "182",
+                "Number of nodes in the mesh": "351",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "100 mm"
+            },
+            {
+                "Mesh_Collector": "Sleeper",
+                "Mesh_name": "3d_mesh(12)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Concrete",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "182",
+                "Number of nodes in the mesh": "351",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "100 mm"
+            },
+            {
+                "Mesh_Collector": "Sleeper",
+                "Mesh_name": "3d_mesh(11)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Concrete",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "182",
+                "Number of nodes in the mesh": "351",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "100 mm"
+            },
+            {
+                "Mesh_Collector": "Sleeper",
+                "Mesh_name": "3d_mesh(10)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Concrete",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "182",
+                "Number of nodes in the mesh": "351",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "100 mm"
+            },
+            {
+                "Mesh_Collector": "Sleeper",
+                "Mesh_name": "3d_mesh(9)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Concrete",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "182",
+                "Number of nodes in the mesh": "351",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "100 mm"
+            },
+            {
+                "Mesh_Collector": "Sleeper",
+                "Mesh_name": "3d_mesh(8)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Concrete",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "182",
+                "Number of nodes in the mesh": "351",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "100 mm"
+            },
+            {
+                "Mesh_Collector": "Sleeper",
+                "Mesh_name": "3d_mesh(7)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Concrete",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "182",
+                "Number of nodes in the mesh": "351",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "100 mm"
+            },
+            {
+                "Mesh_Collector": "Sleeper",
+                "Mesh_name": "3d_mesh(6)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Concrete",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "182",
+                "Number of nodes in the mesh": "351",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "100 mm"
+            },
+            {
+                "Mesh_Collector": "Sleeper",
+                "Mesh_name": "3d_mesh(5)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Concrete",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "182",
+                "Number of nodes in the mesh": "351",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "100 mm"
+            },
+            {
+                "Mesh_Collector": "Sleeper",
+                "Mesh_name": "3d_mesh(4)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Concrete",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "182",
+                "Number of nodes in the mesh": "351",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "100 mm"
+            },
+            {
+                "Mesh_Collector": "Sleeper",
+                "Mesh_name": "3d_mesh(3)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Concrete",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "182",
+                "Number of nodes in the mesh": "351",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "100 mm"
+            },
+            {
+                "Mesh_Collector": "Sleeper",
+                "Mesh_name": "3d_mesh(2)",
+                "Surface Curvature Based Size Variation": "NA",
+                "Surface Curvature Threshold": "NA",
+                "SolidMaterial": "Concrete",
+                "Minimum Element Length": "NA",
+                "Number of elements in the mesh": "182",
+                "Number of nodes in the mesh": "351",
+                "ELEMENT_TYPES": [
+                    "CHEXA"
+                ],
+                "Type of mesh": "3D",
+                "Element Size": "100 mm"
+            }
+        ],
+        "MeshFileName": "1_Transient_sim",
+        "MeshFileSize": 20556122,
+        "MeshFileDateModified": 1628745480.0
+    },
+    "PROPERTY_INFO": [],
+    "MATERIAL_INFO": {
+        "Steel": {
+            "Category": {
+                "Magnitude": "METAL",
+                "Unit": ""
+            },
+            "Sub-Category": {
+                "Magnitude": "Alloy Steel",
+                "Unit": ""
+            },
+            "Mass Density (RHO)": {
+                "Magnitude": "7.829e-06",
+                "Unit": "kg/mm^3"
+            },
+            "Young's Modulus (E)": {
+                "Magnitude": "206940000",
+                "Unit": "kPa"
+            },
+            "Temperature Dependent Young's Modulus (E)": {
+                "X": {
+                    "Label": "temperature",
+                    "Data": [
+                        "21.11"
+                    ],
+                    "Unit": "degC"
+                },
+                "Y": {
+                    "Label": "Temperature Dependent Young's Modulus (E)",
+                    "Data": [
+                        "206940000"
+                    ],
+                    "Unit": "kPa"
+                }
+            },
+            "Poisson's Ratio (NU)": {
+                "Magnitude": "0.288",
+                "Unit": ""
+            },
+            "Temperature Dependent Poisson's Ratio (NU)": {
+                "X": {
+                    "Label": "temperature",
+                    "Data": [
+                        "21.11",
+                        "23.89",
+                        "37.78",
+                        "51.67",
+                        "65.56",
+                        "79.44",
+                        "93.33",
+                        "107.22",
+                        "121.11",
+                        "135",
+                        "148.89",
+                        "162.78",
+                        "176.67",
+                        "190.56",
+                        "204.44",
+                        "218.33",
+                        "232.22",
+                        "246.11",
+                        "260",
+                        "273.89",
+                        "287.78",
+                        "301.67",
+                        "315.56",
+                        "329.44",
+                        "343.33",
+                        "357.22",
+                        "371.11",
+                        "385",
+                        "398.89",
+                        "412.78",
+                        "426.67",
+                        "440.56",
+                        "454.44",
+                        "468.33",
+                        "482.22",
+                        "496.11",
+                        "510",
+                        "523.89",
+                        "537.78",
+                        "551.67",
+                        "565.56",
+                        "579.44",
+                        "593.33",
+                        "607.22",
+                        "621.11",
+                        "635",
+                        "648.89",
+                        "662.78",
+                        "676.67",
+                        "690.56",
+                        "704.44"
+                    ],
+                    "Unit": "degC"
+                },
+                "Y": {
+                    "Label": "Temperature Dependent Poisson's Ratio (NU)",
+                    "Data": [
+                        "0.288",
+                        "0.288",
+                        "0.288",
+                        "0.289",
+                        "0.289",
+                        "0.29",
+                        "0.29",
+                        "0.291",
+                        "0.291",
+                        "0.291",
+                        "0.292",
+                        "0.292",
+                        "0.293",
+                        "0.293",
+                        "0.293",
+                        "0.294",
+                        "0.294",
+                        "0.294",
+                        "0.295",
+                        "0.295",
+                        "0.296",
+                        "0.296",
+                        "0.296",
+                        "0.297",
+                        "0.297",
+                        "0.298",
+                        "0.298",
+                        "0.298",
+                        "0.299",
+                        "0.299",
+                        "0.3",
+                        "0.3",
+                        "0.301",
+                        "0.301",
+                        "0.302",
+                        "0.302",
+                        "0.303",
+                        "0.304",
+                        "0.304",
+                        "0.305",
+                        "0.306",
+                        "0.307",
+                        "0.308",
+                        "0.309",
+                        "0.31",
+                        "0.311",
+                        "0.312",
+                        "0.313",
+                        "0.314",
+                        "0.316",
+                        "0.317"
+                    ],
+                    "Unit": ""
+                }
+            },
+            "Type of Nonlinearity (TYPE)": {
+                "Magnitude": "Elastoplastic",
+                "Unit": ""
+            },
+            "Yield Function Criterion (YF)": {
+                "Magnitude": "von Mises",
+                "Unit": ""
+            },
+            "Hardening Rule (HR)": {
+                "Magnitude": "Isotropic",
+                "Unit": ""
+            },
+            "Yield Strength": {
+                "X": {
+                    "Label": "temperature",
+                    "Data": [
+                        "21.1111",
+                        "23.8889",
+                        "37.7778",
+                        "51.6667",
+                        "65.5556",
+                        "79.4444",
+                        "93.3333",
+                        "107.222",
+                        "121.111",
+                        "135",
+                        "148.889",
+                        "162.778",
+                        "176.667",
+                        "190.556",
+                        "204.444",
+                        "218.333",
+                        "232.222",
+                        "246.111",
+                        "260",
+                        "273.889",
+                        "287.778",
+                        "301.667",
+                        "315.556",
+                        "329.444",
+                        "343.333",
+                        "357.222",
+                        "371.111",
+                        "385",
+                        "398.889",
+                        "412.778",
+                        "426.667"
+                    ],
+                    "Unit": "degC"
+                },
+                "Y": {
+                    "Label": "Yield Strength",
+                    "Data": [
+                        "137895",
+                        "137895",
+                        "137895",
+                        "137206",
+                        "137206",
+                        "136516",
+                        "136516",
+                        "136516",
+                        "135827",
+                        "135827",
+                        "135137",
+                        "134448",
+                        "133758",
+                        "133069",
+                        "131690",
+                        "130311",
+                        "128242",
+                        "126174",
+                        "124106",
+                        "121348",
+                        "117900",
+                        "114453",
+                        "111006",
+                        "107558",
+                        "104111",
+                        "100663",
+                        "97216.1",
+                        "93768.7",
+                        "90321.3",
+                        "86184.5",
+                        "82737.1"
+                    ],
+                    "Unit": "kPa"
+                }
+            },
+            "Ultimate Tensile Strength": {
+                "X": {
+                    "Label": "temperature",
+                    "Data": [
+                        "21.1111",
+                        "23.8889",
+                        "37.7778",
+                        "51.6667",
+                        "65.5556",
+                        "79.4444",
+                        "93.3333",
+                        "107.222",
+                        "121.111",
+                        "135",
+                        "148.889",
+                        "162.778",
+                        "176.667",
+                        "190.556",
+                        "204.444",
+                        "218.333",
+                        "232.222",
+                        "246.111",
+                        "260",
+                        "273.889",
+                        "287.778",
+                        "301.667",
+                        "315.556",
+                        "329.444",
+                        "343.333",
+                        "357.222",
+                        "371.111",
+                        "385",
+                        "398.889",
+                        "412.778",
+                        "426.667"
+                    ],
+                    "Unit": "degC"
+                },
+                "Y": {
+                    "Label": "Ultimate Tensile Strength",
+                    "Data": [
+                        "275790",
+                        "262001",
+                        "262001",
+                        "262001",
+                        "262001",
+                        "262001",
+                        "262001",
+                        "262001",
+                        "262001",
+                        "262001",
+                        "262001",
+                        "262001",
+                        "262001",
+                        "262001",
+                        "262001",
+                        "262001",
+                        "262001",
+                        "262001",
+                        "261311",
+                        "260622",
+                        "259932",
+                        "257864",
+                        "254417",
+                        "249590",
+                        "243385",
+                        "236490",
+                        "228906",
+                        "220632",
+                        "212359",
+                        "202706",
+                        "193053"
+                    ],
+                    "Unit": "kPa"
+                }
+            },
+            "Initial Strain": {
+                "Magnitude": "0.02",
+                "Unit": "mm/mm"
+            },
+            "Hardening Exponent": {
+                "Magnitude": "0.2",
+                "Unit": ""
+            },
+            "Strength Coefficient": {
+                "Magnitude": "550",
+                "Unit": "MPa"
+            },
+            "R0": {
+                "Magnitude": "1.3",
+                "Unit": ""
+            },
+            "R45": {
+                "Magnitude": "1.3",
+                "Unit": ""
+            },
+            "R90": {
+                "Magnitude": "1.3",
+                "Unit": ""
+            },
+            "Temperature Dependent Thermal Expansion Coefficient (A)": {
+                "X": {
+                    "Label": "temperature",
+                    "Data": [
+                        "93.33",
+                        "107.22",
+                        "121.11",
+                        "135",
+                        "148.89",
+                        "162.78",
+                        "176.67",
+                        "190.56",
+                        "204.44",
+                        "218.33",
+                        "232.22",
+                        "246.11",
+                        "260",
+                        "273.89",
+                        "287.78",
+                        "301.67",
+                        "315.56",
+                        "329.44",
+                        "343.33",
+                        "357.22",
+                        "371.11",
+                        "385",
+                        "398.89",
+                        "412.78",
+                        "426.67",
+                        "440.56",
+                        "454.44",
+                        "468.33",
+                        "482.22",
+                        "496.11",
+                        "510",
+                        "523.89",
+                        "537.78",
+                        "551.67",
+                        "565.56",
+                        "579.44",
+                        "593.33",
+                        "607.22",
+                        "621.11",
+                        "635",
+                        "648.89",
+                        "662.78",
+                        "676.67",
+                        "690.56",
+                        "704.44",
+                        "718.33",
+                        "732.22",
+                        "746.11",
+                        "760",
+                        "773.89",
+                        "787.78",
+                        "801.67",
+                        "815.56"
+                    ],
+                    "Unit": "degC"
+                },
+                "Y": {
+                    "Label": "Temperature Dependent Thermal Expansion Coefficient (A)",
+                    "Data": [
+                        "1.179e-05",
+                        "1.188e-05",
+                        "1.197e-05",
+                        "1.206e-05",
+                        "1.2132e-05",
+                        "1.2222e-05",
+                        "1.2312e-05",
+                        "1.2402e-05",
+                        "1.2492e-05",
+                        "1.2582e-05",
+                        "1.2672e-05",
+                        "1.2762e-05",
+                        "1.2852e-05",
+                        "1.2942e-05",
+                        "1.3032e-05",
+                        "1.3122e-05",
+                        "1.3212e-05",
+                        "1.3302e-05",
+                        "1.3392e-05",
+                        "1.3464e-05",
+                        "1.3554e-05",
+                        "1.3644e-05",
+                        "1.3734e-05",
+                        "1.3806e-05",
+                        "1.3896e-05",
+                        "1.3986e-05",
+                        "1.4058e-05",
+                        "1.4148e-05",
+                        "1.4238e-05",
+                        "1.431e-05",
+                        "1.44e-05",
+                        "1.4472e-05",
+                        "1.4544e-05",
+                        "1.4616e-05",
+                        "1.4688e-05",
+                        "1.4742e-05",
+                        "1.4796e-05",
+                        "1.4832e-05",
+                        "1.4886e-05",
+                        "1.4904e-05",
+                        "1.4922e-05",
+                        "1.4922e-05",
+                        "1.4922e-05",
+                        "1.4904e-05",
+                        "1.4886e-05",
+                        "1.485e-05",
+                        "1.4796e-05",
+                        "1.4724e-05",
+                        "1.4634e-05",
+                        "1.4472e-05",
+                        "1.4256e-05",
+                        "1.4004e-05",
+                        "1.368e-05"
+                    ],
+                    "Unit": "degC^-1"
+                }
+            },
+            "Specific Heat (CP)": {
+                "Magnitude": "434000000",
+                "Unit": "microJ/(kg-K)"
+            },
+            "Crosshatch Pattern": {
+                "Magnitude": "Steel",
+                "Unit": ""
+            },
+            "Material Property Dependency": {
+                "Magnitude": "Temperature",
+                "Unit": ""
+            },
+            "Studio Material": {
+                "Magnitude": "Steel",
+                "Unit": ""
+            }
+        }
+    },
+    "LOAD_INFO": [
+        {
+            "Name": "Wheelweight",
+            "types": [
+                "FORCE"
+            ],
+            "CSYSOption": 5,
+            "observeNode1": "Observe Node 1",
+            "observeNode2": "Observe Node 2",
+            "observeNode3": "Observe Node 3",
+            "observeNode4": "Observe Node 4",
+            "distributionType": 1,
+            "DistributionField": "NA",
+            "TotalForce": {
+                "Magnitude": 75000000.0,
+                "Unit": "N"
+            }
+        },
+        {
+            "Name": "Longitudinal",
+            "types": [
+                "FORCE"
+            ],
+            "CSYSOption": 5,
+            "observeNode1": "Observe Node 1",
+            "observeNode2": "Observe Node 2",
+            "observeNode3": "Observe Node 3",
+            "observeNode4": "Observe Node 4",
+            "distributionType": 1,
+            "DistributionField": "NA",
+            "TotalForce": {
+                "Magnitude": 20000000.0,
+                "Unit": "N"
+            }
+        },
+        {
+            "Name": "Lateral",
+            "types": [
+                "FORCE",
+                "LOAD"
+            ],
+            "CSYSOption": 5,
+            "observeNode1": "Observe Node 1",
+            "observeNode2": "Observe Node 2",
+            "observeNode3": "Observe Node 3",
+            "observeNode4": "Observe Node 4",
+            "distributionType": 1,
+            "DistributionField": "NA",
+            "TotalForce": {
+                "Magnitude": 500.0,
+                "Unit": "N"
+            }
+        },
+        {
+            "Name": "Impact_Mg_Wheelweight",
+            "types": [
+                "FORCE"
+            ],
+            "CSYSOption": 5,
+            "observeNode1": "Observe Node 1",
+            "observeNode2": "Observe Node 2",
+            "observeNode3": "Observe Node 3",
+            "observeNode4": "Observe Node 4",
+            "distributionType": 1,
+            "DistributionField": "NA",
+            "TotalForce": {
+                "Magnitude": 187500000.0,
+                "Unit": "N"
+            }
+        },
+        {
+            "Name": "Impact_Mg_Longitudinal",
+            "types": [
+                "FORCE"
+            ],
+            "CSYSOption": 5,
+            "observeNode1": "Observe Node 1",
+            "observeNode2": "Observe Node 2",
+            "observeNode3": "Observe Node 3",
+            "observeNode4": "Observe Node 4",
+            "distributionType": 1,
+            "DistributionField": "NA",
+            "TotalForce": {
+                "Magnitude": 20000000.0,
+                "Unit": "N"
+            }
+        },
+        {
+            "Name": "Impact_Mg_Lateral",
+            "types": [
+                "FORCE",
+                "LOAD"
+            ],
+            "CSYSOption": 5,
+            "observeNode1": "Observe Node 1",
+            "observeNode2": "Observe Node 2",
+            "observeNode3": "Observe Node 3",
+            "observeNode4": "Observe Node 4",
+            "distributionType": 1,
+            "DistributionField": "NA",
+            "TotalForce": {
+                "Magnitude": 500.0,
+                "Unit": "N"
+            }
+        }
+    ],
+    "CONSTRAINT_INFO": [
+        {
+            "Name": "Fixed(1)",
+            "types": [
+                "SPC"
+            ]
+        },
+        {
+            "Name": "Symmetric(1)",
+            "types": [
+                "SPC"
+            ]
+        }
+    ],
+    "REGION_INFO": [],
+    "isTransient": false,
+    "isHarmonic": false,
+    "ToolVersion": "v1953.0.0.1700",
+    "isSteadyState": true,
+    "DateModified": 1628745360.0,
+    "FileSize": 4928805,
+    "GEOM_INFO": {
+        "TRACK_MERGED": {
+            "GeometryFileName": "TRACK_MERGED",
+            "is2D": false,
+            "is3D": true,
+            "GeometryFileDateModified": 1628745480.0,
+            "GeometryFileSize": 1803627,
+            "all_objects": {
+                "Component": [
+                    {
+                        "JournalIdentifier": "Component TRACK_MERGED 1",
+                        "Name": "TRACK_MERGED",
+                        "PRT_Name": "TRACK_MERGED.prt"
+                    }
+                ]
+            },
+            "isAssembly": false
+        },
+        "RootComponent": "TRACK_MERGED"
+    },
+    "RESULT_INFO": {
+        "ResultDetails": {
+            "Model": {
+                "Displacement - Nodal": {
+                    "Magnitude": {
+                        "Maximum": 0.003300730837509036,
+                        "Minimum": 0.0
+                    },
+                    "X": {
+                        "Maximum": 0.00047050215653143823,
+                        "Minimum": -0.0023022713139653206
+                    },
+                    "Y": {
+                        "Maximum": 0.00045750601566396654,
+                        "Minimum": -0.0003458501596469432
+                    },
+                    "Z": {
+                        "Maximum": 0.0009443588205613196,
+                        "Minimum": -0.002960115671157837
+                    }
+                },
+                "Rotation - Nodal": {
+                    "Magnitude": {
+                        "Maximum": 0.0,
+                        "Minimum": 0.0
+                    },
+                    "X": {
+                        "Maximum": 0.0,
+                        "Minimum": 0.0
+                    },
+                    "Y": {
+                        "Maximum": 0.0,
+                        "Minimum": 0.0
+                    },
+                    "Z": {
+                        "Maximum": 0.0,
+                        "Minimum": 0.0
+                    }
+                },
+                "Stress - Elemental": {
+                    "Determinant": {
+                        "Maximum": 1.785977417167566e+22,
+                        "Minimum": -2.450422068051169e+22
+                    },
+                    "MaximumPrincipal": {
+                        "Maximum": 48820560.0,
+                        "Minimum": -21996652.0
+                    },
+                    "MaximumShear": {
+                        "Maximum": 51802456.0,
+                        "Minimum": 0.0058938441798090935
+                    },
+                    "Mean": {
+                        "Maximum": 16467152.0,
+                        "Minimum": -48821900.0
+                    },
+                    "MiddlePrincipal": {
+                        "Maximum": 7564260.5,
+                        "Minimum": -39768276.0
+                    },
+                    "MinimumPrincipal": {
+                        "Maximum": 2690755.75,
+                        "Minimum": -109797784.0
+                    },
+                    "Octahedral": {
+                        "Maximum": 46866856.0,
+                        "Minimum": 0.005172632168978453
+                    },
+                    "VonMises": {
+                        "Maximum": 99419616.0,
+                        "Minimum": 0.010972809046506882
+                    },
+                    "WorstPrincipal": {
+                        "Maximum": 48820560.0,
+                        "Minimum": -109797784.0
+                    },
+                    "XX": {
+                        "Maximum": 11525413.0,
+                        "Minimum": -22032602.0
+                    },
+                    "XY": {
+                        "Maximum": 15681759.0,
+                        "Minimum": -14526283.0
+                    },
+                    "YY": {
+                        "Maximum": 48760496.0,
+                        "Minimum": -73414608.0
+                    },
+                    "YZ": {
+                        "Maximum": 42010696.0,
+                        "Minimum": -39442732.0
+                    },
+                    "ZX": {
+                        "Maximum": 18204774.0,
+                        "Minimum": -11358937.0
+                    },
+                    "ZZ": {
+                        "Maximum": 9621619.0,
+                        "Minimum": -108862576.0
+                    }
+                },
+                "Stress - Element-Nodal": {
+                    "Determinant": {
+                        "Maximum": 1.2612952613487621e+24,
+                        "Minimum": -2.7110392896204034e+24
+                    },
+                    "MaximumPrincipal": {
+                        "Maximum": 201986480.0,
+                        "Minimum": -65321448.0
+                    },
+                    "MaximumShear": {
+                        "Maximum": 170120768.0,
+                        "Minimum": 0.014322053641080856
+                    },
+                    "Mean": {
+                        "Maximum": 80046600.0,
+                        "Minimum": -178075872.0
+                    },
+                    "MiddlePrincipal": {
+                        "Maximum": 63558688.0,
+                        "Minimum": -143068784.0
+                    },
+                    "MinimumPrincipal": {
+                        "Maximum": 34629268.0,
+                        "Minimum": -387649280.0
+                    },
+                    "Octahedral": {
+                        "Maximum": 155639936.0,
+                        "Minimum": 0.011833772994577885
+                    },
+                    "VonMises": {
+                        "Maximum": 330162176.0,
+                        "Minimum": 0.02510322444140911
+                    },
+                    "WorstPrincipal": {
+                        "Maximum": 201986480.0,
+                        "Minimum": -387649280.0
+                    },
+                    "XX": {
+                        "Maximum": 49343456.0,
+                        "Minimum": -93404920.0
+                    },
+                    "XY": {
+                        "Maximum": 38173088.0,
+                        "Minimum": -38103216.0
+                    },
+                    "YY": {
+                        "Maximum": 73324352.0,
+                        "Minimum": -174173632.0
+                    },
+                    "YZ": {
+                        "Maximum": 113693920.0,
+                        "Minimum": -105490128.0
+                    },
+                    "ZX": {
+                        "Maximum": 90017504.0,
+                        "Minimum": -71768800.0
+                    },
+                    "ZZ": {
+                        "Maximum": 149714832.0,
+                        "Minimum": -387346208.0
+                    }
+                }
+            }
+        },
+        "ResultFileName": "1_sim_track-long_sym_bc_normalload",
+        "ResultFileDateModified": 1628745360.0,
+        "ResultFileSize": 547716732
+    },
+    "manual_info": {
+        "confluence_url": "",
+        "ppt_name": "",
+        "ppt_storage_location": "Local",
+        "ppt_gid": "",
+        "ppt_machine_name": "",
+        "ppt_tc_path": "",
+        "ppt_tc_project_id": "",
+        "ppt_tc_server_loc": "MLH",
+        "ppt_cloud_loc": "",
+        "ppt_cloud_hostname": "",
+        "ppt_cloud_extn": "",
+        "ppt_server_bucket": "",
+        "ppt_server_loc": "",
+        "ppt_server_hostname": "",
+        "ppt_server_extn": "",
+        "new_project": false,
+        "project_name": "track_analysis",
+        "project_contributors": [
+            "Keshav",
+            "Shyam"
+        ],
+        "simulation_contributors": [
+            "Keshav"
+        ],
+        "project_start_date": "01-Jun-2019",
+        "project_end_date": "30-Sep-2021",
+        "update_event_comment": "some change 1",
+        "predecessor_analysis": "1_Static_SIM_Track",
+        "successor_analysis": "",
+        "sim_name": {
+            "current_name": "1_SIM_Track",
+            "new_name": "1_SIM_Track"
+        },
+        "mesh_name": {
+            "current_name": "1_Transient_sim",
+            "new_name": "1_Transient_sim"
+        },
+        "geom_name": {
+            "current_name": [
+                "TRACK_MERGED"
+            ],
+            "new_name": [
+                "TRACK_MERGED"
+            ]
+        }
+    }
+}
